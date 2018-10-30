@@ -1,0 +1,149 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu';
+}
+
+h1, h2 {
+  color: #fdf6e3;
+}
+
+h1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h4 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+body {
+  font-family: 'Inconsolata', 'Ubuntu Mono', monospace;
+  background-color:;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #42DCA3;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+#mainNav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ml-auto {
+  margin-right: 10%;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', monospace;
+  padding-left: 5%;
+}
+
+.navbar-toggler {
+  margin-right: 5%;
+}
+
+
+#map {
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  font-weight: 400;
+  font-family: 'Ubuntu', monospace;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+
+.btn-default {
+  color: #42DCA3;
+  border: 1px solid #42DCA3;
+  background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: black;
+  border: 1px solid #42DCA3;
+  outline: none;
+  background-color: #42DCA3;
+}
+
+.content-section {
+  padding: 50px;
+}
+
+header {
+  padding-top: 100px;
+}
+
+footer {
+  padding: 50px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.li-arrow {
+  margin: 0;
+  	padding: 18px 0 18px 42px;
+  	list-style: none;
+  	background-image: url("../images/right_arrow.svg");
+  	background-repeat: no-repeat;
+  	background-position: left center;
+  	background-size: 24px;
+  }
+
+.expanded_arrow {
+		-webkit-animation: rotation 0.4s forwards linear;
+}
+
+.ul-multicol {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+		}
+}
+
+.collapsed_arrow {
+  -webkit-animation: rotation_back 0.4s forwards linear;
+}
+
+@-webkit-keyframes rotation_back {
+		from {
+				-webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+		}
+}
