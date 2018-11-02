@@ -32,20 +32,54 @@
     <div class="container">
       <h1>projects<span id="underscore">_</span></h1>
 
-      <h4>Digital Native<a class="arrow_expander collapsed_arrow btn" data-toggle="collapse" href="#project1Collapse" role="button" aria-expanded="false" aria-controls="project1Collapse"><img src="images/down_arrow.svg" /></a></h4>
+      <h4>Digital Native<a class="arrow_expander collapsed_arrow btn" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse"><img src="images/down_arrow.svg" /></a></h4>
 
-      <div class="collapse" id="project1Collapse">
+      <div class="collapse" id="dignatCollapse">
         <div class="card card-body">
           <p>
-            In this project, I explored how human and non-human attention functions. The project in its entirety is found <a href="http://digitalnative.space/">here</a>.
+            The <a href="http://digitalnative.space">Digital_Native website</a> is a portfolio for my Senior Seminar course on Rhetoric, Writing, and Technology. Throughout the semester, we studied how attention functions in humans and non-humans. In a series of publications, we pursued questions such as: What is attention? How does it work as a commodity? Is it better understand as a function of environmental factors and actors? How do networks of attention form and operate?
+            <br>
+            <br>
+            The small size of the class allowed us students to tailor our projects according to our interests. I chose to focus on digital attention, so each project implicates the field of Human Computer Interaction (HCI), even if I didn't realize it at the time. The portfolio is located at <a href="http://digitalnative.space">digitalnative.space</a>.
+            <br>
+            <br>
+            My last and most HCI-intensive publication examined how humans attend to entirely digital worlds. I created a web-based mobile Virtual Reality (VR) experience using <a href="https://aframe.io">Mozilla's A-Frame technology</a>. I observed some of my friends using the VR application on their phones in a basic headset. Through this project, I learned that human attention can be affected by VR experiences in serious and complex ways. And we don't understand all of those ways yet.
+            <br>
+            <br>
+            My portfolio required a lot of HTML/CSS and JavaScript coding. I hosted it on Github.io, so I didn't have to take of the backend stuff. <a href="https://github.com/mgottsacker/digitalnative">Here is the Github repo for my portfolio</a>. Admittedly, the repo has a pretty messy commit history because I found myself prototyping and coding very quickly as I ran into configuration issues while trying to meet deadlines.
           </p>
         </div>
       </div>
 
-      <br>
-      <h5>
-        View my resume <a href="docs/Resume-Matthew-Gottsacker-10182018.pdf">here</a>.
-      </h5>
+      <h4>Safe-Bot<a class="arrow_expander collapsed_arrow btn" data-toggle="collapse" href="#safebotCollapse" role="button" aria-expanded="false" aria-controls="safebotCollapse"><img src="images/down_arrow.svg" /></a></h4>
+
+      <div class="collapse" id="safebotCollapse">
+        <div class="card card-body">
+          <p>
+            This project is the frontend and (incomplete) backend for a Facebook Messenger chatbot that leverages the SafeTrek API (NEED LINK). SafeTrek connects users to emergency services in innovative and user-centric ways. Safe-Bot brings their technology to Facebook Messenger and allows users to easily request police, fire, or emergency medical services through a chat conversation. The Facebook Messenger platform is useful for these situations because it is an always-on application that allows users to share a precise location quickly and without having to think about it. It is also advantageous in events where users under duress need to remain silent.
+            <br>
+            <br>
+            I wrote the chatbot frontend in JavaScript. I wrote the backend using Node.JS on a Heroku server. <a href="https://github.com/mgottsacker34/safe-bot">Here is the Github repo for Safe-Bot</a>. I wrote this application in a rapid development window for SafeTrek, so its commit history is messy. I was not familiar with Heroku or writing backend JavaScript in general at the time. The chatbot has limitations in that it does not manage multiple users. To be complete, it needs a secure database to manage user tokens. I plan on working on this part in the future. Let me know if you want to help with this part. I would love to collaborate.
+          </p>
+        </div>
+      </div>
+
+      <h4>St. Louis Parcel Data Aggregation<a class="arrow_expander collapsed_arrow btn" data-toggle="collapse" href="#stlparcelCollapse" role="button" aria-expanded="false" aria-controls="stlparcelCollapse"><img src="images/down_arrow.svg" /></a></h4>
+
+      <div class="collapse" id="stlparcelCollapse">
+        <div class="card card-body">
+          <p>
+            My friend and sociology researcher, Andrew Dermott Smith, is conducting research on land parcels in St. Louis. When he started his research project, there was a less-than-ideal data source for parcel data in the City of St. Louis. For example, the City provides some datasets about land data, but the datasets excluded some of the fields he wanted to study. Additionally, the City hosts a web application that provides complete data for each parcel entry when users search by address or by a unique <code>parcelID</code>. This <code>parcelID</code> field can sometimes be derived from information in the datasets.
+            <br>
+            <br>
+            This project involves a series of Bash commands and scripts that constructs <code>parcelID</code> identifiers from the datasets, queries the City's web application, and downloads the resulting web page. Scripts then process the raw HTML files to extract the desired fields. The final result is a tab-separated file with the <code>parcelID</code> and fields that Andrew wanted to study. This data can help produce maps of the city of St. Louis based on total parcel value and how each parcel is used.
+            <br>
+            <br>
+            <a href="https://github.com/mgottsacker34/stl-parcel-data">Here is the Github repo</a>.
+          </p>
+        </div>
+      </div>
+
 
     </div>
   </header>
