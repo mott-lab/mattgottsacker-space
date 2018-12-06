@@ -30,7 +30,6 @@ html {
   height: 100%;
 }
 
-
 a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -45,6 +44,12 @@ a:focus, a:hover {
 
 #mainNav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.subtitle {
+  padding-left: 85px;
+  font-family: 'Ubuntu Mono', monospace;
+  color: #fdf6e3;
 }
 
 .ml-auto {
