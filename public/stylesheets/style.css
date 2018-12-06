@@ -1,5 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu Mono', 'Ubuntu';
+h1, h2 {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Ubuntu';
 }
 
 h1, h2 {
