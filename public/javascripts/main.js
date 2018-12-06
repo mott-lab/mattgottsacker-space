@@ -78,7 +78,7 @@ function init() {
       "featureType": "road.highway",
       "elementType": "geometry.fill",
       "stylers": [{
-        "color": "#00FF00"
+        "color": "#42DCA3"
       }, {
         "lightness": 17
       }]
@@ -86,7 +86,7 @@ function init() {
       "featureType": "road.highway",
       "elementType": "geometry.stroke",
       "stylers": [{
-        "color": "#00FF00"
+        "color": "#1d9b6c"
       }, {
         "lightness": 29
       }, {
@@ -96,7 +96,7 @@ function init() {
       "featureType": "road.arterial",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#00FF00"
+        "color": "#1d9b6c"
       }, {
         "lightness": 18
       }]
@@ -104,7 +104,7 @@ function init() {
       "featureType": "road.local",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#00FF00"
+        "color": "#1d9b6c"
       }, {
         "lightness": 16
       }]

@@ -46,10 +46,22 @@ a:focus, a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.title-bar {
+  background-color: #073642;
+  padding-bottom: 10px;
+}
+
+.pad-content {
+  padding: 1.1em;
+}
+
 .subtitle {
-  padding-left: 85px;
   font-family: 'Ubuntu Mono', monospace;
   color: #fdf6e3;
+}
+
+.subtitle-break {
+  padding-left: 85px;
 }
 
 .ml-auto {
@@ -96,6 +108,10 @@ a:focus, a:hover {
 
 .content-section {
   padding: 25px;
+}
+
+.card {
+  border-radius: 0 !important;
 }
 
 header {
