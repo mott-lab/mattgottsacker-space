@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu Mono', 'Ubuntu';
 }
 
 h1, h2 {
@@ -17,7 +17,7 @@ h4 {
 }
 
 body {
-  font-family: 'Inconsolata', 'Ubuntu Mono', monospace;
+  font-family: 'Ubuntu', 'Ubuntu Mono', monospace;
   background-color:;
 }
 
@@ -48,7 +48,7 @@ a:focus, a:hover {
 }
 
 .navbar-brand {
-  font-family: 'Ubuntu', monospace;
+  font-family: 'Ubuntu Mono', monospace;
   padding-left: 5%;
 }
 
