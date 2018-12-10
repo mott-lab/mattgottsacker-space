@@ -46,7 +46,7 @@ google.maps.event.addDomListener(window, 'resize', function() {
 function init() {
   var mapOptions = {
     // How zoomed in you want the map to start at (always required)
-    zoom: 12,
+    zoom: 9,
 
     // The latitude and longitude to center the map (always required)
     center: new google.maps.LatLng(38.636497, -90.233903), // St. Louis University
@@ -56,8 +56,7 @@ function init() {
     scrollwheel: true,
     draggable: true,
 
-    // How you would like to style the map.
-    // This is where you would paste any style found on Snazzy Maps.
+    // Map stylization.
     styles: [{
       "featureType": "water",
       "elementType": "geometry",
@@ -176,11 +175,11 @@ function init() {
   map = new google.maps.Map(mapElement, mapOptions);
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-  var image = 'img/map-marker.svg';
+  var mapIcon = 'images/map-marker.svg';
   var myLatLng = new google.maps.LatLng(38.636497, -90.233903);
-  var beachMarker = new google.maps.Marker({
+  var homeMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    icon: image
+    icon: mapIcon
   });
 }

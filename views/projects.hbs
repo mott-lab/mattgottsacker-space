@@ -36,6 +36,35 @@
       <!-- <a href="#dignatCollapse" > -->
         <div class="title-bar">
             <h4 style="padding-bottom: 0px; margin-bottom: 0px;">
+              <a class="arrow_expander collapsed_arrow btn" data-toggle="collapse" href="#workplacebiasCollapse" role="button" aria-expanded="false" aria-controls="workplacebiasCollapse"><img src="images/down_arrow.svg"></a>
+              Addressing Workplace Bias
+            </h4>
+            <h6 class="subtitle subtitle-break">meeting audio analysis system (Python)</h6>
+        </div>
+      <!-- </a> -->
+
+      <div class="collapse" id="workplacebiasCollapse">
+        <div class="card card-body">
+          <p>
+            This project originated as part of the Intern Idea Innovation Challenge at MIT Linoln Laboratory during my summer internship there over the summer of 2018. I worked on a team with <a href="https://www.stephaniecarnell.com/">Stevie Carnell</a>, <a href="https://www.linkedin.com/in/toby-macaluso/">Toby Macaluso</a>, <a href="https://www.linkedin.com/in/davidgundana/">David Gundana</a>, and <a href="https://www.linkedin.com/in/robert-hakulin/">Robert Hakulin</a> to develop the idea and present it to five of the Lab's executives. We won the challenge, and I have been able to work on it with <a href="https://www.linkedin.com/in/saucedord/">Ricardo Saucedo</a> and <a href="https://www.linkedin.com/in/hayden-clarke/">Hayden Clarke</a> for our Senior Capstone project at <a href="http://www.cs.slu.edu/">Saint Louis University</a>.
+            <br>
+            <br>
+            Implicit gender bias is unfortunately prominent in the workplace: 42% of women have experienced discrimination at their jobs because of their gender. While this bias can manifest in a variety of ways, a number of meeting-related bias behaviors have been identified: women are more likely to be interrupted by men and talk less frequently and for shorter periods than men. These trends in meeting communication should be particularly concerning for companies, given that the average organization spends 15% of their collective time in meetings. To mitigate these meeting trends, we propose a meeting analysis tool that serves as a bias intervention for individual meeting attendees and a company-wide meter for workplace culture.
+            <br>
+            <br>
+            The system we are implementing records meeting audio and uses speaker diarization technology to differentiate among individuals speaking. We have begun using <a href="https://github.com/tyiannak/pyAudioAnalysis">pyAudioAnalysis</a> for this task and are modifying its source code to meet our needs. <a href="https://github.com/mgottsacker34/pyAudioAnalysis">Here is our forked Github repository</a>. We are in the process of programmatically collecting data on a variety of conversational behaviors, such as speaking times and interruptions. By identifying an individual speaker and when he/she is speaking, we can compile the total speaking time for that meeting attendee. Similarly, overlaps or unusually short gaps between different speakers can be coded as interruptions.
+            <br>
+            <br>
+            The conversational data is then used in two primary visualizations: an individual view and a company-wide view. The individual view will show an attendee his/her own data from previous meetings, such as how long he/she spoke or how many times he/she interrupted other attendees. The individual view could also show historical trend data to demonstrate how his/her behaviors may change over time. By reviewing this information, the attendee should be prompted to and capable of engaging in self-monitoring regarding any biased behaviors he/she may exhibit. The second view is at a company-wide level and will allow companies to review conversational behavior at a larger scale. This view is similar to the individual view but will contain aggregate data from many meeting attendees broken down by various demographics of interest. This information can give upper-level management and Human Resources departments a concrete measure for creating a supportive workplace culture.
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <!-- <a href="#dignatCollapse" > -->
+        <div class="title-bar">
+            <h4 style="padding-bottom: 0px; margin-bottom: 0px;">
               <a class="arrow_expander collapsed_arrow btn" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse"><img src="images/down_arrow.svg"></a>
               Digital Native
             </h4>
