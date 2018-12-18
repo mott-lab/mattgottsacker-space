@@ -62,6 +62,7 @@ jQuery('img.svg').each(function(){
   $(function() {
     $('svg').hover(
       function(){
+        console.log('chevron hovered');
         $(this).children().first().addClass('chevronSelected');
       },
       function(){
