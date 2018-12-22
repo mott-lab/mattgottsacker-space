@@ -32,6 +32,19 @@ jQuery('img.svg').each(function(){
 
   }, 'xml');
 
+  // When hovering over whole svg, highlight svg path
+  $(function() {
+    $('svg').hover(
+      function(){
+        console.log('chevron hovered');
+        $(this).children().first().addClass('chevronSelected');
+      },
+      function(){
+        $(this).children().first().removeClass('chevronSelected');
+      }
+    );
+  });
+
 });
 
 (function($){
@@ -58,18 +71,7 @@ jQuery('img.svg').each(function(){
     $("#underscore").visibilityToggle();
   }, 500);
 
-  // When hovering over whole svg, highlight svg path
-  $(function() {
-    $('svg').hover(
-      function(){
-        console.log('chevron hovered');
-        $(this).children().first().addClass('chevronSelected');
-      },
-      function(){
-        $(this).children().first().removeClass('chevronSelected');
-      }
-    );
-  });
+
 
 })(jQuery);
 
