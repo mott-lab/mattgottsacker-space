@@ -91,6 +91,16 @@ $('.arrow_expander').on('click', function() {
   }
 });
 
+$('.title_expander').on('click', function() {
+  if($(this).hasClass('title_collapsed')) {
+    $(this).removeClass('title_collapsed');
+    $(this).addClass('title_expanded');
+  } else {
+    $(this).removeClass('title_expanded');
+    $(this).addClass('title_collapsed');
+  }
+});
+
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below

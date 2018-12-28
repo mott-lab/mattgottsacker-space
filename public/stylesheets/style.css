@@ -129,13 +129,13 @@ footer p {
 
 .li-arrow {
   margin: 0;
-  	padding: 18px 0 18px 42px;
-  	list-style: none;
-  	background-image: url("../images/right_arrow.svg");
-  	background-repeat: no-repeat;
-  	background-position: left center;
-  	background-size: 24px;
-  }
+	padding: 18px 0 18px 42px;
+	list-style: none;
+	background-image: url("../images/right_arrow.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 24px;
+}
 
 .expanded_arrow {
 		-webkit-animation: rotation 0.4s forwards linear;
@@ -160,6 +160,14 @@ footer p {
 
 .collapsed_arrow {
   -webkit-animation: rotation_back 0.4s forwards linear;
+}
+
+.title_expanded {
+  /* color: #1d9b6c !important; */
+}
+
+.title_collapsed {
+  /* color: #42DCA3 !important; */
 }
 
 @-webkit-keyframes rotation_back {
