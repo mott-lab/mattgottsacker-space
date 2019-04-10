@@ -1,13 +1,15 @@
 // Change profile picture when user hovers over it.
 var numHovers = 0;
 $('.profile-pic').mouseenter(function(){
-  var hoverPic = 'images/profile-pic-glitched-' + (numHovers % 8) + '.png'
+  var hoverPic = 'images/profile-pic-' + (numHovers % 8) + '.png'
   $(this).attr('src', hoverPic);
   numHovers++;
 });
 
 $('.profile-pic').mouseleave(function(){
-  $(this).attr('src', 'images/profile-pic.jpg');
+  var hoverPic = 'images/profile-pic-' + (numHovers % 8) + '.png'
+  $(this).attr('src', hoverPic);
+  numHovers++;
 });
 
 // Google Maps Scripts
