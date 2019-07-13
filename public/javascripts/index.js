@@ -26,7 +26,7 @@ function init() {
     zoom: 9,
 
     // The latitude and longitude to center the map (always required)
-    center: new google.maps.LatLng(38.636497, -90.233903), // St. Louis University
+    center: new google.maps.LatLng(47.6, -122.166667), // Bellevue, WA
 
     // Disables the default Google Maps UI components
     disableDefaultUI: true,
@@ -153,7 +153,7 @@ function init() {
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
   var mapIcon = 'images/map-marker.svg';
-  var myLatLng = new google.maps.LatLng(38.636497, -90.233903);
+  var myLatLng = new google.maps.LatLng(47.6, -122.166667);
   var homeMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
