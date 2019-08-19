@@ -9,6 +9,8 @@ var bioRouter = require('./routes/bio');
 var projectsRouter = require('./routes/projects');
 var interestsRouter = require('./routes/interests');
 
+var compProgWebsiteRouter = require('./routes/comp-prog');
+
 var app = express();
 
 // view engine setup
@@ -25,6 +27,8 @@ app.use('/', indexRouter);
 app.use('/bio', bioRouter);
 app.use('/projects', projectsRouter);
 app.use('/interests', interestsRouter);
+
+app.use('/muhs-comp-prog', compProgWebsiteRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
