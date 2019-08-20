@@ -1,3 +1,3 @@
-[submodule "lib/comp-prog-website"]
-	path = lib/comp-prog-website
+[submodule "public/comp-prog-website"]
+	path = public/comp-prog-website
 	url = https://github.com/mgottsacker34/comp-prog-website.git
