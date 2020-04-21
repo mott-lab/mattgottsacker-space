@@ -1,3 +1,6 @@
 [submodule "public/comp-prog-website"]
 	path = public/comp-prog-website
 	url = https://github.com/mgottsacker34/comp-prog-website.git
+[submodule "public/digital_native"]
+	path = public/digital_native
+	url = https://github.com/mott-lab/digital_native
