@@ -47,7 +47,7 @@ a:focus, a:hover {
 }
 
 .title-bar {
-  background-color: #073642;
+  background-color: #212427;
   padding-bottom: 10px;
 }
 
@@ -74,11 +74,11 @@ a:focus, a:hover {
 
 .navbar-brand {
   font-family: 'Ubuntu Mono', monospace;
-  padding-left: 5%;
+  /* padding-left: 5%; */
 }
 
 .navbar-toggler {
-  margin-right: 5%;
+  /* margin-right: 5%; */
 }
 
 
@@ -209,4 +209,8 @@ footer p {
 
 .chevronSelected {
   fill: #1d9b6c;
+}
+
+.content-card {
+  border: 0;
 }
