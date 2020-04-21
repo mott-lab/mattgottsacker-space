@@ -31,16 +31,17 @@
   <header>
     <div class="container">
       <h1>interests<span id="underscore">_</span></h1>
-      <h6 class="subtitle" style="padding-bottom: 1.5em;">click on the chevrons to learn more!</h6>
+      {{!-- <h6 class="subtitle" style="padding-bottom: 1.5em;">click on the chevrons to learn more!</h6> --}}
 
-      <div class="title-bar">
+      <a class="arrow_expander content-card" data-toggle="collapse" href="#int_computersCollapse" role="button" aria-expanded="false" aria-controls="int_computersCollapse">
+        <div class="title-bar">
           <h4 style="padding-bottom: 0px; margin-bottom: 0px;">
-            <a class="arrow_expander collapsed_arrow btn content-card" data-toggle="collapse" href="#int_computersCollapse" role="button" aria-expanded="false" aria-controls="int_computersCollapse">
               <img src="images/down_arrow.svg" class="svg" />
-            </a>
             Computers
           </h4>
-      </div>
+        </div>
+      </a>
+
       <div class="collapse" id="int_computersCollapse">
         <div class="card card-body">
           <p>
@@ -57,12 +58,15 @@
 
       <br>
 
-      <div class="title-bar">
+      <a class="arrow_expander content-card" data-toggle="collapse" href="#int_writingCollapse" role="button" aria-expanded="false" aria-controls="int_writingCollapse">
+        <div class="title-bar">
           <h4 style="padding-bottom: 0px; margin-bottom: 0px;">
-            <a class="arrow_expander collapsed_arrow btn content-card" data-toggle="collapse" href="#int_writingCollapse" role="button" aria-expanded="false" aria-controls="int_writingCollapse"><img src="images/down_arrow.svg" class="svg" /></a>
+              <img src="images/down_arrow.svg" class="svg" />
             Creative Writing and Storytelling
           </h4>
-      </div>
+        </div>
+      </a>
+
       <div class="collapse" id="int_writingCollapse">
         <div class="card card-body">
           <p>
@@ -76,12 +80,15 @@
 
       <br>
 
-      <div class="title-bar">
+      <a class="arrow_expander content-card" data-toggle="collapse" href="#int_hci_Collapse" role="button" aria-expanded="false" aria-controls="int_hci_Collapse">
+        <div class="title-bar">
           <h4 style="padding-bottom: 0px; margin-bottom: 0px;">
-            <a class="arrow_expander collapsed_arrow btn content-card" data-toggle="collapse" href="#int_hci_Collapse" role="button" aria-expanded="false" aria-controls="int_hci_Collapse"><img src="images/down_arrow.svg" class="svg" /></a>
+              <img src="images/down_arrow.svg" class="svg" />
             Humans + Computers
           </h4>
-      </div>
+        </div>
+      </a>
+
       <div class="collapse" id="int_hci_Collapse">
         <div class="card card-body">
           <p>
@@ -109,4 +116,4 @@
 <script src="javascripts/bootstrap.min.js"></script>
 
 <!-- Custom scripts for this page -->
-<script src="javascripts/interests.js"></script>
+{{!-- <script src="javascripts/interests.js"></script> --}}
