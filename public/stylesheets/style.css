@@ -22,7 +22,7 @@ h4 {
 
 body {
   font-family: 'Ubuntu', 'Ubuntu Mono', monospace;
-  background-color:;
+  /* background-color:; */
 }
 
 html {
@@ -53,6 +53,10 @@ a:focus, a:hover {
 
 .pad-content {
   padding: 1.1em;
+}
+
+.slight-margin-content {
+  margin: 0.5em;
 }
 
 .subtitle {
@@ -115,7 +119,7 @@ a:focus, a:hover {
 }
 
 header {
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 footer {
