@@ -9,8 +9,8 @@ var bioRouter = require('./routes/bio');
 var projectsRouter = require('./routes/projects');
 var interestsRouter = require('./routes/interests');
 
-var compProgWebsiteRouter = require('./routes/comp-prog');
-var digitalNativeRouter = require('./routes/digital-native');
+// var compProgWebsiteRouter = require('./routes/comp-prog');
+// var digitalNativeRouter = require('./routes/digital-native');
 
 var app = express();
 
@@ -29,7 +29,7 @@ app.use('/bio', bioRouter);
 app.use('/projects', projectsRouter);
 app.use('/interests', interestsRouter);
 
-app.use('/muhs-comp-prog', compProgWebsiteRouter);
+// app.use('/muhs-comp-prog', compProgWebsiteRouter);
 // app.use('/digital_native', digitalNativeRouter);
 
 // catch 404 and forward to error handler
