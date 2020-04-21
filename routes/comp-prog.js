@@ -3,7 +3,7 @@ var router = express.Router();
 var path = require('path');
 
 router.get('/muhs-comp-prog', function(req, res, next) {
-    console.log(req);
+  console.log(req);
   res.sendFile('lib/comp-prog-website/');
 });
 

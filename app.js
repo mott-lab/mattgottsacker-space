@@ -30,7 +30,7 @@ app.use('/projects', projectsRouter);
 app.use('/interests', interestsRouter);
 
 app.use('/muhs-comp-prog', compProgWebsiteRouter);
-app.use('/digital_native', digitalNativeRouter);
+// app.use('/digital_native', digitalNativeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
