@@ -42,6 +42,9 @@
             <h4 class="title-bar--header4">
               ongoing
             </h4>
+            <h6 class="subtitle subtitle-break">
+              things i'm working on in my spare time.
+            </h6>
           </div>
         </div>
       </a>
@@ -49,8 +52,73 @@
       <div class="collapse" id="ongoingCollapse">
         <div class="card card-body folder">
 
+          {{!-- space_muse_ --}}
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
+            <div class="title-bar row">
+              <div class="title-bar--svg-row">
+                <img src="images/down_arrow.svg" class="svg" />
+              </div>
+              <div class="title-bar--text-row">
+                <h4 class="title-bar--header4">
+                  space_muse_
+                </h4>
+                <h6 class="subtitle subtitle-break">
+                  spatial audio annotation (web VR + audio)
+                </h6>
+              </div>
+            </div>
+          </a>
 
+          <div class="collapse" id="compasslabCollapse">
+            <div class="card card-body infoItem--card">
+              <p>
+                Audio interacts with the listener's environment. This web application will give users the ability to create VR experiences for different audio tracks. They will be able to insert annotations (text, shapes, environmental effects) at different spacetime points in a track.
+              </p>
+              <p>
+                Upon completion, users will be able to share experiences with others by simply sending a web link.
+              </p>
+              <p class="project-status--p">
+                dev status: nascent
+                <br>
+                <a href="https://github.com/mott-lab/space_muse_">GitHub repo</a>
+              </p>
+            </div>
+          </div>
 
+          <br>
+
+          {{!-- WikiLearn Spanish --}}
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
+            <div class="title-bar row">
+              <div class="title-bar--svg-row">
+                <img src="images/down_arrow.svg" class="svg" />
+              </div>
+              <div class="title-bar--text-row">
+                <h4 class="title-bar--header4">
+                  WikiLearn Spanish
+                </h4>
+                <h6 class="subtitle subtitle-break">
+                  Alexa skill
+                </h6>
+              </div>
+            </div>
+          </a>
+
+          <div class="collapse" id="compasslabCollapse">
+            <div class="card card-body infoItem--card">
+              <p>
+                WikiLearn Spanish is an Alexa skill designed to help Spanish language learners with their reading comprehension. Users can choose a category (people, places, events, or nature), and WikiLearn Spanish will read the summary from a Wikipedia article fitting the selection. Alexa alternates between the Spanish and English articles paragraph by paragraph.
+              </p>
+              <p>
+                An important consideration in this Alexa skill is the idea of translation. Spanish and English Wikipedia articles often do not share the same authors, nor do they try to be "direct translations" of each other. They emphasize different elements. For this reason, my friend Graham Vogt and I manually select and process articles that focus on similar content in both Wikipedia communities.
+              </p>
+              <p class="project-status--p">
+                dev status: in final testing
+                <br>
+                links: <a href="https://github.com/mott-lab/WikiLearn-Spanish">GitHub repo</a> <a href="https://www.slu.edu/news/2019/february/alexa-skill-contest.php">SLU article</a>
+              </p>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -66,6 +134,9 @@
             <h4 class="title-bar--header4">
               completed
             </h4>
+            <h6 class="subtitle subtitle-break">
+              finished things with something you can look at!
+            </h6>
           </div>
         </div>
       </a>
@@ -74,7 +145,7 @@
         <div class="card card-body folder">
 
           {{!-- Compass Lab --}}
-          <a class="arrow_expander subfolder--a" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
             <div class="title-bar row">
               <div class="title-bar--svg-row">
                 <img src="images/down_arrow.svg" class="svg" />
@@ -91,7 +162,7 @@
           </a>
 
           <div class="collapse" id="compasslabCollapse">
-            <div class="card card-body subfolder--card">
+            <div class="card card-body infoItem--card">
               <p>
                 I started working with Dr. Nathaniel Rivers at the SLU Computer Assisted Instruction Lab in the Fall of 2018. The mission of the Lab is to connect students and instructors with technologies that can help them produce new media compositions. It was previously abbreviated as the CAI Lab, but we rebranded it as the Compass Lab to more accurately portray the Lab's function. The compass is a technology that helps us navigate through technologically-defined environments.
                 <br>
@@ -125,7 +196,7 @@
           <br>
 
           {{!-- Digital Native --}}
-          <a class="arrow_expander subfolder--a" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse">
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse">
             <div class="title-bar row">
               <div class="title-bar--svg-row">
                 <img src="images/down_arrow.svg" class="svg" />
@@ -142,7 +213,7 @@
           </a>
 
           <div class="collapse" id="dignatCollapse">
-            <div class="card card-body subfolder--card">
+            <div class="card card-body infoItem--card">
               <p>
                 The <a href="https://mott-lab.github.io/digital_native/">Digital_Native website</a> is a portfolio for my Senior Seminar course on Rhetoric, Writing, and Technology. Throughout the semester, we studied how attention functions in humans and non-humans. In a series of publications, we pursued questions such as: What is attention? How does it work as a commodity? Is it better understand as a function of environmental factors and actors? How do networks of attention form and operate?
                 <br>
@@ -161,7 +232,7 @@
           <br>
 
           {{!-- MIT Lincoln Lab --}}
-          <a class="arrow_expander subfolder--a" data-toggle="collapse" href="#mitllvizCollapse" role="button" aria-expanded="false" aria-controls="mitllvizCollapse">
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#mitllvizCollapse" role="button" aria-expanded="false" aria-controls="mitllvizCollapse">
             <div class="title-bar row">
               <div class="title-bar--svg-row">
                 <img src="images/down_arrow.svg" class="svg" />
@@ -178,7 +249,7 @@
           </a>
 
           <div class="collapse" id="mitllvizCollapse">
-            <div class="card card-body subfolder--card">
+            <div class="card card-body infoItem--card">
               <p>
                 During the Summer of 2018, I worked as a Research Intern in the <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/cyber-analytics-and-decision-systems">Cyber Analytics and Decision Systems Group</a> at the <a href="https://www.ll.mit.edu/">MIT Lincoln Laboratory</a>. My group researched software-defined networking (SDN) in the context of cybersecurity systems.
                 <br>
@@ -200,7 +271,7 @@
           <br>
 
           {{!-- STL Parcel Data --}}
-          <a class="arrow_expander subfolder--a" data-toggle="collapse" href="#stlparcelCollapse" role="button" aria-expanded="false" aria-controls="stlparcelCollapse">
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#stlparcelCollapse" role="button" aria-expanded="false" aria-controls="stlparcelCollapse">
             <div class="title-bar row">
               <div class="title-bar--svg-row">
                 <img src="images/down_arrow.svg" class="svg" />
@@ -217,7 +288,7 @@
           </a>
 
           <div class="collapse" id="stlparcelCollapse">
-            <div class="card card-body subfolder--card">
+            <div class="card card-body infoItem--card">
               <p>
                 My friend and sociology researcher, Andrew Dermott Smith, is conducting research on land parcels in St. Louis. When he started his research project, there was a less-than-ideal data source for parcel data in the City of St. Louis. For example, the City provides some datasets about land data, but the datasets excluded some of the fields he wanted to study. Additionally, the City hosts a web application that provides complete data for each parcel entry when users search by address or by a unique <code>parcelID</code>. This <code>parcelID</code> field can sometimes be derived from information in the datasets.
                 <br>
@@ -233,7 +304,7 @@
           <br>
 
           {{!-- SLU+ --}}
-          <a class="arrow_expander subfolder--a" data-toggle="collapse" href="#sluplusCollapse" role="button" aria-expanded="false" aria-controls="sluplusCollapse">
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#sluplusCollapse" role="button" aria-expanded="false" aria-controls="sluplusCollapse">
             <div class="title-bar row">
               <div class="title-bar--svg-row">
                 <img src="images/down_arrow.svg" class="svg" />
@@ -250,7 +321,7 @@
           </a>
 
           <div class="collapse" id="sluplusCollapse">
-            <div class="card card-body subfolder--card">
+            <div class="card card-body infoItem--card">
               <p>
                 I wrote this application as part of my Foundations of Rhetoric class my Sophomore year. My professor, Dr. Nathaniel Rivers, assigned us a project to map a part of the world in an interesting way. I created SLU+, an augmented reality app of Saint Louis University's campus. I used the <a href="https://www.wikitude.com/">Wikitude SDK</a> to overlay markers on statues and historic buildings. Users can tap on the markers to learn more about each landmark.
                 <br>
@@ -284,6 +355,9 @@
             <h4 class="title-bar--header4">
               backburner
             </h4>
+            <h6 class="subtitle subtitle-break">
+              things that have fallen out of priority for me. i'd love to pick them up with a collaborator.
+            </h6>
           </div>
         </div>
       </a>
@@ -292,7 +366,7 @@
         <div class="card card-body folder">
 
           {{!-- Workplace Bias --}}
-          <a class="arrow_expander subfolder--a" data-toggle="collapse" href="#workplacebiasCollapse" role="button" aria-expanded="false" aria-controls="workplacebiasCollapse">
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#workplacebiasCollapse" role="button" aria-expanded="false" aria-controls="workplacebiasCollapse">
             <div class="title-bar row">
               <div class="title-bar--svg-row">
                 <img src="images/down_arrow.svg" class="svg" />
@@ -309,7 +383,7 @@
           </a>
 
           <div class="collapse" id="workplacebiasCollapse">
-            <div class="card card-body subfolder--card">
+            <div class="card card-body infoItem--card">
               <p>
                 This project originated as part of the Intern Idea Innovation Challenge at MIT Linoln Laboratory during my summer internship there over the summer of 2018. I worked on a team with <a href="https://www.stephaniecarnell.com/">Stevie Carnell</a>, <a href="https://www.linkedin.com/in/toby-macaluso/">Toby Macaluso</a>, <a href="https://www.linkedin.com/in/davidgundana/">David Gundana</a>, and <a href="https://www.linkedin.com/in/robert-hakulin/">Robert Hakulin</a> to develop the idea and present it to five of the Lab's executives. We won the challenge, and I have been able to work on it with <a href="https://www.linkedin.com/in/saucedord/">Ricardo Saucedo</a> and <a href="https://www.linkedin.com/in/hayden-clarke/">Hayden Clarke</a> for our Senior Capstone project at <a href="http://www.cs.slu.edu/">Saint Louis University</a>.
                 <br>
@@ -328,7 +402,7 @@
           <br>
 
           {{!-- Safe-Bot --}}
-          <a class="arrow_expander subfolder--a" data-toggle="collapse" href="#safebotCollapse" role="button" aria-expanded="false" aria-controls="safebotCollapse">
+          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#safebotCollapse" role="button" aria-expanded="false" aria-controls="safebotCollapse">
             <div class="title-bar row">
               <div class="title-bar--svg-row">
                 <img src="images/down_arrow.svg" class="svg" />
@@ -345,7 +419,7 @@
           </a>
 
           <div class="collapse" id="safebotCollapse">
-            <div class="card card-body subfolder--card">
+            <div class="card card-body infoItem--card">
               <p>
                 This project is the frontend and (incomplete) backend for a Facebook Messenger chatbot that leverages the <a href="https://noonlight.com/">Noonlight API</a> (previously SafeTrek). Noonlight connects users to emergency services in innovative and user-centric ways. Safe-Bot brings their technology to Facebook Messenger and allows users to easily request police, fire, or emergency medical services through a chat conversation. The Facebook Messenger platform is useful for these situations because it is an always-on application that allows users to share a precise location quickly and without having to think about it. It is also advantageous in events where users under duress need to remain silent.
                 <br>

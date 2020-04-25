@@ -11,8 +11,9 @@ var interestsRouter = require('./routes/interests');
 
 // var compProgWebsiteRouter = require('./routes/comp-prog');
 // var digitalNativeRouter = require('./routes/digital-native');
-
+// var livereload = require('express-livereload');
 var app = express();
+// livereload(app, config={})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

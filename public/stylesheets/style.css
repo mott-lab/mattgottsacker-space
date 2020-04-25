@@ -59,16 +59,16 @@ hr {
   margin-bottom: 1.25em;
 }
 
-.subfolder--a {
+.infoItem--a, a.infoItem--a:focus {
   border: 0;
   width: 100%;
   text-align: left;
   margin: 0 0 0.5em 0;
-  color: rgba(255, 255, 255, 0.637);
+  color: #e8faff;
   transition: none;
 }
 
-.subfolder--card {
+.infoItem--card {
   margin-top: -0.5em;
 }
 
@@ -89,6 +89,10 @@ hr {
 
 .title-bar--text-row {
   max-width: 80%;
+}
+
+.project-status--p {
+  color: white;
 }
 
 .pad-content {
