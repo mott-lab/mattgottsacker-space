@@ -4,3 +4,6 @@
 [submodule "public/digital_native"]
 	path = public/digital_native
 	url = https://github.com/mott-lab/digital_native
+[submodule "public/alta_ie_v0"]
+	path = public/alta_ie_v0
+	url = https://github.com/mott-lab/alta_ie_v0.git

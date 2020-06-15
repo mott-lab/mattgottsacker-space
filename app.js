@@ -30,6 +30,14 @@ app.use('/bio', bioRouter);
 app.use('/projects', projectsRouter);
 app.use('/interests', interestsRouter);
 
+app.use(express.static(path.join(__dirname, 'public/alta_ie_v0/build')));
+
+app.get('/alta_ie_v0/*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public/alta_ie_v0/build/index.html'));
+});
+
+app.listen(5000);
+
 // app.use('/muhs-comp-prog', compProgWebsiteRouter);
 // app.use('/digital_native', digitalNativeRouter);
 
