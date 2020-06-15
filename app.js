@@ -36,6 +36,13 @@ app.use('/interests', interestsRouter);
 //   res.sendFile(path.join(__dirname, 'public', 'alta_ie_v0', 'build', 'index.html'));
 // });
 
+var altaApp = express();
+altaApp.get('/alta_ie_v0', function(req, res) {
+  res.send('hello, world.');
+});
+
+app.use('alta_ie_v0', altaApp);
+
 app.listen(5000);
 
 // app.use('/muhs-comp-prog', compProgWebsiteRouter);
