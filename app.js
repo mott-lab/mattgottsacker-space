@@ -9,11 +9,9 @@ var bioRouter = require('./routes/bio');
 var projectsRouter = require('./routes/projects');
 var interestsRouter = require('./routes/interests');
 
-// var compProgWebsiteRouter = require('./routes/comp-prog');
-// var digitalNativeRouter = require('./routes/digital-native');
-// var livereload = require('express-livereload');
+// var altaRouter = require('./routes/alta');
+
 var app = express();
-// livereload(app, config={})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,23 +28,13 @@ app.use('/bio', bioRouter);
 app.use('/projects', projectsRouter);
 app.use('/interests', interestsRouter);
 
+// app.use('/alta_ie_v0', altaRouter);
+
 // app.use(express.static(path.join(__dirname, 'public', 'alta_ie_v0', 'build')));
 
 // app.get('/alta_ie_v0/*', function(req, res) {
 //   res.sendFile(path.join(__dirname, 'public', 'alta_ie_v0', 'build', 'index.html'));
 // });
-
-var altaApp = express();
-altaApp.get('/alta_ie_v0', function(req, res) {
-  res.send('hello, world.');
-});
-
-app.use('alta_ie_v0', altaApp);
-
-app.listen(5000);
-
-// app.use('/muhs-comp-prog', compProgWebsiteRouter);
-// app.use('/digital_native', digitalNativeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -58,10 +46,12 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
+  
   // render the error page
   res.status(err.status || 500);
   res.render('error');
 });
 
 module.exports = app;
+
+//app.listen(5000);

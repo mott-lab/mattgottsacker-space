@@ -1,0 +1,26 @@
+{
+  "short_name": "alta_ie_v0",
+  "name": "A.L.T.A. for Isolated Environments, v0.0",
+  "icons": [
+
+    {
+      "src": "noun_terminal_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "noun_terminal_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "noun_terminal_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
