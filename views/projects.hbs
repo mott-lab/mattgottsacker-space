@@ -33,6 +33,216 @@
       <h1>projects<span id="underscore">_</span></h1>
       {{!-- <h6 class="subtitle" style="padding-bottom: 1.5em;">click on the chevrons to expand project details.</h6> --}}
 
+      <hr>
+
+      {{!-- Toggles for categories --}}
+      {{!-- <div class="row proj-cat-btn-row"> --}}
+        <div class="row proj-cat-btn-row">
+          <div class="col-xs proj-cat-btn-row-label">
+            status:
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="ongoing">ongoing</div>
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="completed">completed</div>
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="backburner">backburner</div>
+          </div>
+        </div>
+        <hr class="proj-cat-hr">
+        <div class="row proj-cat-btn-row">
+          <div class="col-xs proj-cat-btn-row-label">
+            venue:
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="research">research</div>
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="school">school</div>
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="professional">professional</div>
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="freetime">free time</div>
+          </div>
+        </div>
+        <hr class="proj-cat-hr">
+        <div class="row proj-cat-btn-row">
+          <div class="col-xs proj-cat-btn-row-label">
+            tags:
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="XR">XR</div>
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="data">data</div>  
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="web">web</div>
+          </div>
+          <div class="col-xs">
+            <div class="proj-cat proj-cat-unselected" id="creative">creative</div>
+          </div>
+        </div>
+        <hr class="proj-cat-hr">
+        <div class="row proj-cat-btn-row all-proj-control-row">
+          <div class="col-xs">
+            <div id="proj-all-cats" class="all-proj-control">all</div>
+          </div>
+          <div class="col-xs">
+            <div id="proj-no-cats" class="all-proj-control">none</div>
+          </div>
+        </div>
+        
+        
+        
+      {{!-- </div> --}}
+
+      <hr class="proj-cat-hr">
+
+      {{!-- data_eng_nintex --}}
+      <a id="data_eng_nintex" class="arrow_expander infoItem--a completed professional data" data-toggle="collapse" href="#nintexCollapse" role="button" aria-expanded="false" aria-controls="nintexCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Product Usage Data Pipeline
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              fully automated data analysis pipeline
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">professional</div> <div class="title-bar-tag">data</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="nintexCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            
+          </p>
+        </div>
+      </div>
+
+      
+      {{!-- the_alta_files_ --}}
+      <a id="the_alta_files" class="arrow_expander infoItem--a ongoing freetime creative" data-toggle="collapse" href="#altaCollapse" role="button" aria-expanded="false" aria-controls="altaCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              the alta files
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              digital wormhole
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">ongoing</div> <div class="title-bar-tag">free time</div> <div class="title-bar-tag">creative</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="altaCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            creative project. link: <a href="https://mattgottsacker.space/alta_ie_v0">https://mattgottsacker.space/alta_ie_v0</a>
+          </p>
+          <p class="project-status--p">
+            dev status: alpha
+            <br>
+            <a href="https://github.com/mott-lab/alta_ie_v0">GitHub repo</a>
+          </p>
+        </div>
+      </div>
+
+      {{!-- <br> --}}
+
+      {{!-- space_muse_ --}}
+      <a id="space_muse" class="arrow_expander infoItem--a ongoing freetime XR creative" data-toggle="collapse" href="#spacemuseCollapse" role="button" aria-expanded="false" aria-controls="spacemuseCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              space_muse_
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              spatial audio annotation (web VR + audio)
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">ongoing</div><div class="title-bar-tag">free time</div><div class="title-bar-tag">XR</div><div class="title-bar-tag">creative</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="spacemuseCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            Audio interacts with the listener's environment. This web application will give users the ability to create VR experiences for different audio tracks. They will be able to insert annotations (text, shapes, environmental effects) at different spacetime points in a track.
+          </p>
+          <p>
+            Upon completion, users will be able to share experiences with others by simply sending a web link.
+          </p>
+          <p class="project-status--p">
+            dev status: nascent
+            <br>
+            <a href="https://github.com/mott-lab/space_muse_">GitHub repo</a>
+          </p>
+        </div>
+      </div>
+
+      {{!-- <br> --}}
+
+      {{!-- WikiLearn Spanish --}}
+      <a id="wikilearn" class="arrow_expander infoItem--a ongoing freetime web" data-toggle="collapse" href="#wikilearnCollapse" role="button" aria-expanded="false" aria-controls="wikilearnCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              WikiLearn Spanish
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Alexa skill
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">ongoing</div><div class="title-bar-tag">free time</div><div class="title-bar-tag">web</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="wikilearnCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            WikiLearn Spanish is an Alexa skill designed to help Spanish language learners with their reading comprehension. Users can choose a category (people, places, events, or nature), and WikiLearn Spanish will read the summary from a Wikipedia article fitting the selection. Alexa alternates between the Spanish and English articles paragraph by paragraph.
+          </p>
+          <p>
+            An important consideration in this Alexa skill is the idea of translation. Spanish and English Wikipedia articles often do not share the same authors, nor do they try to be "direct translations" of each other. They emphasize different elements. For this reason, my friend Graham Vogt and I manually select and process articles that focus on similar content in both Wikipedia communities.
+          </p>
+          <p class="project-status--p">
+            dev status: in final testing
+            <br>
+            links: <a href="https://github.com/mott-lab/WikiLearn-Spanish">GitHub repo</a> <a href="https://www.slu.edu/news/2019/february/alexa-skill-contest.php">SLU article</a>
+          </p>
+        </div>
+      </div>
+
+        
+{{!-- <div class="card card-body folder">
       <a class="arrow_expander content-card" data-toggle="collapse" href="#ongoingCollapse" role="button" aria-expanded="false" aria-controls="ongoingCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
@@ -50,114 +260,13 @@
       </a>
 
       <div class="collapse" id="ongoingCollapse">
-        <div class="card card-body folder">
+        
+      </div> 
+      </div> --}}
 
-          {{!-- the_alta_files_ --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#altaCollapse" role="button" aria-expanded="false" aria-controls="altaCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  the alta files
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  digital wormhole
-                </h6>
-              </div>
-            </div>
-          </a>
+      {{!-- <br> --}}
 
-          <div class="collapse" id="altaCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                creative project. link: <a href="https://mattgottsacker.space/alta_ie_v0">https://mattgottsacker.space/alta_ie_v0</a>
-              </p>
-              <p class="project-status--p">
-                dev status: alpha
-                <br>
-                <a href="https://github.com/mott-lab/alta_ie_v0">GitHub repo</a>
-              </p>
-            </div>
-          </div>
-
-          <br>
-
-          {{!-- space_muse_ --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#spacemuseCollapse" role="button" aria-expanded="false" aria-controls="spacemuseCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  space_muse_
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  spatial audio annotation (web VR + audio)
-                </h6>
-              </div>
-            </div>
-          </a>
-
-          <div class="collapse" id="spacemuseCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                Audio interacts with the listener's environment. This web application will give users the ability to create VR experiences for different audio tracks. They will be able to insert annotations (text, shapes, environmental effects) at different spacetime points in a track.
-              </p>
-              <p>
-                Upon completion, users will be able to share experiences with others by simply sending a web link.
-              </p>
-              <p class="project-status--p">
-                dev status: nascent
-                <br>
-                <a href="https://github.com/mott-lab/space_muse_">GitHub repo</a>
-              </p>
-            </div>
-          </div>
-
-          <br>
-
-          {{!-- WikiLearn Spanish --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#wikilearnCollapse" role="button" aria-expanded="false" aria-controls="wikilearnCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  WikiLearn Spanish
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  Alexa skill
-                </h6>
-              </div>
-            </div>
-          </a>
-
-          <div class="collapse" id="wikilearnCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                WikiLearn Spanish is an Alexa skill designed to help Spanish language learners with their reading comprehension. Users can choose a category (people, places, events, or nature), and WikiLearn Spanish will read the summary from a Wikipedia article fitting the selection. Alexa alternates between the Spanish and English articles paragraph by paragraph.
-              </p>
-              <p>
-                An important consideration in this Alexa skill is the idea of translation. Spanish and English Wikipedia articles often do not share the same authors, nor do they try to be "direct translations" of each other. They emphasize different elements. For this reason, my friend Graham Vogt and I manually select and process articles that focus on similar content in both Wikipedia communities.
-              </p>
-              <p class="project-status--p">
-                dev status: in final testing
-                <br>
-                links: <a href="https://github.com/mott-lab/WikiLearn-Spanish">GitHub repo</a> <a href="https://www.slu.edu/news/2019/february/alexa-skill-contest.php">SLU article</a>
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <br>
-
-      <a class="arrow_expander content-card" data-toggle="collapse" href="#completedCollapse" role="button" aria-expanded="false" aria-controls="completedCollapse">
+      {{!-- <a class="arrow_expander content-card" data-toggle="collapse" href="#completedCollapse" role="button" aria-expanded="false" aria-controls="completedCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -174,211 +283,226 @@
       </a>
 
       <div class="collapse" id="completedCollapse">
-        <div class="card card-body folder">
+        <div class="card card-body folder"> --}}
 
-          {{!-- Compass Lab --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  SLU Compass Lab Development
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  web developing and technology consulting
-                </h6>
-              </div>
-            </div>
-          </a>
-
-          <div class="collapse" id="compasslabCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                I started working with Dr. Nathaniel Rivers at the SLU Computer Assisted Instruction Lab in the Fall of 2018. The mission of the Lab is to connect students and instructors with technologies that can help them produce new media compositions. It was previously abbreviated as the CAI Lab, but we rebranded it as the Compass Lab to more accurately portray the Lab's function. The compass is a technology that helps us navigate through technologically-defined environments.
-                <br>
-                <div class="col-md-6">
-                  <a href="https://www.slucompasslab.com">
-                    <img src="images/compasslab.png" width="100%"/>
-                  </a>
-                </div>
-                <br>
-                We identified gaps in information distribution from the Lab to its users and kinks in the Lab's internal workflow. For example, there exists a webpage with information about the Lab, but it is difficult to update in a timely manner, and it does not serve a lot of useful content. Additionally, the process to reserve some of the Lab's resources are cumbersome for employees. Dr. Rivers and I determined that designing and implementing a website could address both of these issues.
-                <br>
-                <br>
-                The website displays the Compass Lab's resources in a user-centric and intuitive way. We organize the available technologies primarily according to the functions they serve (i.e., for podcast or video production) while also giving a full catalogue. We provide links to product pages and manuals for more detailed user instructions.
-                <br>
-                <br>
-                Some of the Compass Lab's most important resources are the physical spaces it offers to students and instructors. Its main office has workspaces for editing content and browsing among available technologies. The Lab also has a professionally-equipped recording studio. To connect users with these spaces, I am developing web-based virtual reality tours to orient visitors to their highlights and resources.
-                <br>
-                <br>
-                <a href="https://www.slucompasslab.com">Here is a link to the website.</a>
-                <br>
-                Look around the frame below to explore the Lab in VR!
-                <br>
-                <br>
-                <iframe style="width: 100%; height: 500px" src="https://compasslab.glitch.me/" frameborder="0">
-                </iframe>
-              </p>
+      {{!-- Compass Lab --}}
+      <a id="compass_lab" class="arrow_expander infoItem--a professional completed web XR" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              SLU Compass Lab Development
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              web developing and technology consulting
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div><div class="title-bar-tag">professional</div><div class="title-bar-tag">web</div><div class="title-bar-tag">XR</div>
             </div>
           </div>
+        </div>
+      </a>
 
-          <br>
-          <br>
-
-          {{!-- Digital Native --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  Digital Native: Exploring Human Attention
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  web (HTML/CSS + JavaScript + A-Frame)
-                </h6>
-              </div>
+      <div class="collapse" id="compasslabCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            I started working with Dr. Nathaniel Rivers at the SLU Computer Assisted Instruction Lab in the Fall of 2018. The mission of the Lab is to connect students and instructors with technologies that can help them produce new media compositions. It was previously abbreviated as the CAI Lab, but we rebranded it as the Compass Lab to more accurately portray the Lab's function. The compass is a technology that helps us navigate through technologically-defined environments.
+            <br>
+            <div class="col-md-6">
+              <a href="https://www.slucompasslab.com">
+                <img src="images/compasslab.png" width="100%"/>
+              </a>
             </div>
-          </a>
-
-          <div class="collapse" id="dignatCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                The <a href="https://mott-lab.github.io/digital_native/">Digital_Native website</a> is a portfolio for my Senior Seminar course on Rhetoric, Writing, and Technology. Throughout the semester, we studied how attention functions in humans and non-humans. In a series of publications, we pursued questions such as: What is attention? How does it work as a commodity? Is it better understand as a function of environmental factors and actors? How do networks of attention form and operate?
-                <br>
-                <br>
-                The small size of the class allowed us students to tailor our projects according to our interests. I chose to focus on digital attention, so each project implicates the field of Human Computer Interaction (HCI), even if I didn't realize it at the time. The portfolio is located at <a href="https://mott-lab.github.io/digital_native/">https://mott-lab.github.io/digital_native/</a>.
-                <br>
-                <br>
-                My last and most HCI-intensive publication examined how humans attend to entirely digital worlds. I created a <a href="https://digital-calibration.glitch.me">web-based mobile Virtual Reality experience</a> using <a href="https://aframe.io">Mozilla's A-Frame technology</a>. I observed some of my friends using the VR application on their phones in a basic headset. Through this project, I learned that human attention can be affected by VR experiences in serious and complex ways. And we don't understand all of those ways yet.
-                <br>
-                <br>
-                My portfolio required a lot of HTML/CSS and JavaScript coding. <a href="https://github.com/mott-lab/digital_native">Here is the Github repo for my portfolio</a>.
-              </p>
-            </div>
-          </div>
-
-          <br>
-
-          {{!-- MIT Lincoln Lab --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#mitllvizCollapse" role="button" aria-expanded="false" aria-controls="mitllvizCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  Visualizing Network Identifier Bindings
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  web-based visualization tool (D3.js)
-                </h6>
-              </div>
-            </div>
-          </a>
-
-          <div class="collapse" id="mitllvizCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                During the Summer of 2018, I worked as a Research Intern in the <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/cyber-analytics-and-decision-systems">Cyber Analytics and Decision Systems Group</a> at the <a href="https://www.ll.mit.edu/">MIT Lincoln Laboratory</a>. My group researched software-defined networking (SDN) in the context of cybersecurity systems.
-                <br>
-                <br>
-                SDN allows network analysts to easily deploy access control rules across a network. A novel application for an SDN could leverage this feature to enforce dynamic, role-based policies on high-level information such as usernames at the network level. Such a system requires a database to keep track of the relationships among each device and its respective identifying information on the network. In order to enforce a policy based on a username, the system also needs knowledge of the network device’s hostname, IP address, and MAC address. We refer to the relationships between two network identifiers as bindings.
-                <br>
-                <br>
-                Network-level bindings are inherently dynamic, and bindings between usernames and hostnames complicate the state of the network even more. This dynamic nature makes it difficult for network analysts to validate and debug the policy enforcement system described above. Existing SDN verification tools, such as the web applications bundled with the Floodlight and ONOS controllers display the topology of network devices, but they do not visualize the bindings between network identifiers. Researchers currently test the system by examining database logs. Because of the scale of an enterprise network, this method is inefficient and may lead to change blindness.
-                <br>
-                <br>
-                We approached these issues with a web application displaying two different visual representations of the identifier binding database. Each method shows an overview of the network to allow top-down analysis and features that give users access to the granular data necessary for bottom-up analysis. The first representation is an enriched tabular view, in which the records from the database are fit into a sortable and filterable table. The bindings between each pair of identifiers are encoded as link icons in spaces between each identifier column. The icons are colored along a colorblind-safe gradient. The place on the gradient is calculated based on the current time and the difference between the bindings’ activation and expiration times. This view is intuitive and provides fast searching, but it does not scale perfectly. The second representation displays an undirected graph with the network identifiers as nodes and the bindings as edges between the corresponding identifiers. The edges are colored according to the same gradient as the link icons in the table view. While this view loses some simplicity, it provides a useful visual overview of the network and the analyst can quickly learn whether a certain identifier is bound to several others.
-                <br>
-                <br>
-                We have created a web-based application for the views described above. The tool updates in real-time to ensure the network analyst has up-to-date information. We have not evaluated its efficacy with real users or experts. The next step of our research is to conduct a user study to learn if our application provides insights valuable to the end user. I compiled my summer work into <a href="docs/imc-poster-gottsacker2.pdf">this poster</a>, which I presented at the ACM Internet Measurement Conference in Boston, MA, on October 31, 2018.
-              </p>
-            </div>
-          </div>
-
-          <br>
-
-          {{!-- STL Parcel Data --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#stlparcelCollapse" role="button" aria-expanded="false" aria-controls="stlparcelCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  St. Louis Parcel Data Aggregation
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  Linux command line, Bash Scripts
-                </h6>
-              </div>
-            </div>
-          </a>
-
-          <div class="collapse" id="stlparcelCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                My friend and sociology researcher, Andrew Dermott Smith, is conducting research on land parcels in St. Louis. When he started his research project, there was a less-than-ideal data source for parcel data in the City of St. Louis. For example, the City provides some datasets about land data, but the datasets excluded some of the fields he wanted to study. Additionally, the City hosts a web application that provides complete data for each parcel entry when users search by address or by a unique <code>parcelID</code>. This <code>parcelID</code> field can sometimes be derived from information in the datasets.
-                <br>
-                <br>
-                This project involves a series of Bash commands and scripts that constructs <code>parcelID</code> identifiers from the datasets, queries the City's web application, and downloads the resulting web page. Scripts then process the raw HTML files to extract the desired fields. The final result is a tab-separated file with the <code>parcelID</code> and fields that Andrew wanted to study. This data can help produce maps of the city of St. Louis based on total parcel value and how each parcel is used.
-                <br>
-                <br>
-                <a href="https://github.com/mgottsacker34/stl-parcel-data">Here is the Github repo</a>.
-              </p>
-            </div>
-          </div>
-
-          <br>
-
-          {{!-- SLU+ --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#sluplusCollapse" role="button" aria-expanded="false" aria-controls="sluplusCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  SLU+: Augmenting Campus
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  Android app (Java, XML)
-                </h6>
-              </div>
-            </div>
-          </a>
-
-          <div class="collapse" id="sluplusCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                I wrote this application as part of my Foundations of Rhetoric class my Sophomore year. My professor, Dr. Nathaniel Rivers, assigned us a project to map a part of the world in an interesting way. I created SLU+, an augmented reality app of Saint Louis University's campus. I used the <a href="https://www.wikitude.com/">Wikitude SDK</a> to overlay markers on statues and historic buildings. Users can tap on the markers to learn more about each landmark.
-                <br>
-                <br>
-                This project was my first experience with the field of Human-Computer Interaction. I observed a few friends using the app. I learned that people experience an altered physical world when looking through the lens of an AR app. It shapes where they walk and look, and as a result, it shapes where other people walk and look. AR systems are rhetorical devices that affect how people network with physical objects and other people. These networks among humans and non-human devices run deep, and they affect how we attend.
-                <br>
-                <br>
-                Unfortunately, I do not have the code for the application on a Github repo because I was not very experienced with Git at the time of the project. Here is a demo video of it.
-                <br>
-                <br>
-                <div class="video-container">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/-GV1qeCi-tM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </p>
-            </div>
-          </div>
-
+            <br>
+            We identified gaps in information distribution from the Lab to its users and kinks in the Lab's internal workflow. For example, there exists a webpage with information about the Lab, but it is difficult to update in a timely manner, and it does not serve a lot of useful content. Additionally, the process to reserve some of the Lab's resources are cumbersome for employees. Dr. Rivers and I determined that designing and implementing a website could address both of these issues.
+            <br>
+            <br>
+            The website displays the Compass Lab's resources in a user-centric and intuitive way. We organize the available technologies primarily according to the functions they serve (i.e., for podcast or video production) while also giving a full catalogue. We provide links to product pages and manuals for more detailed user instructions.
+            <br>
+            <br>
+            Some of the Compass Lab's most important resources are the physical spaces it offers to students and instructors. Its main office has workspaces for editing content and browsing among available technologies. The Lab also has a professionally-equipped recording studio. To connect users with these spaces, I am developing web-based virtual reality tours to orient visitors to their highlights and resources.
+            <br>
+            <br>
+            <a href="https://www.slucompasslab.com">Here is a link to the website.</a>
+            <br>
+            Look around the frame below to explore the Lab in VR!
+            <br>
+            <br>
+            <iframe style="width: 100%; height: 500px" src="https://compasslab.glitch.me/" frameborder="0">
+            </iframe>
+          </p>
         </div>
       </div>
 
-      <br>
+      {{!-- <br> --}}
+      {{!-- <br> --}}
+
+      {{!-- Digital Native --}}
+      <a id="digital_native" class="arrow_expander infoItem--a completed school web XR" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Digital Native: Exploring Human Attention
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              web (HTML/CSS + JavaScript + A-Frame)
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div><div class="title-bar-tag">school</div><div class="title-bar-tag">web</div><div class="title-bar-tag">XR</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="dignatCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            The <a href="https://mott-lab.github.io/digital_native/">Digital_Native website</a> is a portfolio for my Senior Seminar course on Rhetoric, Writing, and Technology. Throughout the semester, we studied how attention functions in humans and non-humans. In a series of publications, we pursued questions such as: What is attention? How does it work as a commodity? Is it better understand as a function of environmental factors and actors? How do networks of attention form and operate?
+            <br>
+            <br>
+            The small size of the class allowed us students to tailor our projects according to our interests. I chose to focus on digital attention, so each project implicates the field of Human Computer Interaction (HCI), even if I didn't realize it at the time. The portfolio is located at <a href="https://mott-lab.github.io/digital_native/">https://mott-lab.github.io/digital_native/</a>.
+            <br>
+            <br>
+            My last and most HCI-intensive publication examined how humans attend to entirely digital worlds. I created a <a href="https://digital-calibration.glitch.me">web-based mobile Virtual Reality experience</a> using <a href="https://aframe.io">Mozilla's A-Frame technology</a>. I observed some of my friends using the VR application on their phones in a basic headset. Through this project, I learned that human attention can be affected by VR experiences in serious and complex ways. And we don't understand all of those ways yet.
+            <br>
+            <br>
+            My portfolio required a lot of HTML/CSS and JavaScript coding. <a href="https://github.com/mott-lab/digital_native">Here is the Github repo for my portfolio</a>.
+          </p>
+        </div>
+      </div>
+
+      {{!-- <br> --}}
+
+      {{!-- MIT Lincoln Lab --}}
+      <a id="mit_ll_viz" class="arrow_expander infoItem--a completed professional research data web" data-toggle="collapse" href="#mitllvizCollapse" role="button" aria-expanded="false" aria-controls="mitllvizCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Visualizing Network Identifier Bindings
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              web-based visualization tool (D3.js)
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div><div class="title-bar-tag">research</div><div class="title-bar-tag">professional</div><div class="title-bar-tag">data</div><div class="title-bar-tag">web</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="mitllvizCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            During the Summer of 2018, I worked as a Research Intern in the <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/cyber-analytics-and-decision-systems">Cyber Analytics and Decision Systems Group</a> at the <a href="https://www.ll.mit.edu/">MIT Lincoln Laboratory</a>. My group researched software-defined networking (SDN) in the context of cybersecurity systems.
+            <br>
+            <br>
+            SDN allows network analysts to easily deploy access control rules across a network. A novel application for an SDN could leverage this feature to enforce dynamic, role-based policies on high-level information such as usernames at the network level. Such a system requires a database to keep track of the relationships among each device and its respective identifying information on the network. In order to enforce a policy based on a username, the system also needs knowledge of the network device’s hostname, IP address, and MAC address. We refer to the relationships between two network identifiers as bindings.
+            <br>
+            <br>
+            Network-level bindings are inherently dynamic, and bindings between usernames and hostnames complicate the state of the network even more. This dynamic nature makes it difficult for network analysts to validate and debug the policy enforcement system described above. Existing SDN verification tools, such as the web applications bundled with the Floodlight and ONOS controllers display the topology of network devices, but they do not visualize the bindings between network identifiers. Researchers currently test the system by examining database logs. Because of the scale of an enterprise network, this method is inefficient and may lead to change blindness.
+            <br>
+            <br>
+            We approached these issues with a web application displaying two different visual representations of the identifier binding database. Each method shows an overview of the network to allow top-down analysis and features that give users access to the granular data necessary for bottom-up analysis. The first representation is an enriched tabular view, in which the records from the database are fit into a sortable and filterable table. The bindings between each pair of identifiers are encoded as link icons in spaces between each identifier column. The icons are colored along a colorblind-safe gradient. The place on the gradient is calculated based on the current time and the difference between the bindings’ activation and expiration times. This view is intuitive and provides fast searching, but it does not scale perfectly. The second representation displays an undirected graph with the network identifiers as nodes and the bindings as edges between the corresponding identifiers. The edges are colored according to the same gradient as the link icons in the table view. While this view loses some simplicity, it provides a useful visual overview of the network and the analyst can quickly learn whether a certain identifier is bound to several others.
+            <br>
+            <br>
+            We have created a web-based application for the views described above. The tool updates in real-time to ensure the network analyst has up-to-date information. We have not evaluated its efficacy with real users or experts. The next step of our research is to conduct a user study to learn if our application provides insights valuable to the end user. I compiled my summer work into <a href="docs/imc-poster-gottsacker2.pdf">this poster</a>, which I presented at the ACM Internet Measurement Conference in Boston, MA, on October 31, 2018.
+          </p>
+        </div>
+      </div>
+
+      {{!-- <br> --}}
+
+      {{!-- STL Parcel Data --}}
+      <a id="stl_parcel_data" class="arrow_expander infoItem--a completed research data" data-toggle="collapse" href="#stlparcelCollapse" role="button" aria-expanded="false" aria-controls="stlparcelCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              St. Louis Parcel Data Aggregation
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Linux command line, Bash Scripts
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div><div class="title-bar-tag">research</div><div class="title-bar-tag">data</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="stlparcelCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            My friend and sociology researcher, Andrew Dermott Smith, conducted research on land parcels in St. Louis. When he started his project, there was a less-than-ideal data source for parcel data in the City of St. Louis. For example, the City provides some downloadable datasets about land data, but these files exclude some of the fields he wanted to study. However, the City hosts a web application that provides complete data for each parcel entry when users search by address or by a unique <code>parcelID</code>. This <code>parcelID</code> field can sometimes be derived from information in the downloadable datasets.
+          </p>
+          <p>
+            This project involves a series of Bash commands and scripts that constructs <code>parcelID</code> identifiers from the datasets, queries the City's web application, and downloads the resulting web page. Scripts then process the raw HTML files to extract the desired fields. The final result is a tab-separated file with the <code>parcelID</code> and fields that Andrew wanted to study. This data can help produce maps of the city of St. Louis based on total parcel value and how each parcel is used.
+          </p>
+          <p>
+            <a href="https://github.com/mgottsacker34/stl-parcel-data">Here is the Github repo</a>.
+          </p>
+        </div>
+      </div>
+
+      {{!-- <br> --}}
+
+      {{!-- SLU+ --}}
+      <a id="slu_plus" class="arrow_expander infoItem--a completed school XR" data-toggle="collapse" href="#sluplusCollapse" role="button" aria-expanded="false" aria-controls="sluplusCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              SLU+: Augmenting Campus
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Android app (Java, XML)
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div><div class="title-bar-tag">school</div><div class="title-bar-tag">XR</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="sluplusCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            I wrote this application as part of my Foundations of Rhetoric class my Sophomore year. My professor, Dr. Nathaniel Rivers, assigned us a project to map a part of the world in an interesting way. I created SLU+, an augmented reality app of Saint Louis University's campus. I used the <a href="https://www.wikitude.com/">Wikitude SDK</a> to overlay markers on statues and historic buildings. Users can tap on the markers to learn more about each landmark.
+          </p>
+          <p>
+            This project was my first experience with the field of Human-Computer Interaction. I observed a few friends using the app. I learned that people experience an altered physical world when looking through the lens of an AR app. It shapes where they walk and look, and as a result, it shapes where other people walk and look. AR systems are rhetorical devices that affect how people network with physical objects and other people. These networks among humans and non-human devices run deep, and they affect how we attend.
+          </p>
+          <p>
+            Unfortunately, I do not have the code for the application on a Github repo because I was not very experienced with Git at the time of the project. Here is a demo video of it.
+          </p>
+          <p>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-GV1qeCi-tM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </p>
+        </div>
+      </div>
+
+        {{!-- </div>
+      </div> --}}
+
+      {{!-- <br> --}}
 
       
 
-      <a class="arrow_expander content-card" data-toggle="collapse" href="#archivedCollapse" role="button" aria-expanded="false" aria-controls="archivedCollapse">
+      {{!-- <a class="arrow_expander content-card" data-toggle="collapse" href="#archivedCollapse" role="button" aria-expanded="false" aria-controls="archivedCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -392,106 +516,114 @@
             </h6>
           </div>
         </div>
+      </a> --}}
+
+      {{!-- <div class="collapse" id="archivedCollapse">
+        <div class="card card-body folder"> --}}
+
+      {{!-- Workplace Bias --}}
+      <a id="workplace_bias" class="arrow_expander infoItem--a completed school data" data-toggle="collapse" href="#workplacebiasCollapse" role="button" aria-expanded="false" aria-controls="workplacebiasCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Toward Addressing Workplace Bias with Machine Learning
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              meeting audio analysis system (Python)
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div><div class="title-bar-tag">school</div><div class="title-bar-tag">data</div>
+            </div>
+          </div>
+        </div>
       </a>
 
-      <div class="collapse" id="archivedCollapse">
-        <div class="card card-body folder">
-
-          {{!-- Workplace Bias --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#workplacebiasCollapse" role="button" aria-expanded="false" aria-controls="workplacebiasCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  Addressing Workplace Bias
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  meeting audio analysis system (Python)
-                </h6>
-              </div>
-            </div>
-          </a>
-
-          <div class="collapse" id="workplacebiasCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                This project originated as part of the Intern Idea Innovation Challenge at MIT Linoln Laboratory during my summer internship there over the summer of 2018. I worked on a team with <a href="https://www.stephaniecarnell.com/">Stevie Carnell</a>, <a href="https://www.linkedin.com/in/toby-macaluso/">Toby Macaluso</a>, <a href="https://www.linkedin.com/in/davidgundana/">David Gundana</a>, and <a href="https://www.linkedin.com/in/robert-hakulin/">Robert Hakulin</a> to develop the idea and present it to five of the Lab's executives. We won the challenge, and I have been able to work on it with <a href="https://www.linkedin.com/in/saucedord/">Ricardo Saucedo</a> and <a href="https://www.linkedin.com/in/hayden-clarke/">Hayden Clarke</a> for our Senior Capstone project at <a href="http://www.cs.slu.edu/">Saint Louis University</a>.
-                <br>
-                <br>
-                Implicit gender bias is unfortunately prominent in the workplace: 42% of women have experienced discrimination at their jobs because of their gender. While this bias can manifest in a variety of ways, a number of meeting-related bias behaviors have been identified: women are more likely to be interrupted by men and talk less frequently and for shorter periods than men. These trends in meeting communication should be particularly concerning for companies, given that the average organization spends 15% of their collective time in meetings. To mitigate these meeting trends, we propose a meeting analysis tool that serves as a bias intervention for individual meeting attendees and a company-wide meter for workplace culture.
-                <br>
-                <br>
-                The system we are implementing records meeting audio and uses speaker diarization technology to differentiate among individuals speaking. We have begun using <a href="https://github.com/tyiannak/pyAudioAnalysis">pyAudioAnalysis</a> for this task and are modifying its source code to meet our needs. <a href="https://github.com/mgottsacker34/pyAudioAnalysis">Here is our forked Github repository</a>. We are in the process of programmatically collecting data on a variety of conversational behaviors, such as speaking times and interruptions. By identifying an individual speaker and when he/she is speaking, we can compile the total speaking time for that meeting attendee. Similarly, overlaps or unusually short gaps between different speakers can be coded as interruptions.
-                <br>
-                <br>
-                The conversational data is then used in two primary visualizations: an individual view and a company-wide view. The individual view will show an attendee his/her own data from previous meetings, such as how long he/she spoke or how many times he/she interrupted other attendees. The individual view could also show historical trend data to demonstrate how his/her behaviors may change over time. By reviewing this information, the attendee should be prompted to and capable of engaging in self-monitoring regarding any biased behaviors he/she may exhibit. The second view is at a company-wide level and will allow companies to review conversational behavior at a larger scale. This view is similar to the individual view but will contain aggregate data from many meeting attendees broken down by various demographics of interest. This information can give upper-level management and Human Resources departments a concrete measure for creating a supportive workplace culture.
-              </p>
-            </div>
-          </div>
-
-          <br>
-
-          {{!-- Safe-Bot --}}
-          <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#safebotCollapse" role="button" aria-expanded="false" aria-controls="safebotCollapse">
-            <div class="title-bar row">
-              <div class="title-bar--svg-row">
-                <img src="images/down_arrow.svg" class="svg" />
-              </div>
-              <div class="title-bar--text-row">
-                <h4 class="title-bar--header4">
-                  Safe-Bot
-                </h4>
-                <h6 class="subtitle subtitle-break">
-                  Facebook Messenger Chatbot (JavaScript)
-                </h6>
-              </div>
-            </div>
-          </a>
-
-          <div class="collapse" id="safebotCollapse">
-            <div class="card card-body infoItem--card">
-              <p>
-                This project is the frontend and (incomplete) backend for a Facebook Messenger chatbot that leverages the <a href="https://noonlight.com/">Noonlight API</a> (previously SafeTrek). Noonlight connects users to emergency services in innovative and user-centric ways. Safe-Bot brings their technology to Facebook Messenger and allows users to easily request police, fire, or emergency medical services through a chat conversation. The Facebook Messenger platform is useful for these situations because it is an always-on application that allows users to share a precise location quickly and without having to think about it. It is also advantageous in events where users under duress need to remain silent.
-                <br>
-                <br>
-                I wrote the chatbot frontend in JavaScript. I wrote the backend using Node.JS on a Heroku server. <a href="https://github.com/mgottsacker34/safe-bot">Here is the Github repo for Safe-Bot</a>. I wrote this application in a rapid development window for Noonlight, so its commit history is messy. I was not familiar with Heroku or writing backend JavaScript in general at the time. The chatbot has limitations in that it does not manage multiple users. To be complete, it needs a secure database to manage user tokens. I plan on working on this part in the future. Let me know if you want to help with this part. I would love to collaborate.
-                <br>
-                <br>
-                Here is a demo video of Safe-Bot.
-                <br>
-                <br>
-                <div class="video-container">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/DzfjQ-qbV94" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </p>
-            </div>
-          </div>
-
-
+      <div class="collapse" id="workplacebiasCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            This project originated as part of the Intern Idea Innovation Challenge at MIT Linoln Laboratory during my summer internship there over the summer of 2018. I worked on a team with <a href="https://www.stephaniecarnell.com/">Stevie Carnell</a>, <a href="https://www.linkedin.com/in/toby-macaluso/">Toby Macaluso</a>, <a href="https://www.linkedin.com/in/davidgundana/">David Gundana</a>, and <a href="https://www.linkedin.com/in/robert-hakulin/">Robert Hakulin</a> to develop the idea and present it to five of the Lab's executives. We won the challenge, and I have been able to work on it with <a href="https://www.linkedin.com/in/saucedord/">Ricardo Saucedo</a> and <a href="https://www.linkedin.com/in/hayden-clarke/">Hayden Clarke</a> for our Senior Capstone project at <a href="http://www.cs.slu.edu/">Saint Louis University</a>.
+          </p>
+          <p>
+            Implicit gender bias is unfortunately prominent in the workplace: 42% of women have experienced discrimination at their jobs because of their gender. While this bias can manifest in a variety of ways, a number of meeting-related bias behaviors have been identified: women are more likely to be interrupted by men and talk less frequently and for shorter periods than men. These trends in meeting communication should be particularly concerning for companies, given that the average organization spends 15% of their collective time in meetings. To mitigate these meeting trends, we propose a meeting analysis tool that serves as a bias intervention for individual meeting attendees and a company-wide meter for workplace culture.
+          </p>
+          <p>
+            The system we implemented records meeting audio and uses speaker diarization technology to differentiate among individuals speaking. We used <a href="https://github.com/tyiannak/pyAudioAnalysis">pyAudioAnalysis</a> for this task and slight modified its source code to meet our needs. <a href="https://github.com/mott-lab/pyAudioAnalysis">Here is our forked Github repository</a>. We are in the process of programmatically collecting data on a variety of conversational behaviors, such as speaking times and interruptions. By identifying an individual speaker and when he/she is speaking, we can compile the total speaking time for that meeting attendee. Similarly, overlaps or unusually short gaps between different speakers can be coded as interruptions.
+          </p>
+          <p>
+            The conversational data is then used in two primary visualizations: an individual view and a company-wide view. The individual view will show an attendee his/her own data from previous meetings, such as how long he/she spoke or how many times he/she interrupted other attendees. The individual view could also show historical trend data to demonstrate how his/her behaviors may change over time. By reviewing this information, the attendee should be prompted to and capable of engaging in self-monitoring regarding any biased behaviors he/she may exhibit. The second view is at a company-wide level and will allow companies to review conversational behavior at a larger scale. This view is similar to the individual view but will contain aggregate data from many meeting attendees broken down by various demographics of interest. This information can give upper-level management and Human Resources departments a concrete measure for creating a supportive workplace culture.
+          </p>
+          <p>
+            The system we implemented for the Capstone project is technically limited and falls short on some ethical considerations. From the technical perspective, we did not achieve full automation. After recording meeting audio, we had to manually run each file through the ML software. More glaring are the ethical shortcomings. The system only determines between male and female voices. A better implementation would account for non-binary genders and other identifiers that are personally constructed. This kind of system should allow users to create a personal profile, and construct an individualized voice model that would be used to classify their voice in a meeting. This design of course brings new privacy concerns, but they do not seem insurmountable.
+          </p>
         </div>
       </div>
 
-     
+      {{!-- <br> --}}
 
-      <br>
-      <br>
-
-      <a href="docs/Resume-Matthew-Gottsacker-online.pdf">
-        Click here for my résumé.
+      {{!-- Safe-Bot --}}
+      <a id="safe_bot" class="arrow_expander infoItem--a backburner professional web" data-toggle="collapse" href="#safebotCollapse" role="button" aria-expanded="false" aria-controls="safebotCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Safe-Bot
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Facebook Messenger Chatbot (JavaScript)
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">backburner</div><div class="title-bar-tag">professional</div><div class="title-bar-tag">web</div>
+            </div>
+          </div>
+        </div>
       </a>
+
+      <div class="collapse" id="safebotCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            This project is the frontend and (incomplete) backend for a Facebook Messenger chatbot that leverages the <a href="https://noonlight.com/">Noonlight API</a> (previously SafeTrek). Noonlight connects users to emergency services in innovative and user-centric ways. Safe-Bot brings their technology to Facebook Messenger and allows users to easily request police, fire, or emergency medical services through a chat conversation. The Facebook Messenger platform is useful for these situations because it is an always-on application that allows users to share a precise location quickly and without having to think about it. It is also advantageous in events where users under duress need to remain silent.
+            <br>
+            <br>
+            I wrote the chatbot frontend in JavaScript. I wrote the backend using Node.JS on a Heroku server. <a href="https://github.com/mgottsacker34/safe-bot">Here is the Github repo for Safe-Bot</a>. I wrote this application in a rapid development window for Noonlight, so its commit history is messy. I was not familiar with Heroku or writing backend JavaScript in general at the time. The chatbot has limitations in that it does not manage multiple users. To be complete, it needs a secure database to manage user tokens. I plan on working on this part in the future. Let me know if you want to help with this part. I would love to collaborate.
+            <br>
+            <br>
+            Here is a demo video of Safe-Bot.
+            <br>
+            <br>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/DzfjQ-qbV94" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </p>
+        </div>
+      </div>     
+
+      <br>
+      <br>
+      <h4>
+        Showing <span id="num_displayed" class="p_emph"></span> projects.
+      </h4>
+      <p>
+        Select the filter buttons to see associated projects. Use <span class="p_emph">all</span> to show everything, or <span class="p_emph">none</span> to clear the filters.
+      </p>
+      <p>
+        <a href="docs/Resume-Matthew-Gottsacker-online.pdf">
+          Click here for my résumé.
+        </a>
+      </p>
 
     </div>
   </header>
 </section>
 
-<!-- Bootstrap core JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
 
 <script src="javascripts/bootstrap.min.js"></script>
 
 <!-- Custom scripts for this page -->
-{{!-- <script src="javascripts/projects.js"></script> --}}
+<script src="javascripts/projects.js"></script>

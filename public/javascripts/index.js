@@ -1,12 +1,6 @@
 // Change profile picture when user hovers over it.
 var numHovers = 0;
-$('.profile-pic').mouseenter(function(){
-  var hoverPic = 'images/profile-pic-' + (numHovers % 8) + '.png'
-  $(this).attr('src', hoverPic);
-  numHovers++;
-});
-
-$('.profile-pic').mouseleave(function(){
+$('.profile-pic').on("mouseenter click", function(){
   var hoverPic = 'images/profile-pic-' + (numHovers % 8) + '.png'
   $(this).attr('src', hoverPic);
   numHovers++;

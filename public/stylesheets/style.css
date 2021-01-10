@@ -12,7 +12,7 @@ h1, h2 {
 
 h1 {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 
 h4 {
@@ -54,6 +54,10 @@ hr {
   padding: 0;
 }
 
+.map-container {
+  padding: 5%;
+}
+
 .folder {
   padding: 0.5em;
   margin-bottom: 1.25em;
@@ -63,7 +67,7 @@ hr {
   border: 0;
   width: 100%;
   text-align: left;
-  margin: 0 0 0.5em 0;
+  margin:1em 0 0.5em 0;
   color: #e8faff;
   transition: none;
 }
@@ -75,7 +79,7 @@ hr {
 .title-bar {
   background-color: #212427;
   padding-bottom: 10px;
-  margin: 0;
+  margin: 1em 0 0 0;
 }
 
 .title-bar--header4 {
@@ -276,4 +280,74 @@ footer p {
 
 .subtitleHighlight {
   color: #3d9e7b;
+}
+
+.proj-cat {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 0em 0.5em 0.5em 0em;
+  cursor: cell;
+  background-color: #555555;
+  color: #FFFFFF;
+}
+
+.proj-cat:hover {
+  background-color: #444444;
+}
+
+.proj-cat:active {
+  background-color: #111111;
+}
+
+.proj-cat-selected {
+  background-color: #111111;
+}
+
+.all-proj-control {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 0em 0.5em 0.5em 0em;
+  background-color: #555555;
+  cursor: crosshair;
+  color: #FFFFFF;
+  border-style: solid ;
+  border-width: .1em ;
+  border-color: #FFFFFF;
+}
+
+.all-proj-control:hover {
+  background-color: #444444;
+}
+
+.all-proj-control:active {
+  background-color: #111111;
+}
+
+.proj-cat-btn-row {
+  margin-left: 0em;
+}
+
+.proj-cat-btn-row-label {
+  padding: 0.5em 0em 0em 0em;
+  margin: 0.5em 0.5em 0em 0.5em;
+  /* vertical-align: bottom; */
+}
+
+.all-proj-control-row {
+  margin-left: 0.5em;
+}
+
+.title-bar-tag {
+  margin-right: 0.5em;
+  padding: 0 0.25em 0 0.25em;
+  background-color: #555555;
+  color: #FFFFFF;
+}
+
+.p_emph {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.proj-cat-hr {
+  margin: 0 0 0.5em 0;
 }
