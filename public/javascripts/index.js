@@ -11,7 +11,7 @@ var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-  map.setCenter(new google.maps.LatLng(43.038336, -87.955760));
+  map.setCenter(new google.maps.LatLng(28.538336, -81.379234));
 });
 
 function init() {
@@ -20,7 +20,7 @@ function init() {
     zoom: 9,
 
     // The latitude and longitude to center the map (always required)
-    center: new google.maps.LatLng(43.038336, -87.955760), // Bellevue, WA
+    center: new google.maps.LatLng(28.538336, -81.379234), // Orlando, FL
 
     // Disables the default Google Maps UI components
     disableDefaultUI: true,
@@ -147,7 +147,7 @@ function init() {
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
   var mapIcon = 'images/map-marker.svg';
-  var myLatLng = new google.maps.LatLng(43.038336, -87.955760);
+  var myLatLng = new google.maps.LatLng(28.538336, -81.379234);
   var homeMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,

@@ -20,10 +20,7 @@
         <a class="nav-link" href="/interests">Interests</a>
       </li>
     </ul>
-    <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" placeholder="Search" type="text">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
+
   </div>
 </nav>
 
@@ -36,70 +33,66 @@
       <hr>
 
       {{!-- Toggles for categories --}}
-      {{!-- <div class="row proj-cat-btn-row"> --}}
-        <div class="row proj-cat-btn-row">
-          <div class="col-xs proj-cat-btn-row-label">
-            status:
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="ongoing">ongoing</div>
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="completed">completed</div>
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="backburner">backburner</div>
-          </div>
+      <div class="row proj-cat-btn-row">
+        <div class="col-xs proj-cat-btn-row-label">
+          status:
         </div>
-        <hr class="proj-cat-hr">
-        <div class="row proj-cat-btn-row">
-          <div class="col-xs proj-cat-btn-row-label">
-            venue:
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="research">research</div>
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="school">school</div>
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="professional">professional</div>
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="freetime">free time</div>
-          </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="ongoing">ongoing</div>
         </div>
-        <hr class="proj-cat-hr">
-        <div class="row proj-cat-btn-row">
-          <div class="col-xs proj-cat-btn-row-label">
-            tags:
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="XR">XR</div>
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="data">data</div>  
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="web">web</div>
-          </div>
-          <div class="col-xs">
-            <div class="proj-cat proj-cat-unselected" id="creative">creative</div>
-          </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="completed">completed</div>
         </div>
-        <hr class="proj-cat-hr">
-        <div class="row proj-cat-btn-row all-proj-control-row">
-          <div class="col-xs">
-            <div id="proj-all-cats" class="all-proj-control">all</div>
-          </div>
-          <div class="col-xs">
-            <div id="proj-no-cats" class="all-proj-control">none</div>
-          </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="backburner">backburner</div>
         </div>
+      </div>
+      <hr class="proj-cat-hr">
+      <div class="row proj-cat-btn-row">
+        <div class="col-xs proj-cat-btn-row-label">
+          venue:
+        </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="research">research</div>
+        </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="school">school</div>
+        </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="professional">professional</div>
+        </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="freetime">free time</div>
+        </div>
+      </div>
+      <hr class="proj-cat-hr">
+      <div class="row proj-cat-btn-row">
+        <div class="col-xs proj-cat-btn-row-label">
+          tags:
+        </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="XR">XR</div>
+        </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="data">data</div>  
+        </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="web">web</div>
+        </div>
+        <div class="col-xs">
+          <div class="proj-cat proj-cat-unselected" id="creative">creative</div>
+        </div>
+      </div>
+      <hr class="proj-cat-hr">
+      <div class="row proj-cat-btn-row all-proj-control-row">
+        <div class="col-xs">
+          <div id="proj-all-cats" class="all-proj-control">all</div>
+        </div>
+        <div class="col-xs">
+          <div id="proj-no-cats" class="all-proj-control">none</div>
+        </div>
+      </div>
         
-        
-        
-      {{!-- </div> --}}
 
       <hr class="proj-cat-hr">
 
@@ -165,8 +158,6 @@
         </div>
       </div>
 
-      {{!-- <br> --}}
-
       {{!-- space_muse_ --}}
       <a id="space_muse" class="arrow_expander infoItem--a ongoing freetime XR creative" data-toggle="collapse" href="#spacemuseCollapse" role="button" aria-expanded="false" aria-controls="spacemuseCollapse">
         <div class="title-bar row">
@@ -202,8 +193,6 @@
           </p>
         </div>
       </div>
-
-      {{!-- <br> --}}
 
       {{!-- WikiLearn Spanish --}}
       <a id="wikilearn" class="arrow_expander infoItem--a ongoing freetime web" data-toggle="collapse" href="#wikilearnCollapse" role="button" aria-expanded="false" aria-controls="wikilearnCollapse">
@@ -241,49 +230,6 @@
         </div>
       </div>
 
-        
-{{!-- <div class="card card-body folder">
-      <a class="arrow_expander content-card" data-toggle="collapse" href="#ongoingCollapse" role="button" aria-expanded="false" aria-controls="ongoingCollapse">
-        <div class="title-bar row">
-          <div class="title-bar--svg-row">
-            <img src="images/down_arrow.svg" class="svg" />
-          </div>
-          <div class="title-bar--text-row">
-            <h4 class="title-bar--header4">
-              ongoing
-            </h4>
-            <h6 class="subtitle subtitle-break">
-              things i'm working on in my spare time.
-            </h6>
-          </div>
-        </div>
-      </a>
-
-      <div class="collapse" id="ongoingCollapse">
-        
-      </div> 
-      </div> --}}
-
-      {{!-- <br> --}}
-
-      {{!-- <a class="arrow_expander content-card" data-toggle="collapse" href="#completedCollapse" role="button" aria-expanded="false" aria-controls="completedCollapse">
-        <div class="title-bar row">
-          <div class="title-bar--svg-row">
-            <img src="images/down_arrow.svg" class="svg" />
-          </div>
-          <div class="title-bar--text-row">
-            <h4 class="title-bar--header4">
-              completed
-            </h4>
-            <h6 class="subtitle subtitle-break">
-              finished things with something you can look at!
-            </h6>
-          </div>
-        </div>
-      </a>
-
-      <div class="collapse" id="completedCollapse">
-        <div class="card card-body folder"> --}}
 
       {{!-- Compass Lab --}}
       <a id="compass_lab" class="arrow_expander infoItem--a professional completed web XR" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
@@ -336,9 +282,6 @@
         </div>
       </div>
 
-      {{!-- <br> --}}
-      {{!-- <br> --}}
-
       {{!-- Digital Native --}}
       <a id="digital_native" class="arrow_expander infoItem--a completed school web XR" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse">
         <div class="title-bar row">
@@ -375,8 +318,6 @@
           </p>
         </div>
       </div>
-
-      {{!-- <br> --}}
 
       {{!-- MIT Lincoln Lab --}}
       <a id="mit_ll_viz" class="arrow_expander infoItem--a completed professional research data web" data-toggle="collapse" href="#mitllvizCollapse" role="button" aria-expanded="false" aria-controls="mitllvizCollapse">
@@ -418,8 +359,6 @@
         </div>
       </div>
 
-      {{!-- <br> --}}
-
       {{!-- STL Parcel Data --}}
       <a id="stl_parcel_data" class="arrow_expander infoItem--a completed research data" data-toggle="collapse" href="#stlparcelCollapse" role="button" aria-expanded="false" aria-controls="stlparcelCollapse">
         <div class="title-bar row">
@@ -453,8 +392,6 @@
           </p>
         </div>
       </div>
-
-      {{!-- <br> --}}
 
       {{!-- SLU+ --}}
       <a id="slu_plus" class="arrow_expander infoItem--a completed school XR" data-toggle="collapse" href="#sluplusCollapse" role="button" aria-expanded="false" aria-controls="sluplusCollapse">
@@ -495,32 +432,6 @@
         </div>
       </div>
 
-        {{!-- </div>
-      </div> --}}
-
-      {{!-- <br> --}}
-
-      
-
-      {{!-- <a class="arrow_expander content-card" data-toggle="collapse" href="#archivedCollapse" role="button" aria-expanded="false" aria-controls="archivedCollapse">
-        <div class="title-bar row">
-          <div class="title-bar--svg-row">
-            <img src="images/down_arrow.svg" class="svg" />
-          </div>
-          <div class="title-bar--text-row">
-            <h4 class="title-bar--header4">
-              backburner
-            </h4>
-            <h6 class="subtitle subtitle-break">
-              things that have fallen out of priority for me. i'd love to pick them up with a collaborator.
-            </h6>
-          </div>
-        </div>
-      </a> --}}
-
-      {{!-- <div class="collapse" id="archivedCollapse">
-        <div class="card card-body folder"> --}}
-
       {{!-- Workplace Bias --}}
       <a id="workplace_bias" class="arrow_expander infoItem--a completed school data" data-toggle="collapse" href="#workplacebiasCollapse" role="button" aria-expanded="false" aria-controls="workplacebiasCollapse">
         <div class="title-bar row">
@@ -560,8 +471,6 @@
           </p>
         </div>
       </div>
-
-      {{!-- <br> --}}
 
       {{!-- Safe-Bot --}}
       <a id="safe_bot" class="arrow_expander infoItem--a backburner professional web" data-toggle="collapse" href="#safebotCollapse" role="button" aria-expanded="false" aria-controls="safebotCollapse">
