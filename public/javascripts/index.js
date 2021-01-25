@@ -34,7 +34,7 @@ function init() {
       "stylers": [{
         "color": "#145b66"
       }, {
-        "lightness": 17
+        "lightness": 10
       }]
     }, {
       "featureType": "landscape",
