@@ -32,7 +32,7 @@ function init() {
       "featureType": "water",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#0c363d"
+        "color": "#09262b"
       }, {
         "lightness": 10
       }]
