@@ -1,7 +1,7 @@
 // Change profile picture when user hovers over it.
 var numHovers = 0;
 $('.profile-pic').on("mouseenter click", function(){
-  var hoverPic = 'images/profile-pic-' + (numHovers % 8) + '.png'
+  var hoverPic = 'images/profile-pic-b-' + (numHovers % 6) + '.jpg'
   $(this).attr('src', hoverPic);
   numHovers++;
 });
@@ -32,7 +32,7 @@ function init() {
       "featureType": "water",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#000000"
+        "color": "#20b2c9"
       }, {
         "lightness": 17
       }]
