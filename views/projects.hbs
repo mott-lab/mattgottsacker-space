@@ -34,6 +34,23 @@
 
       {{!-- Toggles for categories --}}
       <div class="row proj-cat-btn-row">
+       <div class="col-xs proj-cat-btn-row-label">
+          filter mode:
+        </div>
+        <div class="col-xs">
+          <div id="proj-AND-mode" class="filter-mode-control">AND</div>
+        </div>
+        <div class="col-xs">
+          <div id="proj-OR-mode" class="filter-mode-control filter-mode-selected">OR</div>
+        </div>
+        {{!-- <p> --}}
+        <div class="filter-mode-desc">
+          <span class="p_emph">AND shows projects strictly matching all the categories you select. OR shows projects that match any of the selected categories.</span>
+        </div>
+        {{!-- </p> --}}
+      </div>
+      <hr class="proj-cat-hr">
+      <div class="row proj-cat-btn-row">
         <div class="col-xs proj-cat-btn-row-label">
           status:
         </div>
@@ -84,17 +101,90 @@
         </div>
       </div>
       <hr class="proj-cat-hr">
+      
       <div class="row proj-cat-btn-row all-proj-control-row">
         <div class="col-xs">
-          <div id="proj-all-cats" class="all-proj-control">all</div>
+          <div id="proj-all-cats" class="all-proj-control">show all</div>
         </div>
         <div class="col-xs">
-          <div id="proj-no-cats" class="all-proj-control">none</div>
+          <div id="proj-no-cats" class="all-proj-control">clear filters</div>
         </div>
       </div>
         
 
       <hr class="proj-cat-hr">
+
+      {{!-- vr_interruptions --}}
+      <a id="vr_interruptions" class="arrow_expander infoItem--a completed professional data" data-toggle="collapse" href="#vrInterruptionsCollapse" role="button" aria-expanded="false" aria-controls="vrInterruptionsCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Toward Seamless VR Interruptions
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Studying methods to break traditional isolating boundaries of VR
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">ongoing</div> <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="vrInterruptionsCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            When someone puts on a virtual reality headset, they are completely isolated from their physical environment, including the people around them. This is by design&mdash;VR presents to be the most immersive computing technology. However, there are many cases in which a person wants or needs to interact with someone immersed in VR. Some examples, where "you" are wearing a VR head-mounted display:
+            <ul>
+              <li>You are playing a VR game in your home, and your roommate needs to ask what kind of pizza you want.</li>
+              <li>You are working on a 3D design task in VR, and your collaborator needs to tell you about a specification update.</li>
+              <li>You are passing time on a plane in peaceful virtual environment, and your seat neighbor needs to move around you to use the onboard lavatory.</li>
+            </ul>
+            With the current state of the art, the interrupter cannot fully interact with the VR user unless they take off the headset. There is a lot of friction involved in that process, so it seems that there should be a communication channel that does not require the user to doff the headset. Additionally, the interruption is often jarring for the user. They are immersed in another world. When someone taps them on the shoulder or yells at them, their physical environment abruptly calls them back. This process should be smoother.
+          </p>
+          <p>
+            To address this problem, I am designing, implementing, and running a user study to try to figure out the best way to facilitate this interaction. I can't share too many details yet, but I will update this description when I can!
+          </p>
+        </div>
+      </div>
+
+      {{!-- vre --}}
+      <a id="vre" class="arrow_expander infoItem--a completed professional data" data-toggle="collapse" href="#vreCollapse" role="button" aria-expanded="false" aria-controls="vreCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Virtual Reality Engineering projects
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Class projects submitted in Fall 2020
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">school</div> <div class="title-bar-tag">XR</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="vreCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            I took CAP 5115 VR Engineering with <a href="https://www.ryanmcmahan.com/">Dr. Ryan McMahan</a> in my first semester of grad school at the University of Central Florida. Dr. McMahan is a great teacher, and he taught this class very well. He got me to make some cool and fun VR interactions and environments. You can find all my demos on my YouTube page, but the ones shared here are probably the most entertaining. All of them except the first video build on some sort of story!
+          </p>
+          <p class="p_emph">
+            All YouTube videos are embedded in privacy-enhanced mode, meaning YouTube will not store information about you for playing the videos here.
+          </p>
+          <iframe class="vr_eng_yt" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NhGntjqdE6s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="vr_eng_yt" width="560" height="315" src="https://www.youtube-nocookie.com/embed/C8dF61sOLFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="vr_eng_yt" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Coo7Wp6QMHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="vr_eng_yt" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sIa5qxMKiYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
 
       {{!-- data_eng_nintex --}}
       <a id="data_eng_nintex" class="arrow_expander infoItem--a completed professional data" data-toggle="collapse" href="#nintexCollapse" role="button" aria-expanded="false" aria-controls="nintexCollapse">
@@ -119,7 +209,15 @@
       <div class="collapse" id="nintexCollapse">
         <div class="card card-body infoItem--card">
           <p>
-            
+            As a summer intern at the workflow automation company <a href="https://www.nintex.com/">Nintex</a>, I developed a fully automated data analysis pipeline to gain insights about customer behavior and generate reports for company executives and the product team. It was an independent project supervised by the company's Principal Architect. At the end of the summer, I presented my work to the company CTO and other stakeholders. 
+          </p>
+          <p>  
+            The components of the pipeline and their purposes include:
+            <ul>
+              <li>Azure Function and Azure Storage Queue: detect new and modified data</li>
+              <li>Databricks: extract meaningful data, transform them into useful aggregated formats, and load to new tables</li>
+              <li>Power BI: generate and share reports that summarize product usage and highlight interesting outliers</li>
+            </ul>
           </p>
         </div>
       </div>
@@ -139,7 +237,7 @@
               digital wormhole
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">ongoing</div> <div class="title-bar-tag">free time</div> <div class="title-bar-tag">creative</div>
+              <div class="title-bar-tag">ongoing</div><div class="title-bar-tag">free time</div><div class="title-bar-tag">web</div><div class="title-bar-tag">creative</div>
             </div>
           </div>
         </div>
@@ -148,11 +246,9 @@
       <div class="collapse" id="altaCollapse">
         <div class="card card-body infoItem--card">
           <p>
-            creative project. link: <a href="https://mattgottsacker.space/alta_ie_v0">https://mattgottsacker.space/alta_ie_v0</a>
+            This is a web-based, interactive creative project in which the story is told through a series of found logs on a computer. The content is not finished, but most of the technical setup work is done. You can check it out here: <a href="https://mattgottsacker.space/alta_ie_v0">https://mattgottsacker.space/alta_ie_v0</a>
           </p>
           <p class="project-status--p">
-            dev status: alpha
-            <br>
             <a href="https://github.com/mott-lab/alta_ie_v0">GitHub repo</a>
           </p>
         </div>
@@ -172,7 +268,7 @@
               spatial audio annotation (web VR + audio)
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">ongoing</div><div class="title-bar-tag">free time</div><div class="title-bar-tag">XR</div><div class="title-bar-tag">creative</div>
+              <div class="title-bar-tag">ongoing</div><div class="title-bar-tag">free time</div><div class="title-bar-tag">XR</div><div class="title-bar-tag">web</div><div class="title-bar-tag">creative</div>
             </div>
           </div>
         </div>
@@ -181,15 +277,13 @@
       <div class="collapse" id="spacemuseCollapse">
         <div class="card card-body infoItem--card">
           <p>
-            Audio interacts with the listener's environment. This web application will give users the ability to create VR experiences for different audio tracks. They will be able to insert annotations (text, shapes, environmental effects) at different spacetime points in a track.
+            Audio interacts with the listener's environment. This web application will give users the ability to easily create VR experiences for different audio tracks. They will be able to insert annotations in the form of text, shapes, environmental effects at different spacetime points in a track.
           </p>
           <p>
             Upon completion, users will be able to share experiences with others by simply sending a web link.
           </p>
           <p class="project-status--p">
-            dev status: nascent
-            <br>
-            <a href="https://github.com/mott-lab/space_muse_">GitHub repo</a>
+            I would love a collaborator on this project. It needs a lot of work. Here's the <a href="https://github.com/mott-lab/space_muse_">GitHub repo</a>.
           </p>
         </div>
       </div>
@@ -424,9 +518,12 @@
           <p>
             Unfortunately, I do not have the code for the application on a Github repo because I was not very experienced with Git at the time of the project. Here is a demo video of it.
           </p>
+          <p class="p_emph">
+            All YouTube videos are embedded in privacy-enhanced mode, meaning YouTube will not store information about you for playing the videos here.
+          </p>
           <p>
             <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/-GV1qeCi-tM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-GV1qeCi-tM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </p>
         </div>
@@ -496,18 +593,19 @@
         <div class="card card-body infoItem--card">
           <p>
             This project is the frontend and (incomplete) backend for a Facebook Messenger chatbot that leverages the <a href="https://noonlight.com/">Noonlight API</a> (previously SafeTrek). Noonlight connects users to emergency services in innovative and user-centric ways. Safe-Bot brings their technology to Facebook Messenger and allows users to easily request police, fire, or emergency medical services through a chat conversation. The Facebook Messenger platform is useful for these situations because it is an always-on application that allows users to share a precise location quickly and without having to think about it. It is also advantageous in events where users under duress need to remain silent.
-            <br>
-            <br>
-            I wrote the chatbot frontend in JavaScript. I wrote the backend using Node.JS on a Heroku server. <a href="https://github.com/mgottsacker34/safe-bot">Here is the Github repo for Safe-Bot</a>. I wrote this application in a rapid development window for Noonlight, so its commit history is messy. I was not familiar with Heroku or writing backend JavaScript in general at the time. The chatbot has limitations in that it does not manage multiple users. To be complete, it needs a secure database to manage user tokens. I plan on working on this part in the future. Let me know if you want to help with this part. I would love to collaborate.
-            <br>
-            <br>
-            Here is a demo video of Safe-Bot.
-            <br>
-            <br>
-            <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/DzfjQ-qbV94" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
           </p>
+          <p>
+            I wrote the chatbot frontend in JavaScript. I wrote the backend using Node.JS on a Heroku server. <a href="https://github.com/mgottsacker34/safe-bot">Here is the Github repo for Safe-Bot</a>. I wrote this application in a rapid development window for Noonlight, so its commit history is messy. I was not familiar with Heroku or writing backend JavaScript in general at the time. The chatbot has limitations in that it does not manage multiple users. To be complete, it needs a secure database to manage user tokens. I plan on working on this part in the future. Let me know if you want to help with this part. I would love to collaborate.
+          </p>
+          <p>
+            Here is a demo video of Safe-Bot.
+          </p>
+          <p class="p_emph">
+            All YouTube videos are embedded in privacy-enhanced mode, meaning YouTube will not store information about you for playing the videos here.
+          </p>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DzfjQ-qbV94" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>     
 
