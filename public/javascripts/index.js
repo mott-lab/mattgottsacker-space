@@ -154,3 +154,4 @@ function init() {
     icon: mapIcon
   });
 }
+

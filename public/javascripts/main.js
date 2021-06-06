@@ -104,3 +104,7 @@ $(function() {
 
   });
 });
+
+$('.close').click(function(e) {
+  $('.data-banner').fadeOut();
+});

@@ -388,3 +388,34 @@ footer p {
 .vr_eng_yt {
   margin: 0 0 1em 0;
 }
+
+.data-banner {
+  position: fixed;
+  bottom: 1em;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  border: #b4eae4;
+  border-radius: 0.2em;
+
+}
+
+.close {
+  margin-left: 1em;
+  color: #42DCA3 !important;
+  border: 1px solid #42DCA3 !important;
+  padding: 0.25em 0.5em !important;
+  text-shadow: none;
+  opacity: 1 !important;
+}
+
+.close:hover {
+  background-color: #42DCA3;
+  color: #111111 !important;
+  opacity: 1 !important;
+}
