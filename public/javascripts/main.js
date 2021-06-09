@@ -105,6 +105,14 @@ $(function() {
   });
 });
 
+if(localStorage.getItem('cookieSeen') != 'shown'){
+  console.log('Not yet shown...');
+  $(".data-banner").delay(2000).fadeIn();
+  localStorage.setItem('cookieSeen','shown');
+} else {
+  console.log('already shown.');
+}
+
 $('.close').click(function(e) {
   $('.data-banner').fadeOut();
 });
