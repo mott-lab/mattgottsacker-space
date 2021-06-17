@@ -49,7 +49,7 @@ AFRAME.registerComponent('switch-src', {
 
     for (var i = 1; i < 13; i++) {
       var paneSelector = computePaneSelector(i);
-      var src = Math.floor(Math.random() * 36 + 1);
+      var src = Math.floor(Math.random() * 40 + 1);
       document.querySelector(paneSelector).setAttribute('src', '#pic' + src);
     }
 
@@ -77,7 +77,7 @@ AFRAME.registerComponent('switch-src', {
       var paneSelector = computePaneSelector(newPaneNum);
       // console.log(paneSelector);
       
-      var newSrc = Math.floor(Math.random() * 36 + 1);
+      var newSrc = Math.floor(Math.random() * 40 + 1);
       document.querySelector(paneSelector).setAttribute('src', '#pic' + newSrc);
       console.log('changed: ' + newPaneNum + ' to: #pic' + newSrc);
 
