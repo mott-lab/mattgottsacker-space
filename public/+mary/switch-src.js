@@ -94,6 +94,6 @@ AFRAME.registerComponent('switch-src', {
     setTimeout(function() {
       var pane = Math.floor(Math.random() * 12 + 1);
       scene.emit('changePane', {newPane: pane}, false);
-    }, 5000);
+    }, 25000);
   }
 })

@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /public/mothers-day-2021/
+Disallow: /public/+mary/
