@@ -1,0 +1,16 @@
+#rainCanvas {
+  font-family: 'Ubuntu mono', monospace;
+}
+
+.rain {
+  font-family: 'Ubuntu mono', monospace;
+}
+
+body {
+  background-color: rgb(55, 55, 66);
+  color: rgb(131, 156, 156);
+}
+
+.one {
+  color: white;
+}
