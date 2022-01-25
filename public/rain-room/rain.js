@@ -34,18 +34,18 @@ async function rain_simple() {
       let is_rain = Math.round(Math.random() * rain_freq);
       if (is_rain == 1) {
         cell_text.classList.add("one");
-        cell_text.innerHTML = 1;
+        cell_text.innerHTML = '1';
       } else {
-        cell_text.innerHTML = 0;
+        cell_text.innerHTML = '0';
       }
       row_text.appendChild(cell_text);
     }
     rain_div.prepend(row_text);
     // console.log(rain_div.childElementCount);
-    if (rain_div.childElementCount >= rows-2) {
+    if (rain_div.childElementCount >= rows-3) {
       rain_div.removeChild(rain_div.lastChild);
     }
-    await sleep(300);
+    await sleep(200);
   }
 }
 
