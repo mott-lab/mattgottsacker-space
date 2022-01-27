@@ -76,6 +76,18 @@ let projects_state = {
       display: true,
       categories: ['ongoing', 'research', 'XR']
     },
+    'vr_interrupters': {
+      display: true,
+      categories: ['ongoing', 'research', 'XR']
+    },
+    'arplacemaking': {
+      display: true,
+      categories: ['completed', 'school', 'XR']
+    },
+    'are': {
+      display: true,
+      categories: ['completed', 'school', 'XR']
+    },
     'vre': {
       display: true,
       categories: ['completed', 'school', 'XR']

@@ -117,20 +117,20 @@
       <hr class="proj-cat-hr">
 
       {{!-- vr_interruptions --}}
-      <a id="vr_interruptions" class="arrow_expander infoItem--a completed professional data" data-toggle="collapse" href="#vrInterruptionsCollapse" role="button" aria-expanded="false" aria-controls="vrInterruptionsCollapse">
+      <a id="vr_interruptions" class="arrow_expander infoItem--a ongoing research xr" data-toggle="collapse" href="#vrInterruptionsCollapse" role="button" aria-expanded="false" aria-controls="vrInterruptionsCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
           </div>
           <div class="title-bar--text-row">
             <h4 class="title-bar--header4">
-              Toward Seamless VR Interruptions
+              Toward Seamless Cross-Reality Interruptions using Diegetic Representations
             </h4>
             <h6 class="subtitle subtitle-break">
-              Studying methods to break traditional isolating boundaries of VR
+              Studying usability challenges caused by the isolating nature of VR
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">ongoing</div> <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
+              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
             </div>
           </div>
         </div>
@@ -145,29 +145,140 @@
               <li>You are working on a 3D design task in VR, and your collaborator needs to tell you about a specification update.</li>
               <li>You are passing time on a plane in peaceful virtual environment, and your seat neighbor needs to move around you to use the onboard lavatory.</li>
             </ul>
-            With the current state of the art, the interrupter cannot fully interact with the VR user unless they take off the headset. There is a lot of friction involved in that process, so it seems that there should be a communication channel that does not require the user to doff the headset. Additionally, the interruption is often jarring for the user. They are immersed in another world. When someone taps them on the shoulder or yells at them, their physical environment abruptly calls them back. This process should be smoother.
+            With the current state of the art, the interrupter cannot fully interact with the VR user unless they take off the headset. There is a lot of friction involved in that process, so it seems that there should be a communication channel that does not require the user to doff the headset. Additionally, the interruption is often jarring for the user. They are immersed in another world. When someone taps them on the shoulder or speaks to them, their physical environment abruptly calls them back. This process could be smoother.
           </p>
           <p>
-            With the help of some awesome people in my lab, I designed, implemented, and ran a user study to examine ways to facilitate this interaction. It was published in the proceedings of the International Symposium on Mixed and Augmented Reality (ISMAR) in October 2021. You can read the paper here: <a href="https://sreal.ucf.edu/wp-content/uploads/2021/08/ISMAR_2021_Paper__Interruptions_.pdf">Diegetic Representations for Seamless Cross-Reality Interruptions</a>.
+            With the help of some awesome people in my lab, I designed, implemented, and ran an experimental design human subjects study to examine ways to facilitate this interaction. Our work was published in the proceedings of the International Symposium on Mixed and Augmented Reality (ISMAR) in October 2021. You can read the full paper here: <a href="https://sreal.ucf.edu/wp-content/uploads/2021/08/ISMAR_2021_Paper__Interruptions_.pdf">Diegetic Representations for Seamless Cross-Reality Interruptions</a>.
           </p>
           <p>
-            Kind of a tough title, I know. Let me unpack it. The word "diegetic" comes from describing media elements (most often in movies). It refers to whether a story element comes from within the context of the story world itself. For example, a sound in a movie is diegetic if it is produced by something in the scene (e.g., a radio playing a song). A different sound is non-diegetic if it is added to the scene as a narrative element (e.g., a musical score added to a scene where there is no orchestra plausibly nearby).
+            The word "diegetic" comes from describing media elements (most often in movies). It refers to whether a story element comes from within the context of the story world itself. For example, a sound in a movie is diegetic if it is produced by something in the scene (e.g., a radio playing a song). A different sound is non-diegetic if it is added to the scene as a narrative element (e.g., a musical score added to a scene where there is no orchestra plausibly nearby). I made a <a href="https://youtu.be/ioq4Q-ffNwE?t=1400">2-minute creative explanation for this concept</a> in my video presentation of this paper. You can watch the whole "live" presentation from that link if you want; my presentation starts around the <a href="https://youtu.be/ioq4Q-ffNwE?t=1222">20:20 mark</a>.
           </p>
           <p>
-            We built a virtual office environment and tasked participants with stacking virtual blocks in a couple different formations&mdash;just an easy task that could help them fall into a rhythm pretty quickly. We interrupted them part-way through each block formation. The way the interrupter was represented to the VR user changed each time:
+            VR complicates the common definition diegetic because the virtual world completely surrounds the user. We can talk about audio mostly in the same diegetic dimensions, but the lines between diegetic and non-diegetic visuals blur a little. We explored how one might vary the diegetic degree of the appearance of an avatar to represent a non-VR interrupter to a VR user, and the different effects that might have on the VR user's virtual experience and cross-reality interaction experience.
+          </p>
+          <p>
+            I built a virtual office environment and tasked participants with stacking virtual blocks in a couple different formations&mdash;just an easy task that could help them fall into a rhythm pretty quickly. The experimenter interrupted them part-way through each block formation. The way the interrupter was represented to the VR user changed each time:
             <ul>
-              <li>Baseline: interrupter taps the user on their shoulder, user takes off the headset to interact with interrupter.</li>
-              <li>UI + passthrough view: UI notification alerted the user someone nearby wanted to speak with them, then the user activated the headset's passthrough view to see the interrupter through the headset's external cameras.</li>
-              <li>Non-diegetic avatar: The interrupter was represented in the virtual environment as a floating green sphere.</li>
-              <li>Partially diegetic avatar: The interrupter was represented in the virtual environment as an avatar in business clothes with a glowing green outline.</li>
-              <li>Fully diegetic avatar: The interrupter was represented in the virtual environment as an avatar in business clothes.</li>
+              <li><b>Baseline:</b> interrupter taps the user on their shoulder, user takes off the headset to interact with interrupter.</li>
+              <li><b>UI + passthrough view:</b> UI notification alerted the user someone nearby wanted to speak with them, then the user activated the headset's passthrough view to see the interrupter through the headset's external cameras.</li>
+              <li><b>Non-diegetic avatar:</b> The interrupter was represented in the virtual environment as a floating green sphere.</li>
+              <li><b>Partially diegetic avatar:</b> The interrupter was represented in the virtual environment as an avatar in business clothes with a glowing green outline.</li>
+              <li><b>Fully diegetic avatar:</b> The interrupter was represented in the virtual environment as an avatar in business clothes.</li>
             </ul>
+          </p>
+          <p>
+            Based on a Cross-Reality Interaction Experience questionnaire we developed, we found that participants rated the interaction experience with the interrupter highest for the partially and fully diegetic avatars. We also found that these avatars afforded a reasonably high sense of co-presence with the real-world interrupters, i.e., participants felt they were with a real person as opposed to a purely digital one. We found that participants more often preferred the partially diegetic representations. Their qualitative responses suggest why: several stated that the green outline helped them distinguish the avatar from the rest of the virtual environment; the outline suggested the avatar was not just an NPC (non-player character in a video game). I am interested in further exploring methods for representing cross-reality interactors, especially for interactions that may occur for longer periods (as opposed to brief interruptions).
+          </p>
+          <p>
+            Additionally, we asked participants about their <em>place illusion</em>, or their sense of "being there" in the virtual environment before, during, and after the interruptions. We found that the avatar conditions led participants to experience a consistent and high sense of place illusion throughout the interruption, where the conditions that caused participants to take the headset off led to a drop in place illusion that did not recover immediately after the interruption. I am interested in investigating further how VR users' senses of presence move and change throughout a VR experience.
           </p>
         </div>
       </div>
 
+      {{!-- vr_interrupters --}}
+      <a id="vr_interrupters" class="arrow_expander infoItem--a ongoing research xr" data-toggle="collapse" href="#vrInterruptersCollapse" role="button" aria-expanded="false" aria-controls="vrInterruptersCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Exploring Cues and Signaling to Improve Cross-Reality Interruptions
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Studying usability challenges caused by the physical boundaries of VR
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">ongoing</div> <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="vrInterruptersCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            This research follows on my work on using diegetic avatars to represent avatars that was published at ISMAR 2021. In running that experiment, I acted as the interrupter, and I interrupted participants immersed in VR. It felt strange to interact with someone wearing a head-mounted display (HMD). When someone we are interacting with is wearing an HMD, our usual ability to attribute mental states to the other person is inhibited. We perform this attribution quite often in social interactions&mdash;in psychology it is referred to as developing a <em>theory of mind</em> about the other person. This inhibition seems like a problem that will become increasingly common as VR is used by more people, in more settings (e.g., the workplace), for more purposes, and for longer durations.
+          </p>
+          <p>
+            To improve this interaction from the interrupter's perspective, I am designing and implementing both hardware and software prototypes, and running user studies to test them. I am exploring using basic cues about a VR user's virtual activity to communicate their interruptibility. I am also exploring signaling mechanisms such as a gesture sensor to notify a VR user of an interrupter's intention to interrupt.
+          </p>
+          <p>
+            I have a late-breaking work paper under submission about a preliminary study we ran, and we are planning to run a full study this semester (Spring 2022).
+          </p>
+        </div>
+      </div>
+
+      {{!-- arplacemaking --}}
+      <a id="arplacemaking" class="arrow_expander infoItem--a completed school xr" data-toggle="collapse" href="#arplacemakingCollapse" role="button" aria-expanded="false" aria-controls="arplacemakingCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Augmented Reality Placemaking
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Using AR to make better public places
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">school</div><div class="title-bar-tag">XR</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="arplacemakingCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            For CAP 6115 Mixed Reality Project taught by <a href="https://www.ryanmcmahan.com/">Dr. Ryan McMahan</a>, I worked with UCF Computer Science Master's student Steven Perdomo and Prof. Tommy James from the UCF Architecture Department on his Pipeline to Better Placemaking project. Steven and I created a mobile AR app using Unity's ARFoundation to display virtual architecture models in the physical place in which they will be built. Users can cycle through different proposed models and complete a survey to provide public feedback to the architects. The app was designed to position the virtual objects based on image targets that would be part of a physical poster with information about the place. Positioning the models into a precise location requires many fine-tuned adjustments, so we built an authoring tool to help the architects update the position and rotation of models in real-time. Without this tool, each adjustment to the models' positions would require re-building and re-deploying the application.
+          </p>
+          <p class="p_emph">
+            All YouTube videos are embedded in privacy-enhanced mode, meaning YouTube will not store information about you for playing the videos here.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yrKRFhce5ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      {{!-- are --}}
+      <a id="are" class="arrow_expander infoItem--a completed school xr" data-toggle="collapse" href="#areCollapse" role="button" aria-expanded="false" aria-controls="areCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Augmented Reality Engineering projects
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Class projects submitted in Spring 2021
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">school</div> <div class="title-bar-tag">XR</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="areCollapse">
+        <div class="card card-body infoItem--card">
+          <p>
+            I took CAP 6110 AR Engineering with <a href="https://www.ryanmcmahan.com/">Dr. Ryan McMahan</a> in my second semester of grad school at the University of Central Florida. Here are some of my class probjects. You can find the others on <a href="https://www.youtube.com/channel/UCgB4SeHtpR9gWC_XspBf-Ew">my YouTube page</a>.
+          </p>
+          <p class="p_emph">
+            All YouTube videos are embedded in privacy-enhanced mode, meaning YouTube will not store information about you for playing the videos here.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LwAYjaDVAeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_jhz_lNaMBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7SPQoP3Hs-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nl4fl9_sX2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BhlrgEIiyIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
       {{!-- vre --}}
-      <a id="vre" class="arrow_expander infoItem--a completed professional data" data-toggle="collapse" href="#vreCollapse" role="button" aria-expanded="false" aria-controls="vreCollapse">
+      <a id="vre" class="arrow_expander infoItem--a completed school xr" data-toggle="collapse" href="#vreCollapse" role="button" aria-expanded="false" aria-controls="vreCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -189,7 +300,7 @@
       <div class="collapse" id="vreCollapse">
         <div class="card card-body infoItem--card">
           <p>
-            I took CAP 5115 VR Engineering with <a href="https://www.ryanmcmahan.com/">Dr. Ryan McMahan</a> in my first semester of grad school at the University of Central Florida. Dr. McMahan is a great teacher, and he taught this class very well. He got me to make some cool and fun VR interactions and environments. You can find all my demos on my YouTube page, but the ones shared here are probably the most entertaining. All of them except the first video build on some sort of story!
+            I took CAP 5115 VR Engineering with <a href="https://www.ryanmcmahan.com/">Dr. Ryan McMahan</a> in my first semester of grad school at the University of Central Florida. Dr. McMahan is a great teacher, and he taught this class very well. He got me to make some cool and fun VR interactions and environments. You can find all my demos on <a href="https://www.youtube.com/channel/UCgB4SeHtpR9gWC_XspBf-Ew">my YouTube page</a>, but the ones shared here are probably the most entertaining. All of them except the first video build on some sort of story!
           </p>
           <p class="p_emph">
             All YouTube videos are embedded in privacy-enhanced mode, meaning YouTube will not store information about you for playing the videos here.
