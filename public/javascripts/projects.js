@@ -218,5 +218,5 @@ function countSelectedCategories() {
   projects_state['total_cats'] = total_cats;
 }
 
-noProjectsSelected();
+allProjectsSelected();
 displaySelectedCats();

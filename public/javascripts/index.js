@@ -19,4 +19,19 @@ function nextPic() {
   $('.profile-pic').attr('src', picSrc);
 }
 
-var picSwitch = setInterval(nextPic, 2000);
+var picSwitch = setInterval(nextPic, 5000);
+
+var inVRdetails = document.querySelector("#inVRdetails");
+var inVRimages = document.querySelectorAll(".inVRimages");
+
+inVRdetails.addEventListener("toggle", function() {
+  inVRimages.forEach((image) => {
+    if (inVRdetails.hasAttribute("open")) {
+      image.classList.remove("hideimage");
+      image.classList.add("showimage");
+    } else {
+      image.classList.remove("showimage");
+      image.classList.add("hideimage");
+    }
+  });
+});

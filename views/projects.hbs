@@ -116,6 +116,58 @@
 
       <hr class="proj-cat-hr">
 
+      <details>
+        <summary>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              Toward Seamless Cross-Reality Interruptions using Diegetic Representations
+            </h4>
+            <h6 class="subtitle subtitle-break">
+              Studying usability challenges caused by the isolating nature of VR
+            </h6>
+            <div class="row subtitle subtitle-break">
+              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
+            </div>
+          </div>
+        </summary>
+        <div class="card card-body infoItem--card">
+          <p>
+            When someone puts on a virtual reality headset, they are completely isolated from their physical environment, including the people around them. This is by design&mdash;VR presents to be the most immersive computing technology. However, there are many cases in which a person wants or needs to interact with someone immersed in VR. Some examples, where "you" are wearing a VR head-mounted display:
+            <ul>
+              <li>You are playing a VR game in your home, and your roommate needs to ask what kind of pizza you want.</li>
+              <li>You are working on a 3D design task in VR, and your collaborator needs to tell you about a specification update.</li>
+              <li>You are passing time on a plane in peaceful virtual environment, and your seat neighbor needs to move around you to use the onboard lavatory.</li>
+            </ul>
+            With the current state of the art, the interrupter cannot fully interact with the VR user unless they take off the headset. There is a lot of friction involved in that process, so it seems that there should be a communication channel that does not require the user to doff the headset. Additionally, the interruption is often jarring for the user. They are immersed in another world. When someone taps them on the shoulder or speaks to them, their physical environment abruptly calls them back. This process could be smoother.
+          </p>
+          <p>
+            With the help of some awesome people in my lab, I designed, implemented, and ran an experimental design human subjects study to examine ways to facilitate this interaction. Our work was published in the proceedings of the International Symposium on Mixed and Augmented Reality (ISMAR) in October 2021. You can read the full paper here: <a href="https://sreal.ucf.edu/wp-content/uploads/2021/08/ISMAR_2021_Paper__Interruptions_.pdf">Diegetic Representations for Seamless Cross-Reality Interruptions</a>.
+          </p>
+          <p>
+            The word "diegetic" comes from describing narrative media elements. It refers to whether a story element comes from within the context of the story world itself. For example, a sound in a movie is diegetic if it is produced by something in the scene (e.g., a radio playing a song). A different sound is non-diegetic if it is added to the scene as a narrative element (e.g., a musical score added to a scene where there is no orchestra plausibly nearby). I made a <a href="https://youtu.be/ioq4Q-ffNwE?t=1400">2-minute creative explanation for this concept</a> in my video presentation of this paper. You can watch the whole "live" presentation from that link if you want; my presentation starts around the <a href="https://youtu.be/ioq4Q-ffNwE?t=1222">20:20 mark</a>.
+          </p>
+          <p>
+            VR complicates the common definition diegetic because the virtual world completely surrounds the user. We can talk about audio mostly in the same diegetic dimensions, but the lines between diegetic and non-diegetic visuals blur a little. We explored how one might vary the diegetic degree of the appearance of an avatar to represent a non-VR interrupter to a VR user, and the different effects that might have on the VR user's virtual experience and cross-reality interaction experience.
+          </p>
+          <p>
+            I built a virtual office environment and tasked participants with stacking virtual blocks in a couple different formations&mdash;just an easy task that could help them fall into a rhythm pretty quickly. The experimenter interrupted them part-way through each block formation. The way the interrupter was represented to the VR user changed each time:
+            <ul>
+              <li><b>Baseline:</b> interrupter taps the user on their shoulder, user takes off the headset to interact with interrupter.</li>
+              <li><b>UI + passthrough view:</b> UI notification alerted the user someone nearby wanted to speak with them, then the user activated the headset's passthrough view to see the interrupter through the headset's external cameras.</li>
+              <li><b>Non-diegetic avatar:</b> The interrupter was represented in the virtual environment as a floating green sphere.</li>
+              <li><b>Partially diegetic avatar:</b> The interrupter was represented in the virtual environment as an avatar in business clothes with a glowing green outline.</li>
+              <li><b>Fully diegetic avatar:</b> The interrupter was represented in the virtual environment as an avatar in business clothes.</li>
+            </ul>
+          </p>
+          <p>
+            Based on a Cross-Reality Interaction Experience questionnaire we developed, we found that participants rated the interaction experience with the interrupter highest for the partially and fully diegetic avatars. We also found that these avatars afforded a reasonably high sense of co-presence with the real-world interrupters, i.e., participants felt they were with a real person as opposed to a purely digital one. We found that participants more often preferred the partially diegetic representations. Their qualitative responses suggest why: several stated that the green outline helped them distinguish the avatar from the rest of the virtual environment; the outline suggested the avatar was not just an NPC (non-player character in a video game). I am interested in further exploring methods for representing cross-reality interactors, especially for interactions that may occur for longer periods (as opposed to brief interruptions).
+          </p>
+          <p>
+            Additionally, we asked participants about their <em>place illusion</em>, or their sense of "being there" in the virtual environment before, during, and after the interruptions. We found that the avatar conditions led participants to experience a consistent and high sense of place illusion throughout the interruption, where the conditions that caused participants to take the headset off led to a drop in place illusion that did not recover immediately after the interruption. I am interested in investigating further how VR users' senses of presence move and change throughout a VR experience.
+          </p>
+        </div>
+      </details>
+
       {{!-- vr_interruptions --}}
       <a id="vr_interruptions" class="arrow_expander infoItem--a ongoing research xr" data-toggle="collapse" href="#vrInterruptionsCollapse" role="button" aria-expanded="false" aria-controls="vrInterruptionsCollapse">
         <div class="title-bar row">

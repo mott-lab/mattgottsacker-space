@@ -167,7 +167,7 @@ hr {
 }
 
 .content-section {
-  padding: 25px;
+  padding: 0.75em;
 }
 
 .card {
@@ -418,4 +418,65 @@ footer p {
   background-color: #42DCA3;
   color: #111111 !important;
   opacity: 1 !important;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.break-above {
+  margin-top: 1em;
+}
+
+.summary-title {
+  font-family: 'Ubuntu';
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+
+summary{ 
+  margin-bottom: 1.5em;
+  background-color: #333333;
+  padding: 1em;
+  color: #42DCA3;
+}
+
+summary:hover {
+  color: #1d9b6c;
+}
+
+summary::marker{
+  color: #42DCA3;
+}
+
+.hideimage {
+  display: none;
+}
+
+.showimage {
+  display: block;
+  margin-top: 1em;
+}
+
+.proj-summary-group {
+  /* background-color: #191919; */
+  padding-top: 1em;
+}
+
+.proj-image-group {
+  max-width: 30%;
+}
+
+.proj-thumbnail {
+  max-width: 100%;
+}
+
+.thumbnail-caption {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace;
+  color: #fdf6e3;
 }
