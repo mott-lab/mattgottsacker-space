@@ -35,3 +35,18 @@ inVRdetails.addEventListener("toggle", function() {
     }
   });
 });
+
+var interruptingVRdetails = document.querySelector("#interruptingVRdetails");
+var interruptingVRimages = document.querySelectorAll(".interruptingVRimages");
+
+interruptingVRdetails.addEventListener("toggle", function() {
+  interruptingVRimages.forEach((image) => {
+    if (interruptingVRdetails.hasAttribute("open")) {
+      image.classList.remove("hideimage");
+      image.classList.add("showimage");
+    } else {
+      image.classList.remove("showimage");
+      image.classList.add("hideimage");
+    }
+  });
+});
