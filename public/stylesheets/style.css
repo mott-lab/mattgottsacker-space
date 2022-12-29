@@ -4,6 +4,7 @@ h1, h2 {
 
 h3, h4, h5, h6 {
   font-family: 'Ubuntu';
+  color: #fdf6e3;
 }
 
 h1, h2 {
@@ -432,7 +433,7 @@ footer p {
 
 .summary-title {
   font-family: 'Ubuntu';
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-left: 0.5em;
 }
 
@@ -467,6 +468,11 @@ summary::marker{
 
 .proj-image-group {
   max-width: 30%;
+  padding: 0.3em;
+}
+
+.proj-group-details {
+  padding: 0.3em;
 }
 
 .proj-thumbnail {
