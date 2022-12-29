@@ -1,0 +1,4 @@
+- make project dropdowns on projects page into reusable components
+- separate comp-prog-website out; host it as its own app 
+- consider re-writing this thing in react...
+- reset scroll position after closing project dropdown
