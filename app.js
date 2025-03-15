@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var bioRouter = require('./routes/bio');
 var projectsRouter = require('./routes/projects');
 var interestsRouter = require('./routes/interests');
+var oldnewsRouter = require('./routes/oldnews');
 
 // var altaRouter = require('./routes/alta');
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/bio', bioRouter);
 app.use('/projects', projectsRouter);
 app.use('/interests', interestsRouter);
+app.use('/oldnews', oldnewsRouter);
 
 // app.use('/alta_ie_v0', altaRouter);
 

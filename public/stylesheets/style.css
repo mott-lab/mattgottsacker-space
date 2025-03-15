@@ -171,6 +171,10 @@ hr {
   padding: 0.75em;
 }
 
+.first-section {
+  margin-top: 5em;
+}
+
 .card {
   border-radius: 0 !important;
 }
