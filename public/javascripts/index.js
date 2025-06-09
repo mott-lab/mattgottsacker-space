@@ -50,3 +50,18 @@ interruptingVRdetails.addEventListener("toggle", function() {
     }
   });
 });
+
+var spatialResiduedetails = document.querySelector("#spatialResidueDetails");
+var spatialResidueimages = document.querySelectorAll(".spatialResidueImages");
+
+spatialResiduedetails.addEventListener("toggle", function() {
+  spatialResidueimages.forEach((image) => {
+    if (spatialResiduedetails.hasAttribute("open")) {
+      image.classList.remove("hideimage");
+      image.classList.add("showimage");
+    } else {
+      image.classList.remove("showimage");
+      image.classList.add("hideimage");
+    }
+  });
+});
