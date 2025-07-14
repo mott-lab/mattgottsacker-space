@@ -1,3 +1,70 @@
+{{#*inline "timeline-entry-header"}}
+  <div class="row mb-3">
+    <div class="col-sm-10 col-md-3 align-items-center justify-content-end">
+      {{!-- Image --}}
+      {{#if image}}
+        <img class="proj-thumbnail" src="{{image}}" width="100%" alt="{{title}}">
+      {{else}}
+        <img class="proj-thumbnail" src="images/default_thumbnail.png" width="100%" alt="Default Thumbnail">
+      {{/if}}
+    </div>
+    <div class="col-sm-12 col-md-1 font-weight-bold text-center align-items-center justify-content-end timeline-year-header">
+      {{year}}
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <!-- Content -->
+        <span class="summary-title">
+          {{title}}
+        </span>
+    </div>
+  </div>
+{{/inline}}
+
+
+{{#*inline "timeline-entry-major"}}
+  <div class="row mb-3">
+    <div class="col-2 font-weight-bold text-center align-items-center justify-content-end timeline-year">
+      {{year}}
+    </div>
+    <div class="col-10">
+      <!-- Content -->
+      <details class="timeline-details">
+        <summary class="summary-timeline">
+          <span class="summary-title">
+        {{title}}
+          </span>
+        </summary>
+        <div class="card card-body timeline-details-content">
+          {{{content}}}
+        </div>
+      </details>
+    </div>
+  </div>
+{{/inline}}
+
+{{#*inline "timeline-entry-minor"}}
+  <div class="row mb-3">
+    {{!-- <div class="col-2 align-items-center justify-content-end">
+    </div> --}}
+    <div class="col-2 font-weight-bold text-center align-items-center justify-content-end timeline-year">
+      {{year}}
+    </div>
+    <div class="col-10">
+      <!-- Content -->
+      <details class="timeline-details">
+        <summary class="summary-timeline-minor">
+          <span class="summary-title">
+        {{title}}
+          </span>
+        </summary>
+        <div class="card card-body timeline-details-content">
+          {{{content}}}
+        </div>
+      </details>
+    </div>
+  </div>
+{{/inline}}
+
 <!-- navbar -->
 <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="/#page-top">mg-space</a>
@@ -31,8 +98,192 @@
   <header>
     <div class="container"> <!-- used to be class container -->
       <h1>about me<span id="underscore">_</span></h1>
-      {{!-- <h6 class="subtitle" style="padding-bottom: 1.5em;">click on the chevrons to learn more!</h6> --}}
 
+      <h5>
+        Below is my timeline of everything so far! <span class="summary-timeline-green">Milestone events are in green</span>, and <span class="summary-timeline-blue">other notable events are in blue</span>.
+      </h5>
+      <br>
+
+      <hr>
+
+      <div class="row mb-3">
+        <div class="col-sm-10 col-md-3 align-items-center justify-content-end">
+          {{!-- Image --}}
+          <img class="proj-thumbnail" src="images/ucf_fountain_cropped.png" width="100%" alt="PhD Studies">
+        </div>
+        
+        <div class="col-sm-12 col-md-8">
+
+          <div class="row">
+            <div class="col-2 font-weight-bold justify-content-end timeline-year-header">
+              2020&ndash;present
+            </div>
+            <div class="col-10">
+
+              <h5 class="summary-title font-weight-bold timeline-year-header">
+                PhD Studies
+              </h5>
+            </div>
+          </div>
+
+
+          {{#> timeline-entry-minor 
+            year="2023/4" 
+            image="" 
+            title="I interned with the AR/VR research team at JPMorganChase."
+            content="
+              <p>
+                In 2023 and 2024, I completed summer internships in the JPMorganChase Global Technology Applied Research Immersive Technologies and Spatial Computing team led by <a href=\"https://blairmacintyre.me/\">Blair MacIntyre</a>. I worked on an immersive presentation system. You can read about this work in our 2025 CHI paper (<a href=\"https://dl.acm.org/doi/abs/10.1145/3706598.3713346\">ACM link</a>, <a href=\"https://arxiv.org/abs/2503.13174\">arXiv pre-print</a>), or in our <a href=\"https://patents.google.com/patent/US20250022020A1/en\">pending patent application</a>. 
+              </p>
+              <p>
+                I really enjoyed working with this talented research group. I learned a lot about (and had some good success with) making our research valuable to the firm by networking across different lines of business and demoing prototypes to them to identify unique and useful research angles.
+              </p>"
+          }}
+          {{/timeline-entry-minor}}
+
+          {{#> timeline-entry-minor 
+            year="2022" 
+            image="" 
+            title="I did a research visit at Columbia University to study collaborative AR."
+            content="
+              <p>
+                I spent the summer of 2022 working with Prof. Steve Feiner at the <a href=\"https://graphics.cs.columbia.edu/home\">Computer Graphics and User Interfaces Lab at Columbia University</a>. We explored augmented reality interfaces to support collaboration around a shared virtual object. In collaboration scenarios with desktop video conferencing software, we commonly share our perspectives with others by sharing our screens. We wanted to extend this idea to AR --- without causing cybersickness and while preserving face-to-face interaction.
+              </p>
+              <p>
+                Our approach for aligning perspectives in AR collaboration was published in the Late-Breaking Work track of the 2025 ACM CHI conference. You can read the paper and watch the presentation video <a href=\"https://dl.acm.org/doi/abs/10.1145/3706599.3720219\">here</a>. The pre-print is available <a href=\"https://arxiv.org/abs/2503.12253\">here</a>.
+              </p>
+              
+              "
+          }}
+          {{/timeline-entry-minor}}
+
+          {{#> timeline-entry-major 
+            year="2020" 
+            image="images/ucf_fountain_cropped.png" 
+            title="I started my PhD studies at the University of Central Florida."
+            content="<p>
+                    I am a Computer Science PhD student at the University of Central Florida. I work in the <a href=\"https://sreal.ucf.edu/\">Synthetic Reality Lab (SREAL)</a> under the supervision of <a href=\"https://nursing.ucf.edu/people/gregory-welch/\">Prof. Greg Welch</a>. My research interests include human-computer interaction, virtual reality, and augmented reality.
+                  </p>
+                  <p>
+                    I am currently working on my dissertation, which focuses on creating user interfaces that allow people to better interact and transition across different realities. For example, I study how to interrupt a VR user in a less jarring manner, or how to visually transition a user between different virtual environments in ways that align with different cognitive goals.
+                    You can read more about my research on the <a href=\"/#research-highlights\">home page</a>."
+          }}
+          {{/timeline-entry-major}}
+        </div>
+      </div>
+
+      
+
+      {{!-- {{#> timeline-entry-header 
+        year="2020-present"
+        image="images/ucf_fountain_cropped.png"
+        title="PhD Studies"
+      }}
+      {{/timeline-entry-header}} --}}
+      
+      
+      
+      {{!-- Timeline Entry Component --}}
+      
+
+      <hr>
+
+      <div class="row mb-3">
+        <div class="col-sm-10 col-md-3 align-items-center justify-content-end">
+          {{!-- Image --}}
+          <img class="proj-thumbnail" src="images/asc_porch_cropped.png" width="100%" alt="Year of Service">
+        </div>
+        
+        <div class="col-sm-12 col-md-8">
+
+          <div class="row">
+            <div class="col-2 font-weight-bold justify-content-end timeline-year-header">
+              2019&ndash;2020
+            </div>
+            <div class="col-10">
+
+              <h5 class="summary-title font-weight-bold timeline-year-header">
+                Year of Service
+              </h5>
+            </div>
+          </div>
+
+          {{#> timeline-entry-major
+            year="2019"
+            image="images/asc_porch_cropped.png" 
+            title="I taught Computer Science at Marquette University High School."
+            content="<p>
+                I volunteered in a yearlong, community-based program called the Alumni Service Corps at <a href=\"https://www.muhs.edu/\">Marquette University High School</a>. A lot of Jesuit high schools have an ASC program. The one at MUHS is extra special to me because I went there. The three other guys in this photo and I lived in community in a house across the street from the school. I taught Computer Programming, and I also served as a robotics team mentor, co-director of Senior Follies (a student-written play), and retreat leader.
+                </p>
+                <p>I taught an introductory Computer Programming class using the Java programming language. I taught it from a human-centered perspective, encouraging students to think about other disciplines involved in modern computing. I often brought in guest speakers from industry and topics from outside the book and the class's traditional curriculum. We discussed how VR affects attention, how video games rely on geometry, how visualizations can explain sorting algorithms, and the ethical implications of different technologies. 
+              </p>
+              <p>
+                I designed the curriculum to include open-ended projects that challenged students to get creative in their algorithms and visual effects. We were just outputting to a terminal, but some of the students figured out how to make some really cool stuff with custom ASCII art!
+              </p>
+              <p>
+                Here is a link to the <a href=\"https://mattgottsacker.space/comp-prog-website/\">old course website</a>.
+              </p>"
+          }}
+          {{/timeline-entry-major}}
+
+        </div>
+      </div>
+
+      
+
+      <hr>
+
+      <div class="row mb-3">
+        <div class="col-sm-10 col-md-3 align-items-center justify-content-end">
+          {{!-- Image --}}
+          <img class="proj-thumbnail" src="images/slu_mgsquared.png" width="100%" alt="Undergrad">
+        </div>
+        
+        <div class="col-sm-12 col-md-8">
+
+          <div class="row">
+            <div class="col-2 font-weight-bold justify-content-end timeline-year-header">
+              2015&ndash;2019
+            </div>
+            <div class="col-10">
+
+              <h5 class="summary-title font-weight-bold timeline-year-header">
+                Undergrad
+              </h5>
+            </div>
+          </div>
+
+          {{#> timeline-entry-minor 
+            year="2018" 
+            image="" 
+            title="I started doing research."
+            content="
+              <p>
+                I started doing research with <a href=\"http://cs.slu.edu/~esposito/\">Dr. Flavio Esposito</a> during my Junior year of undergrad. We studied <a href=\"https://en.wikipedia.org/wiki/Software-defined_networking\">Software-Defined Networking (SDN)</a>. We looked to implement and evaluate several <a href=\"https://www.dhs.gov/science-and-technology/csd-mtd\">moving target defense</a> strategies in SDN. During my senior year, I worked with Dr. Esposito to design and begin implementing an application that allows humans to control a drone or swarm of drones through conversation. This project aims to lower the barriers between users and drones by not requiring extensive and fine-tuned knowledge of physical controllers.
+              </p>
+              <p>
+                During the summer of 2018, I worked as a Research Intern at the <a href=\"https://www.ll.mit.edu/\">MIT Lincoln Laboratory</a> in Lexington, Massachusetts. Dr. Steven Gomez mentored me while I worked on a visualization tool for network security analysts gathering information in an enterprise-scale SDN. I compiled my summer work into <a href=\"docs/imc-poster-gottsacker2.pdf\">this poster</a>, which I presented at the ACM Internet Measurement Conference in Boston, MA, on October 31, 2018. 
+              </p>"
+          }}
+          {{/timeline-entry-minor}}
+
+          {{#> timeline-entry-major
+            year="2015" 
+            image="images/slu_mgsquared.png" 
+            title="I started studying Computer Science and English at Saint Louis University."
+            content="<p>
+                In high school, I loved tinkering with computers and code, and I also loved writing short stories and poetry. I couldn't decide which of these paths I wanted to go down for a career, so at first I just didn't decide. Eventually, I became more interested in the computer side, and I dropped my English studies to a minor. I still worked closely with my English mentor <a href=\"https://nathanielrivers.org\">Dr. Nathaniel Rivers</a>. Through his courses and working in his lab, I learned to think about technology critically and rhetorically --- for what society aims was it made, for whom, etc. I didn't know it at the time, but this was my first exposure to Human-Computer Interaction research. It was in Dr. Rivers's class (not a CS class) that I made my first VR experiences. (This story is told in a personal statement comic book I made, which you can find <a href=\"https://mattgottsacker.space/docs/personal-statement-comic.pdf\">here</a>.)
+              </p>
+              <p>
+                Apart from academics, I loved my college experience. I made a ton of great people (including the woman who is now my fiancée!). One of my favorite experiences was DJing at the college radio station <a href=\"https://sites.google.com/slu.edu/kslu\">KSLU</a> with one of my best friends who also happened to be named Matt G. We called our show MG^2 and played (almost) exclusively vinyl records from our collections. The photo here is from our last show before I graduated.
+              </p>"
+          }}
+          {{/timeline-entry-major}}
+
+        </div>
+      </div>
+
+{{!--       
       <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#researchCollapse" role="button" aria-expanded="false" aria-controls="researchCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
@@ -130,8 +381,6 @@
         </div>
       </div>
 
-      {{!-- <br> --}}
-
       <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#codeCollapse" role="button" aria-expanded="false" aria-controls="codeCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
@@ -185,8 +434,6 @@
         </div>
       </div>
 
-      {{!-- <br> --}}
-
       <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#otherCollapse" role="button" aria-expanded="false" aria-controls="otherCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
@@ -224,7 +471,7 @@
             I play video games. I'm in <a href="https://outerworlds.obsidian.net/en">The Outer Worlds</a> right now. I got pretty into Assassin's Creed Odyssey&mdash;a beautiful-looking game&mdash;but I've lost steam on that game at the moment. I'm also known to fire up a game of Fortnite with some friends. <a href="https://playdead.com">Playdead</a>'s INSIDE is the coolest game I've played.
           </p>
         </div>
-      </div>
+      </div> --}}
 
       <p></p>
     </div>

@@ -1,0 +1,248 @@
+
+{{!-- {{#*inline "timeline-entry-minor"}}
+  <div class="row mb-3">
+    <div class="col-sm-10 col-md-3 align-items-center justify-content-end">
+      {{!-- Image --}}
+      {{#if image}}
+        <img class="proj-thumbnail" src="{{image}}" width="100%" alt="{{title}}">
+      {{else}}
+        {{!-- <img class="proj-thumbnail" src="images/default_thumbnail.png" width="100%" alt="Default Thumbnail"> --}}
+      {{/if}}
+    </div>
+    <div class="col-sm-12 col-md-1 font-weight-bold text-center align-items-center justify-content-end timeline-year">
+      {{year}}
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <!-- Content -->
+      <details class="timeline-details">
+        <summary class="summary-timeline-minor">
+          <span class="summary-title">
+        {{title}}
+          </span>
+        </summary>
+        <div class="card card-body timeline-details-content">
+          {{{content}}}
+        </div>
+      </details>
+    </div>
+  </div>
+{{/inline}} --}}
+
+{{#*inline "timeline-entry"}}
+  <div class="row mb-3">
+    <div class="col-sm-10 col-md-3 align-items-center justify-content-end">
+      {{!-- Image --}}
+      {{#if image}}
+        <img class="proj-thumbnail" src="{{image}}" width="100%" alt="{{title}}">
+      {{else}}
+        <img class="proj-thumbnail" src="images/default_thumbnail.png" width="100%" alt="Default Thumbnail">
+      {{/if}}
+    </div>
+    <div class="col-sm-12 col-md-1 font-weight-bold text-center align-items-center justify-content-end timeline-year">
+      {{year}}
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <!-- Content -->
+      <details class="timeline-details">
+        <summary class="summary-timeline">
+          <span class="summary-title">
+        {{title}}
+          </span>
+        </summary>
+        <div class="card card-body timeline-details-content">
+          {{{content}}}
+        </div>
+      </details>
+    </div>
+  </div>
+{{/inline}}
+
+      
+      <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#researchCollapse" role="button" aria-expanded="false" aria-controls="researchCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              I research <span class="subtitle">HCI</span>.
+            </h4>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="researchCollapse">
+        <div class="card card-body">
+          <p>
+            I started doing research with <a href="http://cs.slu.edu/~esposito/">Dr. Flavio Esposito</a> during my Junior year of undergrad. We studied <a href="https://en.wikipedia.org/wiki/Software-defined_networking">Software-Defined Networking (SDN)</a>. We looked to implement and evaluate several <a href="https://www.dhs.gov/science-and-technology/csd-mtd">moving target defense</a> strategies in SDN. During my senior year, I worked with Dr. Esposito to design and begin implementing an application that allows humans to control a drone or swarm of drones through conversation. This project aims to lower the barriers between users and drones by not requiring extensive and fine-tuned knowledge of physical controllers.
+          </p>
+          <p>
+            During the summer of 2018, I worked as a Research Intern at the <a href="https://www.ll.mit.edu/">MIT Lincoln Laboratory</a> in Lexington, Massachusetts. Dr. Steven Gomez mentored me while I worked on a visualization tool for network security analysts gathering information in an enterprise-scale SDN. I compiled my summer work into <a href="docs/imc-poster-gottsacker2.pdf">this poster</a>, which I presented at the ACM Internet Measurement Conference in Boston, MA, on October 31, 2018. 
+          </p>
+          <p>
+            During the academic semesters around that internship, I started to work more closely with <a href="https://nathanielrivers.org">Dr. Nathaniel Rivers</a> at Saint Louis University. We worked on making the English Department's technology resources more accessible to students and instructors. This work was inherently human-centered and required a bidrectional understanding of users' needs and desires. And in Dr. Rivers's courses, we examined the ways in which rhetoric and technology interact.
+          </p>
+          <p>
+            The MIT LL research experience and work with Dr. Rivers proved instrumental to me. They were my first experiences with Human-Computer Interaction research, the field in which I work now. I had nurtured interests in computers and in writing, but those interests remained separate entities until I learned about their convergence in the work of people like Dr. Gomez and Dr. Rivers.
+          </p>
+        </div>
+      </div>
+
+      <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#teachCollapse" role="button" aria-expanded="false" aria-controls="teachCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              I taught <span class="subtitle">Computer Programming</span>.
+            </h4>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="teachCollapse">
+        <div class="card card-body">
+          <p>
+            I volunteered in a yearlong, community-based program called the Alumni Service Corps at <a href="https://www.muhs.edu/">Marquette University High School</a>. A lot of Jesuit high schools have an ASC program. The one at MUHS is extra special to me because I went there. The Computer Programming class I taught is an introductory CS class; students learned fundamental programming concepts using the Java programming language. I taught it from a human-centered perspective, encouraging students to think about other disciplines involved in modern computing. I often brought in speakers and topics from outside the book and the class's traditional curriculum. We discussed how VR affects attention, how video games rely on geometry, how visualizations can explain sorting algorithms, and the ethical implications of different technologies. 
+          </p>
+          <p>
+            We practiced productive collaboration through a series of group projects. Individual projects challenged students to get creative in their algorithms and visual effects. We were just outputting to a terminal, but some guys figured out how to make some cool stuff! High on my to-do list is showcasing some of their projects here.
+          </p>
+          <p>
+            Here is a link to the <a href="https://mattgottsacker.space/comp-prog-website/">course website</a>.
+          </p>
+        </div>
+      </div>
+
+      <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#studentCollapse" role="button" aria-expanded="false" aria-controls="studentCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              I went to school at <span class="subtitle">SLU</span>.
+            </h4>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="studentCollapse">
+        <div class="card card-body">
+          <p>
+            I went to <a href="https://slu.edu">Saint Louis University</a> in St. Louis, MO. I majored in <a href="https://cs.slu.edu">Computer Science</a> with a minor in English. I appreciate the Jesuit approach to education.
+          </p>
+          <p>
+            My undergraduate Computer Science courses included:
+            <ul class="ul-arrow">
+              <li class="li-arrow">Computer Security</li>
+              <li class="li-arrow">Computer Ethics</li>
+              <li class="li-arrow">Programming Languages</li>
+              <li class="li-arrow">Network Programming</li>
+              <li class="li-arrow">Artificial Intelligence</li>
+              <li class="li-arrow">Algorithms</li>
+              <li class="li-arrow">Operating Systems</li>
+              <li class="li-arrow">Computer Architecture</li>
+              <li class="li-arrow">Data Structures</li>
+              <li class="li-arrow">Object Oriented Software Design</li>
+              <li class="li-arrow">Taming Big Data</li>
+            </ul>
+          </p>
+          <p>
+            My favorite out of those has to be Taming Big Data. I took it freshman year with <a href="https://cs.slu.edu/~scannell/">Dr. Kevin Scannell</a>. We learned some machine learning techniques and how to apply them. Our final project was to write a sentiment analyzer for tweets in the Basque language. I achieved the most accurate results in the class with a 73% correct classification.
+          </p>
+        </div>
+      </div>
+
+      <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#codeCollapse" role="button" aria-expanded="false" aria-controls="codeCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              I make things with <span class="subtitle">computers</span>.
+            </h4>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="codeCollapse">
+        <div class="card card-body">
+          <p>
+            As far back as my memory goes, my dad has worked in software product management. When I was younger I wanted to be just like him. I spent time with various softwares and messed around with computer parts. I was curious about how all these systems worked, so I used them, broke them, built things with them. I eventually learned how to program them, and that hooked me on Computer Science.
+          </p>
+          <p>
+            The first program I wrote was a virtual world. In my first CS class Sophomore year of high school, we learned programming concepts through the Alice educational software. I was amazed with how easy it was to create digital worlds and tell stories through them. I was entranced with the ability to create immersive software. I loved watching my friends play with the worlds I wrote. In the second half of my first CS course, we turned to Java, and I found joy in how quickly coding came to me. I felt that I could understand the esoteric language at the heart of every computer program I had ever used.
+          </p>
+          <p>
+            I work with computers in ways that my sophomoric mind couldn't have imagined, but that tinkering mentality is still very much there for me. I like prototyping things, seeing how well they work, thinking of how else they can work, and understanding where they fall short. I more or less follow that process in my personally expressive projects, and in my research&mdash;although there is more idea-grappling and paper-reading before getting to the prototype phase in my formal reserach. 
+          </p>
+          <p>
+            I approach computers from an art <span class="p_emph">and</span> science angle rather than one or the other. For most of my life, I thought the most important computer work was making them better, faster, stronger. I see the value in that, but now I see the greatest value in figuring out what this technology <span class="p_emph">means</span> for us as humans on this strange rock. That's where the art comes in, and I think it's an important perspective to consider when thinking of human-computer interaction problems.
+          </p>
+          <p>
+            These are some of my favorite languages and tools. To see some of these things in action, head to the <a href="/projects">projects tab</a>.
+            <ul class="ul-arrow">
+              <li class="li-arrow">
+                <a href="https://unity.com/">Unity</a>. This software is my most recent love( / hate) interest. I make virtual environments for experiments with it. Maybe I'll get around to making one of my game ideas with it.
+              </li>
+              <li class="li-arrow">
+                <a href="https://www.javascript.com/">JavaScript</a>. I've found myself using it a lot in personal projects (like driving the backend of this website, as well as its interactive pieces) and in internships. <a href="https://d3js.org/">D3.js</a> is powerful for creating visualizations. <a href="https://aframe.io/">A-Frame</a> is awesome for bringing virtual reality to web browsers. <a href="https://reactjs.org/">React</a> is cool for UI development, and I look forward to rewriting this website in it.
+              </li>
+              <li class="li-arrow">
+                <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>. Yeah yeah, "it's not a ~real~ programming language." I like reading and writing HTML. With the tools out there today, it wasn't necessary to write all of this website's HTML by hand. But I did, because it's fun.
+              </li>
+              <li class="li-arrow">
+                <a href="https://www.gnu.org/software/bash/">Bash</a>. My favorite scripting language because I love the Linux command line. I use Bash to automate some tasks when I can, and I like to break it out to scrape web pages. I used it extensively in a <a href="/projects#stlparcelCollapse">collaboration project with a sociology researcher</a> as well.
+              </li>
+              <li class="li-arrow">
+                <a href="https://www.python.org/">Python</a>. I like using Python because of how quickly I can prototype with it. I've used it in a couple research projects, my Senior Capstone project, and programming challenges.
+              </li>
+              <li class="li-arrow">
+                <a href="https://golang.org/">Go</a>. I do not have a lot of technical experience with this language yet, but I've read about how it works on a lower level. I especially like the language's approach to sharing data in concurrent systems. If you're interested, <a href="https://blog.golang.org/share-memory-by-communicating">this article is a cool read on that topic</a>.
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <a class="arrow_expander infoItem--a" data-toggle="collapse" href="#otherCollapse" role="button" aria-expanded="false" aria-controls="otherCollapse">
+        <div class="title-bar row">
+          <div class="title-bar--svg-row">
+            <img src="images/down_arrow.svg" class="svg" />
+          </div>
+          <div class="title-bar--text-row">
+            <h4 class="title-bar--header4">
+              I do <span class="subtitle">other things</span>.
+            </h4>
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse" id="otherCollapse">
+        <div class="card card-body">
+          <p>
+            I love spending time outside and looking at stars. Some highlights: hiking the White Mountains in New Hampshire, the Smoky Mountains in Tennessee, and a variety of places in Northern Wisconsin and around Seattle. I like to rock climb as well! I've only climbed outside once, and it was at Jackson Falls in Southern Illinois.
+          </p>
+          <p>
+            I <a href="https://youtu.be/DaK3LwCrNks">fly a drone</a> every now and then.
+          </p>
+          <p>
+            I meditate, and I practice yoga. These practices are important for my mental health. Reflecting on how I move through the world is something that resonates in many other parts of my life.
+          </p>
+          <p>
+            I collect records. My uncle gave me a 1972 Kenwood record player when I graduated high school, and I have been hooked on vinyls ever since. My collection has grown to well over 200 records, spanning the 1940's to the present. My friend and I had an all-vinyl college radio show. You won't hear us anymore, but you can tune in at <a href="https://sites.google.com/slu.edu/kslu">KSLU.slu.edu</a> if you ever want to listen to some awesome SLU DJs.
+          </p>
+          <p>
+            I write spoken word poetry and rap. I've performed some of my work with my guitarist friend <a href="https://www.youtube.com/user/lvest79/">Luke Vest</a> at my college radio station's open mic nights. Some of my favorite musicians: Frank Ocean, The Avalanches, Bon Iver, Donald Glover, Watsky, Ivy Sole, Noname.
+          </p>
+          <p>
+            I read. I especially dig <a href="https://craphound.com/">Cory Doctorow</a>, <a href="https://www.nealstephenson.com/">Neal Stephenson<a/>, <a href="https://cogs.sitehost.iu.edu/people/profile.php?u=dughof">Douglas Hofstadter</a>, <a href="https://whatever.scalzi.com/">John Scalzi</a>, <a href="https://www.stephenking.com/">Stephen King</a>, F. Scott Fitzgerald, and Hermann Hesse.
+          </p>
+          <p>
+            I play video games. I'm in <a href="https://outerworlds.obsidian.net/en">The Outer Worlds</a> right now. I got pretty into Assassin's Creed Odyssey&mdash;a beautiful-looking game&mdash;but I've lost steam on that game at the moment. I'm also known to fire up a game of Fortnite with some friends. <a href="https://playdead.com">Playdead</a>'s INSIDE is the coolest game I've played.
+          </p>
+        </div>
+      </div>

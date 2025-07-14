@@ -448,6 +448,46 @@ summary{
   color: #42DCA3;
 }
 
+.summary-timeline{ 
+  background-color: #333333;
+  padding: 1em;
+  color: #42DCA3;
+  margin-bottom: 0em;
+}
+
+.summary-timeline-minor{ 
+  background-color: #333333;
+  padding: 1em;
+  color: #3db2c7;
+  margin-bottom: 0em;
+}
+
+.summary-timeline-green {
+  color: #42DCA3;
+}
+
+.summary-timeline-blue {
+  color: #3db2c7;
+}
+
+.summary-timeline-minor:hover {
+  color: #246c79;;
+}
+
+.summary-timeline-minor::marker {
+  color: #3db2c7;
+}
+
+.timeline-year {
+  padding-top: 1em;
+}
+
+.timeline-year-header {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #fdf6e3;
+  font-size: 1.25em;
+}
+
 summary:hover {
   color: #1d9b6c;
 }
