@@ -65,3 +65,18 @@ spatialResiduedetails.addEventListener("toggle", function() {
     }
   });
 });
+
+var augPresdetails = document.querySelector("#augmentedPresentationsDetails");
+var augPresimages = document.querySelectorAll(".augmentedPresentationsImages");
+
+augPresdetails.addEventListener("toggle", function() {
+  augPresimages.forEach((image) => {
+    if (augPresdetails.hasAttribute("open")) {
+      image.classList.remove("hideimage");
+      image.classList.add("showimage");
+    } else {
+      image.classList.remove("showimage");
+      image.classList.add("hideimage");
+    }
+  });
+});
