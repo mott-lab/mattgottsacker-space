@@ -28,10 +28,12 @@
   <header>
     <div class="container">
       <h1>projects<span id="underscore">_</span></h1>
-      {{!-- <h6 class="subtitle" style="padding-bottom: 1.5em;">click on the chevrons to expand project details.</h6> --}}
-      <p>
+      <h5 class="" style="padding-bottom: 1.5em;">
+        This page has an assortment of the things I have made. These are generally not full research studies&mdash;they are more like prototypes or creative works I've found interesting. Some of them have been published as demo papers or extended abstracts. For a selection of full research studies, head to the <a href="/#research-highlights">home page</a>.
+      </h5>
+      {{!-- <p>
         Select the filter buttons to see associated projects.
-      </p>
+      </p> --}}
       <hr>
 
       {{!-- Toggles for categories --}}
@@ -52,7 +54,7 @@
         {{!-- </p> --}}
       </div>
       <hr class="proj-cat-hr">
-      <div class="row proj-cat-btn-row">
+      {{!-- <div class="row proj-cat-btn-row">
         <div class="col-xs proj-cat-btn-row-label">
           status:
         </div>
@@ -65,8 +67,8 @@
         <div class="col-xs">
           <div class="proj-cat proj-cat-unselected" id="backburner">backburner</div>
         </div>
-      </div>
-      <hr class="proj-cat-hr">
+      </div> --}}
+      {{!-- <hr class="proj-cat-hr"> --}}
       <div class="row proj-cat-btn-row">
         <div class="col-xs proj-cat-btn-row-label">
           venue:
@@ -116,119 +118,8 @@
 
       <hr class="proj-cat-hr">
 
-      {{!-- <details>
-        <summary>
-          <div class="title-bar--text-row">
-            <h4 class="title-bar--header4">
-              Toward Seamless Cross-Reality Interruptions using Diegetic Representations
-            </h4>
-            <h6 class="subtitle subtitle-break">
-              Studying usability challenges caused by the isolating nature of VR
-            </h6>
-            <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
-            </div>
-          </div>
-        </summary>
-        <div class="card card-body infoItem--card">
-          <p>
-            When someone puts on a virtual reality headset, they are completely isolated from their physical environment, including the people around them. This is by design&mdash;VR presents to be the most immersive computing technology. However, there are many cases in which a person wants or needs to interact with someone immersed in VR. Some examples, where "you" are wearing a VR head-mounted display:
-            <ul>
-              <li>You are playing a VR game in your home, and your roommate needs to ask what kind of pizza you want.</li>
-              <li>You are working on a 3D design task in VR, and your collaborator needs to tell you about a specification update.</li>
-              <li>You are passing time on a plane in peaceful virtual environment, and your seat neighbor needs to move around you to use the onboard lavatory.</li>
-            </ul>
-            With the current state of the art, the interrupter cannot fully interact with the VR user unless they take off the headset. There is a lot of friction involved in that process, so it seems that there should be a communication channel that does not require the user to doff the headset. Additionally, the interruption is often jarring for the user. They are immersed in another world. When someone taps them on the shoulder or speaks to them, their physical environment abruptly calls them back. This process could be smoother.
-          </p>
-          <p>
-            With the help of some awesome people in my lab, I designed, implemented, and ran an experimental design human subjects study to examine ways to facilitate this interaction. Our work was published in the proceedings of the International Symposium on Mixed and Augmented Reality (ISMAR) in October 2021. You can read the full paper here: <a href="https://sreal.ucf.edu/wp-content/uploads/2021/08/ISMAR_2021_Paper__Interruptions_.pdf">Diegetic Representations for Seamless Cross-Reality Interruptions</a>.
-          </p>
-          <p>
-            The word "diegetic" comes from describing narrative media elements. It refers to whether a story element comes from within the context of the story world itself. For example, a sound in a movie is diegetic if it is produced by something in the scene (e.g., a radio playing a song). A different sound is non-diegetic if it is added to the scene as a narrative element (e.g., a musical score added to a scene where there is no orchestra plausibly nearby). I made a <a href="https://youtu.be/ioq4Q-ffNwE?t=1400">2-minute creative explanation for this concept</a> in my video presentation of this paper. You can watch the whole "live" presentation from that link if you want; my presentation starts around the <a href="https://youtu.be/ioq4Q-ffNwE?t=1222">20:20 mark</a>.
-          </p>
-          <p>
-            VR complicates the common definition diegetic because the virtual world completely surrounds the user. We can talk about audio mostly in the same diegetic dimensions, but the lines between diegetic and non-diegetic visuals blur a little. We explored how one might vary the diegetic degree of the appearance of an avatar to represent a non-VR interrupter to a VR user, and the different effects that might have on the VR user's virtual experience and cross-reality interaction experience.
-          </p>
-          <p>
-            I built a virtual office environment and tasked participants with stacking virtual blocks in a couple different formations&mdash;just an easy task that could help them fall into a rhythm pretty quickly. The experimenter interrupted them part-way through each block formation. The way the interrupter was represented to the VR user changed each time:
-            <ul>
-              <li><b>Baseline:</b> interrupter taps the user on their shoulder, user takes off the headset to interact with interrupter.</li>
-              <li><b>UI + passthrough view:</b> UI notification alerted the user someone nearby wanted to speak with them, then the user activated the headset's passthrough view to see the interrupter through the headset's external cameras.</li>
-              <li><b>Non-diegetic avatar:</b> The interrupter was represented in the virtual environment as a floating green sphere.</li>
-              <li><b>Partially diegetic avatar:</b> The interrupter was represented in the virtual environment as an avatar in business clothes with a glowing green outline.</li>
-              <li><b>Fully diegetic avatar:</b> The interrupter was represented in the virtual environment as an avatar in business clothes.</li>
-            </ul>
-          </p>
-          <p>
-            Based on a Cross-Reality Interaction Experience questionnaire we developed, we found that participants rated the interaction experience with the interrupter highest for the partially and fully diegetic avatars. We also found that these avatars afforded a reasonably high sense of co-presence with the real-world interrupters, i.e., participants felt they were with a real person as opposed to a purely digital one. We found that participants more often preferred the partially diegetic representations. Their qualitative responses suggest why: several stated that the green outline helped them distinguish the avatar from the rest of the virtual environment; the outline suggested the avatar was not just an NPC (non-player character in a video game). I am interested in further exploring methods for representing cross-reality interactors, especially for interactions that may occur for longer periods (as opposed to brief interruptions).
-          </p>
-          <p>
-            Additionally, we asked participants about their <em>place illusion</em>, or their sense of "being there" in the virtual environment before, during, and after the interruptions. We found that the avatar conditions led participants to experience a consistent and high sense of place illusion throughout the interruption, where the conditions that caused participants to take the headset off led to a drop in place illusion that did not recover immediately after the interruption. I am interested in investigating further how VR users' senses of presence move and change throughout a VR experience.
-          </p>
-        </div>
-      </details> --}}
-
-      {{!-- vr_interruptions --}}
-      <a id="vr_interruptions" class="arrow_expander infoItem--a ongoing research xr" data-toggle="collapse" href="#vrInterruptionsCollapse" role="button" aria-expanded="false" aria-controls="vrInterruptionsCollapse">
-        <div class="title-bar row">
-          <div class="title-bar--svg-row">
-            <img src="images/down_arrow.svg" class="svg" />
-          </div>
-          <div class="title-bar--text-row">
-            <h4 class="title-bar--header4">
-              Toward Seamless Cross-Reality Interruptions using Diegetic Representations
-            </h4>
-            <h6 class="subtitle subtitle-break">
-              Studying usability challenges caused by the isolating nature of VR
-            </h6>
-            <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <div class="collapse" id="vrInterruptionsCollapse">
-        <div class="card card-body infoItem--card">
-          <p>
-            When someone puts on a virtual reality headset, they are completely isolated from their physical environment, including the people around them. This is by design&mdash;VR presents to be the most immersive computing technology. However, there are many cases in which a person wants or needs to interact with someone immersed in VR. Some examples, where "you" are wearing a VR head-mounted display:
-            <ul>
-              <li>You are playing a VR game in your home, and your roommate needs to ask what kind of pizza you want.</li>
-              <li>You are working on a 3D design task in VR, and your collaborator needs to tell you about a specification update.</li>
-              <li>You are passing time on a plane in peaceful virtual environment, and your seat neighbor needs to move around you to use the onboard lavatory.</li>
-            </ul>
-            With the current state of the art, the interrupter cannot fully interact with the VR user unless they take off the headset. There is a lot of friction involved in that process, so it seems that there should be a communication channel that does not require the user to doff the headset. Additionally, the interruption is often jarring for the user. They are immersed in another world. When someone taps them on the shoulder or speaks to them, their physical environment abruptly calls them back. This process could be smoother.
-          </p>
-          <p>
-            With the help of some awesome people in my lab, I designed, implemented, and ran an experimental design human subjects study to examine ways to facilitate this interaction. Our work was published in the proceedings of the International Symposium on Mixed and Augmented Reality (ISMAR) in October 2021. You can read the full paper here: <a href="https://sreal.ucf.edu/wp-content/uploads/2021/08/ISMAR_2021_Paper__Interruptions_.pdf">Diegetic Representations for Seamless Cross-Reality Interruptions</a>.
-          </p>
-          <p>
-            The word "diegetic" comes from describing media elements (most often in movies). It refers to whether a story element comes from within the context of the story world itself. For example, a sound in a movie is diegetic if it is produced by something in the scene (e.g., a radio playing a song). A different sound is non-diegetic if it is added to the scene as a narrative element (e.g., a musical score added to a scene where there is no orchestra plausibly nearby). I made a <a href="https://youtu.be/ioq4Q-ffNwE?t=1400">2-minute creative explanation for this concept</a> in my video presentation of this paper. You can watch the whole "live" presentation from that link if you want; my presentation starts around the <a href="https://youtu.be/ioq4Q-ffNwE?t=1222">20:20 mark</a>.
-          </p>
-          <p>
-            VR complicates the common definition diegetic because the virtual world completely surrounds the user. We can talk about audio mostly in the same diegetic dimensions, but the lines between diegetic and non-diegetic visuals blur a little. We explored how one might vary the diegetic degree of the appearance of an avatar to represent a non-VR interrupter to a VR user, and the different effects that might have on the VR user's virtual experience and cross-reality interaction experience.
-          </p>
-          <p>
-            I built a virtual office environment and tasked participants with stacking virtual blocks in a couple different formations&mdash;just an easy task that could help them fall into a rhythm pretty quickly. The experimenter interrupted them part-way through each block formation. The way the interrupter was represented to the VR user changed each time:
-            <ul>
-              <li><b>Baseline:</b> interrupter taps the user on their shoulder, user takes off the headset to interact with interrupter.</li>
-              <li><b>UI + passthrough view:</b> UI notification alerted the user someone nearby wanted to speak with them, then the user activated the headset's passthrough view to see the interrupter through the headset's external cameras.</li>
-              <li><b>Non-diegetic avatar:</b> The interrupter was represented in the virtual environment as a floating green sphere.</li>
-              <li><b>Partially diegetic avatar:</b> The interrupter was represented in the virtual environment as an avatar in business clothes with a glowing green outline.</li>
-              <li><b>Fully diegetic avatar:</b> The interrupter was represented in the virtual environment as an avatar in business clothes.</li>
-            </ul>
-          </p>
-          <p>
-            Based on a Cross-Reality Interaction Experience questionnaire we developed, we found that participants rated the interaction experience with the interrupter highest for the partially and fully diegetic avatars. We also found that these avatars afforded a reasonably high sense of co-presence with the real-world interrupters, i.e., participants felt they were with a real person as opposed to a purely digital one. We found that participants more often preferred the partially diegetic representations. Their qualitative responses suggest why: several stated that the green outline helped them distinguish the avatar from the rest of the virtual environment; the outline suggested the avatar was not just an NPC (non-player character in a video game). I am interested in further exploring methods for representing cross-reality interactors, especially for interactions that may occur for longer periods (as opposed to brief interruptions).
-          </p>
-          <p>
-            Additionally, we asked participants about their <em>place illusion</em>, or their sense of "being there" in the virtual environment before, during, and after the interruptions. We found that the avatar conditions led participants to experience a consistent and high sense of place illusion throughout the interruption, where the conditions that caused participants to take the headset off led to a drop in place illusion that did not recover immediately after the interruption. I am interested in investigating further how VR users' senses of presence move and change throughout a VR experience.
-          </p>
-        </div>
-      </div>
-
       {{!-- vr_interrupters --}}
-      <a id="vr_interrupters" class="arrow_expander infoItem--a ongoing research xr" data-toggle="collapse" href="#vrInterruptersCollapse" role="button" aria-expanded="false" aria-controls="vrInterruptersCollapse">
+      <a id="vr_interrupters" class="arrow_expander infoItem--a research xr" data-toggle="collapse" href="#vrInterruptersCollapse" role="button" aria-expanded="false" aria-controls="vrInterruptersCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -241,7 +132,7 @@
               Studying usability challenges caused by the physical boundaries of VR
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">ongoing</div> <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
+              <div class="title-bar-tag">research</div> <div class="title-bar-tag">XR</div>
             </div>
           </div>
         </div>
@@ -262,7 +153,7 @@
       </div>
 
       {{!-- arplacemaking --}}
-      <a id="arplacemaking" class="arrow_expander infoItem--a completed school xr" data-toggle="collapse" href="#arplacemakingCollapse" role="button" aria-expanded="false" aria-controls="arplacemakingCollapse">
+      <a id="arplacemaking" class="arrow_expander infoItem--a school xr" data-toggle="collapse" href="#arplacemakingCollapse" role="button" aria-expanded="false" aria-controls="arplacemakingCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -275,7 +166,7 @@
               Using AR to make better public places
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">school</div><div class="title-bar-tag">XR</div>
+              <div class="title-bar-tag">school</div><div class="title-bar-tag">XR</div>
             </div>
           </div>
         </div>
@@ -294,7 +185,7 @@
       </div>
 
       {{!-- are --}}
-      <a id="are" class="arrow_expander infoItem--a completed school xr" data-toggle="collapse" href="#areCollapse" role="button" aria-expanded="false" aria-controls="areCollapse">
+      <a id="are" class="arrow_expander infoItem--a school xr" data-toggle="collapse" href="#areCollapse" role="button" aria-expanded="false" aria-controls="areCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -307,7 +198,7 @@
               Class projects submitted in Spring 2021
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">school</div> <div class="title-bar-tag">XR</div>
+              <div class="title-bar-tag">school</div> <div class="title-bar-tag">XR</div>
             </div>
           </div>
         </div>
@@ -330,7 +221,7 @@
       </div>
 
       {{!-- vre --}}
-      <a id="vre" class="arrow_expander infoItem--a completed school xr" data-toggle="collapse" href="#vreCollapse" role="button" aria-expanded="false" aria-controls="vreCollapse">
+      <a id="vre" class="arrow_expander infoItem--a school xr" data-toggle="collapse" href="#vreCollapse" role="button" aria-expanded="false" aria-controls="vreCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -343,7 +234,7 @@
               Class projects submitted in Fall 2020
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">school</div> <div class="title-bar-tag">XR</div>
+              <div class="title-bar-tag">school</div> <div class="title-bar-tag">XR</div>
             </div>
           </div>
         </div>
@@ -365,7 +256,7 @@
       </div>
 
       {{!-- data_eng_nintex --}}
-      <a id="data_eng_nintex" class="arrow_expander infoItem--a completed professional data" data-toggle="collapse" href="#nintexCollapse" role="button" aria-expanded="false" aria-controls="nintexCollapse">
+      <a id="data_eng_nintex" class="arrow_expander infoItem--a professional data" data-toggle="collapse" href="#nintexCollapse" role="button" aria-expanded="false" aria-controls="nintexCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -378,7 +269,7 @@
               fully automated data analysis pipeline
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div> <div class="title-bar-tag">professional</div> <div class="title-bar-tag">data</div>
+              <div class="title-bar-tag">professional</div> <div class="title-bar-tag">data</div>
             </div>
           </div>
         </div>
@@ -402,7 +293,7 @@
 
       
       {{!-- the_alta_files_ --}}
-      <a id="the_alta_files" class="arrow_expander infoItem--a ongoing freetime creative" data-toggle="collapse" href="#altaCollapse" role="button" aria-expanded="false" aria-controls="altaCollapse">
+      <a id="the_alta_files" class="arrow_expander infoItem--a freetime creative" data-toggle="collapse" href="#altaCollapse" role="button" aria-expanded="false" aria-controls="altaCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -415,7 +306,7 @@
               digital wormhole
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">ongoing</div><div class="title-bar-tag">free time</div><div class="title-bar-tag">web</div><div class="title-bar-tag">creative</div>
+              <div class="title-bar-tag">free time</div><div class="title-bar-tag">web</div><div class="title-bar-tag">creative</div>
             </div>
           </div>
         </div>
@@ -433,7 +324,7 @@
       </div>
 
       {{!-- space_muse_ --}}
-      <a id="space_muse" class="arrow_expander infoItem--a ongoing freetime XR creative" data-toggle="collapse" href="#spacemuseCollapse" role="button" aria-expanded="false" aria-controls="spacemuseCollapse">
+      <a id="space_muse" class="arrow_expander infoItem--a freetime XR creative" data-toggle="collapse" href="#spacemuseCollapse" role="button" aria-expanded="false" aria-controls="spacemuseCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -446,7 +337,7 @@
               spatial audio annotation (web VR + audio)
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">ongoing</div><div class="title-bar-tag">free time</div><div class="title-bar-tag">XR</div><div class="title-bar-tag">web</div><div class="title-bar-tag">creative</div>
+              <div class="title-bar-tag">free time</div><div class="title-bar-tag">XR</div><div class="title-bar-tag">web</div><div class="title-bar-tag">creative</div>
             </div>
           </div>
         </div>
@@ -467,7 +358,7 @@
       </div>
 
       {{!-- WikiLearn Spanish --}}
-      <a id="wikilearn" class="arrow_expander infoItem--a ongoing freetime web" data-toggle="collapse" href="#wikilearnCollapse" role="button" aria-expanded="false" aria-controls="wikilearnCollapse">
+      <a id="wikilearn" class="arrow_expander infoItem--a freetime web" data-toggle="collapse" href="#wikilearnCollapse" role="button" aria-expanded="false" aria-controls="wikilearnCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -480,7 +371,7 @@
               Alexa skill
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">ongoing</div><div class="title-bar-tag">free time</div><div class="title-bar-tag">web</div>
+              <div class="title-bar-tag">free time</div><div class="title-bar-tag">web</div>
             </div>
           </div>
         </div>
@@ -504,7 +395,7 @@
 
 
       {{!-- Compass Lab --}}
-      <a id="compass_lab" class="arrow_expander infoItem--a professional completed web XR" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
+      <a id="compass_lab" class="arrow_expander infoItem--a professional web XR" data-toggle="collapse" href="#compasslabCollapse" role="button" aria-expanded="false" aria-controls="compasslabCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -517,7 +408,7 @@
               web developing and technology consulting
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div><div class="title-bar-tag">professional</div><div class="title-bar-tag">web</div><div class="title-bar-tag">XR</div>
+              <div class="title-bar-tag">professional</div><div class="title-bar-tag">web</div><div class="title-bar-tag">XR</div>
             </div>
           </div>
         </div>
@@ -555,7 +446,7 @@
       </div>
 
       {{!-- Digital Native --}}
-      <a id="digital_native" class="arrow_expander infoItem--a completed school web XR" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse">
+      <a id="digital_native" class="arrow_expander infoItem--a school web XR" data-toggle="collapse" href="#dignatCollapse" role="button" aria-expanded="false" aria-controls="dignatCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -568,7 +459,7 @@
               web (HTML/CSS + JavaScript + A-Frame)
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div><div class="title-bar-tag">school</div><div class="title-bar-tag">web</div><div class="title-bar-tag">XR</div>
+              <div class="title-bar-tag">school</div><div class="title-bar-tag">web</div><div class="title-bar-tag">XR</div>
             </div>
           </div>
         </div>
@@ -592,7 +483,7 @@
       </div>
 
       {{!-- MIT Lincoln Lab --}}
-      <a id="mit_ll_viz" class="arrow_expander infoItem--a completed professional research data web" data-toggle="collapse" href="#mitllvizCollapse" role="button" aria-expanded="false" aria-controls="mitllvizCollapse">
+      <a id="mit_ll_viz" class="arrow_expander infoItem--a professional research data web" data-toggle="collapse" href="#mitllvizCollapse" role="button" aria-expanded="false" aria-controls="mitllvizCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -605,7 +496,7 @@
               web-based visualization tool (D3.js)
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div><div class="title-bar-tag">research</div><div class="title-bar-tag">professional</div><div class="title-bar-tag">data</div><div class="title-bar-tag">web</div>
+              <div class="title-bar-tag">research</div><div class="title-bar-tag">professional</div><div class="title-bar-tag">data</div><div class="title-bar-tag">web</div>
             </div>
           </div>
         </div>
@@ -632,7 +523,7 @@
       </div>
 
       {{!-- STL Parcel Data --}}
-      <a id="stl_parcel_data" class="arrow_expander infoItem--a completed research data" data-toggle="collapse" href="#stlparcelCollapse" role="button" aria-expanded="false" aria-controls="stlparcelCollapse">
+      <a id="stl_parcel_data" class="arrow_expander infoItem--a research data" data-toggle="collapse" href="#stlparcelCollapse" role="button" aria-expanded="false" aria-controls="stlparcelCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -645,7 +536,7 @@
               Linux command line, Bash Scripts
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div><div class="title-bar-tag">research</div><div class="title-bar-tag">data</div>
+              <div class="title-bar-tag">research</div><div class="title-bar-tag">data</div>
             </div>
           </div>
         </div>
@@ -666,7 +557,7 @@
       </div>
 
       {{!-- SLU+ --}}
-      <a id="slu_plus" class="arrow_expander infoItem--a completed school XR" data-toggle="collapse" href="#sluplusCollapse" role="button" aria-expanded="false" aria-controls="sluplusCollapse">
+      <a id="slu_plus" class="arrow_expander infoItem--a school XR" data-toggle="collapse" href="#sluplusCollapse" role="button" aria-expanded="false" aria-controls="sluplusCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -679,7 +570,7 @@
               Android app (Java, XML)
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div><div class="title-bar-tag">school</div><div class="title-bar-tag">XR</div>
+              <div class="title-bar-tag">school</div><div class="title-bar-tag">XR</div>
             </div>
           </div>
         </div>
@@ -708,7 +599,7 @@
       </div>
 
       {{!-- Workplace Bias --}}
-      <a id="workplace_bias" class="arrow_expander infoItem--a completed school data" data-toggle="collapse" href="#workplacebiasCollapse" role="button" aria-expanded="false" aria-controls="workplacebiasCollapse">
+      <a id="workplace_bias" class="arrow_expander infoItem--a school data" data-toggle="collapse" href="#workplacebiasCollapse" role="button" aria-expanded="false" aria-controls="workplacebiasCollapse">
         <div class="title-bar row">
           <div class="title-bar--svg-row">
             <img src="images/down_arrow.svg" class="svg" />
@@ -721,7 +612,7 @@
               meeting audio analysis system (Python)
             </h6>
             <div class="row subtitle subtitle-break">
-              <div class="title-bar-tag">completed</div><div class="title-bar-tag">school</div><div class="title-bar-tag">data</div>
+              <div class="title-bar-tag">school</div><div class="title-bar-tag">data</div>
             </div>
           </div>
         </div>
@@ -773,7 +664,7 @@
             This project is the frontend and (incomplete) backend for a Facebook Messenger chatbot that leverages the <a href="https://noonlight.com/">Noonlight API</a> (previously SafeTrek). Noonlight connects users to emergency services in innovative and user-centric ways. Safe-Bot brings their technology to Facebook Messenger and allows users to easily request police, fire, or emergency medical services through a chat conversation. The Facebook Messenger platform is useful for these situations because it is an always-on application that allows users to share a precise location quickly and without having to think about it. It is also advantageous in events where users under duress need to remain silent.
           </p>
           <p>
-            I wrote the chatbot frontend in JavaScript. I wrote the backend using Node.JS on a Heroku server. <a href="https://github.com/mgottsacker34/safe-bot">Here is the Github repo for Safe-Bot</a>. I wrote this application in a rapid development window for Noonlight, so its commit history is messy. I was not familiar with Heroku or writing backend JavaScript in general at the time. The chatbot has limitations in that it does not manage multiple users. To be complete, it needs a secure database to manage user tokens. I plan on working on this part in the future. Let me know if you want to help with this part. I would love to collaborate.
+            I wrote the chatbot frontend in JavaScript. I wrote the backend using Node.JS on a Heroku server. <a href="https://github.com/mgottsacker34/safe-bot">Here is the Github repo for Safe-Bot</a>. I wrote this application in a rapid development window for Noonlight, so its commit history is messy. I was not familiar with Heroku or writing backend JavaScript in general at the time. The chatbot has limitations in that it does not manage multiple users. To be complete, it needs a secure database to manage user tokens. Let me know if you want to help with this part. I would love to collaborate.
           </p>
           <p>
             Here is a demo video of Safe-Bot.
