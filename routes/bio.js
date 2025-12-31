@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET bio page. */
 router.get('/', function(req, res, next) {
-  res.render('bio', { title: 'matt gottsacker' });
+  res.render('bio', { title: 'matt gottsacker: bio' });
 });
 
 module.exports = router;
