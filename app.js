@@ -5,12 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var bioRouter = require('./routes/bio');
-var projectsRouter = require('./routes/projects');
-var interestsRouter = require('./routes/interests');
-var oldnewsRouter = require('./routes/oldnews');
-
-// var altaRouter = require('./routes/alta');
 
 var app = express();
 
@@ -25,12 +19,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/bio', bioRouter);
-app.use('/projects', projectsRouter);
-app.use('/interests', interestsRouter);
-app.use('/oldnews', oldnewsRouter);
-
-// app.use('/alta_ie_v0', altaRouter);
 
 // app.use(express.static(path.join(__dirname, 'public', 'alta_ie_v0', 'build')));
 
