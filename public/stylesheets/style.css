@@ -531,3 +531,14 @@ summary::marker{
   color: #fdf6e3;
   font-size: 0.8em;
 }
+
+.map-header {
+  color: #333333;
+  text-shadow: none;
+}
+
+.map-sub {
+  color: #666; 
+  margin-top: -0.5em;
+  text-shadow: none;
+}

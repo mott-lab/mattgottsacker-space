@@ -1,0 +1,74 @@
+[
+  {
+    "lat": 28.602836,
+    "lon": -81.200262,
+    "header": "Current Location: PhD Studies",
+    "location": "Orlando, FL",
+    "date": "2020–Present",
+    "description": "Pursuing a PhD focused on research in human–computer interaction and immersive technologies.",
+    "type": "current"
+  },
+  {
+    "lat": 40.753625614904614,
+    "lon": -73.99804390892386,
+    "location": "New York City, NY",
+    "header": "JPMC GTAR XR Internships",
+    "date": "Summer 2023 and Summer 2024",
+    "description": "I interned with JPMorganChase Global Technology Applied Research XR team. My work focused on mixed reality presentation systems. <a href=\"docs/papers/CHI25__Paper__Immersive_Presentation_Study_preprint.pdf\">CHI paper</a>, <a href=\"https://patents.google.com/patent/US20250022020A1/en\">provisional patent</a>, <a href=\"https://hybrid-ui-workshop.io/proceedings/gottsacker2023hybrid.pdf\">workshop paper</a>.",
+    "type": "job"
+  },
+  {
+    "lat": 40.80788887673176,
+    "lon": -73.96265001296732,
+    "location": "New York City, NY",
+    "header": "Columbia University",
+    "date": "Summer 2022",
+    "description": "I did a research visit with Prof. Steven Feiner at the Computer Graphics and User Interfaces Lab. My work focused on collaborative mixed reality systems. <a href=\"docs/papers/CHI25__LBW__MR_Perspective_Alignment_preprint.pdf\">CHI late-breaking work paper</a>.",
+    "type": "job"
+  },
+  {
+    "lat": 36.3504119,
+    "lon": 127.3845475,
+    "location": "Daejeon, South Korea",
+    "header": "IEEE ISMAR 2025",
+    "date": "October 2025",
+    "description": "Presented research at IEEE ISMAR. <a href=\"https://arxiv.org/pdf/2508.11778\">Workshop paper</a>, <a href=\"https://sreal.ucf.edu/wp-content/uploads/2025/09/ISMAR25__Demo__VR_World_Switch_UI.pdf\">demo</a>. Co-organized the <a href=\"https://www.ieeeismar.net/2025/program/Future-Faculty-Forum/\">Future Faculty Forum</a>.",
+    "type": "research"
+  },
+  {
+    "lat": 35.4437078,
+    "lon": 139.6380256,
+    "location": "Yokohama, Japan",
+    "header": "ACM CHI 2025",
+    "date": "April 2025",
+    "description": "Presented research at ACM CHI. <a href=\"docs/papers/CHI25__Paper__Immersive_Presentation_Study_preprint.pdf\">Full paper</a>, <a href=\"docs/papers/CHI25__LBW__MR_Perspective_Alignment_preprint.pdf\">late-breaking work poster</a>.",
+    "type": "research"
+  },
+  {
+    "lat": 48.6493029,
+    "lon": -1.6178046,
+    "location": "Saint-Malo, France",
+    "header": "IEEE VR 2025",
+    "date": "March 2025",
+    "description": "Co-organized the <a href=\"https://ieeevr.org/2025/program/future-faculty-forum/\">Future Faculty Forum</a> at IEEE VR.",
+    "type": "research"
+  },
+  {
+    "lat": 47.6061389,
+    "lon": -122.3328481,
+    "location": "Seattle, WA",
+    "header": "IEEE ISMAR 2024",
+    "date": "October 2024",
+    "description": "Presented research at IEEE ISMAR. <a href=\"https://sreal.ucf.edu/wp-content/uploads/2024/08/ISMAR24____Conference____Residue-5.pdf\">Conference paper</a>. Co-organized the <a href=\"https://www.ieeeismar.net/2024/index.html%3Fp=772.html\">Future Faculty Forum</a>.",
+    "type": "research"
+  },
+  {
+    "lat": 28.3852,
+    "lon": -81.5639,
+    "location": "Orlando, FL",
+    "header": "IEEE VR 2024",
+    "date": "March 2024",
+    "description": "Presented research at IEEE VR. <a href=\"https://sreal.ucf.edu/wp-content/uploads/2024/02/vr24d-sub1075-cam-i5.pdf\">Demo paper</a>. Served as Student Volunteer Chair. Co-organized the <a href=\"https://ieeevr.org/2024/program/future-faculty-forum/\">Future Faculty Forum</a>.",
+    "type": "research"
+  }
+]
