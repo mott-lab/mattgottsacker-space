@@ -4,3 +4,6 @@
 [submodule "public/digital_native"]
 	path = public/digital_native
 	url = https://github.com/mott-lab/digital_native
+[submodule "public/reality-party"]
+	path = public/reality-party
+	url = https://github.com/mott-lab/reality-party
