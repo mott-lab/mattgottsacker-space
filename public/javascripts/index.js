@@ -102,16 +102,52 @@ function animateConnectionLine(locations) {
   setTimeout(animate, 500);
 }
 
-var currentPic = 'images/profile-pic-b-0-1200.jpg';
-var picIdx = 0;
-function nextPic() {
-  picIdx++;
-  picIdx %= 6;
-  picSrc = 'images/profile-pic-b-' + picIdx + '-1200.jpg';
-  $('.profile-pic').attr('src', picSrc);
+// profile pic glitching cycling
+var stablePic = 'images/profilepics/profile.jpg';
+var glitchCount = 15;
+var $profilePic = $('.profile-pic');
+
+function randBetween(min, max) {
+  return Math.random() * (max - min) + min;
 }
 
-var picSwitch = setInterval(nextPic, 5000);
+function pickGlitchFrames(n) {
+  var pool = [];
+  for (var i = 1; i <= glitchCount; i++) pool.push(i);
+  for (var i = pool.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+  }
+  return pool.slice(0, n).map(function (k) {
+    return 'images/profilepics/glitched/profile-g' + k + '.png';
+  });
+}
+
+function runGlitchBurst() {
+  var n = Math.floor(randBetween(3, 8));
+  var frames = pickGlitchFrames(n);
+  var i = 0;
+  function showNext() {
+    if (i >= frames.length) {
+      $profilePic.attr('src', stablePic);
+      scheduleNextBurst();
+      return;
+    }
+    $profilePic.attr('src', frames[i++]);
+    setTimeout(showNext, randBetween(50, 200));
+  }
+  showNext();
+}
+
+function scheduleNextBurst() {
+  setTimeout(runGlitchBurst, randBetween(3000, 6000));
+}
+
+for (var gi = 1; gi <= glitchCount; gi++) {
+  (new Image()).src = 'images/profilepics/glitched/profile-g' + gi + '.png';
+}
+
+scheduleNextBurst();
 
 var inVRdetails = document.querySelector("#inVRdetails");
 var inVRimages = document.querySelectorAll(".inVRimages");
@@ -169,6 +205,42 @@ augPresdetails.addEventListener("toggle", function() {
     } else {
       image.classList.remove("showimage");
       image.classList.add("hideimage");
+    }
+  });
+});
+
+var worldSwitchUIdetails = document.querySelector("#worldSwitchUI_Details");
+var worldSwitchUIimages = document.querySelectorAll(".worldSwitchUI_images");
+
+worldSwitchUIdetails.addEventListener("toggle", function() {
+  worldSwitchUIimages.forEach((image) => {
+    if (worldSwitchUIdetails.hasAttribute("open")) {
+      image.classList.remove("hideimage");
+      image.classList.add("showimage");
+    } else {
+      image.classList.remove("showimage");
+      image.classList.add("hideimage");
+    }
+  });
+});
+
+// Add a "collapse" button to the bottom of each <details> on the projects list.
+document.querySelectorAll(".proj-group-details details").forEach((detailsEl) => {
+  var btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "btn btn-sm btn-secondary collapse-details-btn";
+  btn.textContent = "collapse ▲";
+  btn.style.marginTop = "0.5em";
+
+  var card = detailsEl.querySelector(".infoItem--card");
+  (card || detailsEl).appendChild(btn);
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    detailsEl.removeAttribute("open");
+    var summary = detailsEl.querySelector("summary");
+    if (summary && summary.scrollIntoView) {
+      summary.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
 });
