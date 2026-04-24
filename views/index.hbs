@@ -166,9 +166,12 @@
             If your primary environment is a virtual world, and you add elements of the physical environment to it, you get augmented virtuality (AV) (imagine being in a VR headset and seeing real-time video of the physical world through a portal).
           </p>--}}
           {{!-- <img class="proj-thumbnail center" src="images/RV-continuum-2.jpg" alt="Milgram and Kishino's Reality-Virtuality Continuum" max-width="100%"></img>  --}}
+          <p>
+            The diagram below describes the user's process for switching between worlds. The lighter shading above the time arrow notionally represents how the user's cognitive engagement is distributed among the user's first world (blue), the switching interface (yellow), and the second world (green) at each moment of the switch. 
+          </p>
           <img class="proj-thumbnail center" src="images/worldswitch_timeline.png" alt="World Switch Timeline" max-width="100%"></img> 
           <p class="break-above">
-            To address this fundamental usability problem space, my PhD research focuses on creating effective world switching interfaces and cross-reality interactions, as well as studying the cognitive effects of such interfaces and transitions.
+            My PhD research focuses on design explorations and empirical work aimed at discovering principles that can be used to improve the user experience during each part of this process; for example: creating effective world switching interfaces as well as studying the cognitive effects of such interfaces and transitions. I have also studied cross-reality scenarios where people who are in two different worlds need to interact (i.e., without a shared spatial context).
 {{!-- 
             In my research, I have explored methods for efficiently and effectively transitioning a single user between different virtual environments.
             I have also investigated ways to improve interactions between people on opposite ends of the continuum, specifically focusing on when an immersed VR user is interrupted by a non-immersed person nearby in the user's physical environment. --}}
@@ -219,7 +222,7 @@
               [ <a href="https://arxiv.org/abs/2602.01423">arXiv</a> ]
             </p>
             <p>
-              This project started with a couple simple, fundamental questions: why do we use VR apps strictly in a "one-world-at-a-time" mode of operation? What would it look like to create interfaces that let us switch between VR apps in a way similar to how we quickly switch between apps on desktop computers? Coming up with satisfying solutions was a little more complicated than it looked at first glance due to the spatial complexity of VR environments ("worlds"). 
+              This project started with a couple of simple, fundamental questions: why do we use VR apps strictly in a "one-world-at-a-time" mode of operation? What would it look like to create interfaces that let us switch between VR apps in a way similar to how we quickly switch between apps on desktop computers? Coming up with satisfying solutions was a little more complicated than it looked at first glance due to the spatial complexity of VR environments ("worlds"). 
             </p>
             <p>
               Desktop switching interfaces like Alt+Tab or task views provide application previews for quickly getting the gist of an application, as well as a continuous interaction flow. These core features enable users to complete fast switches. However, since VR can display content all around the user and not just within a bounded 2D frame, world switching previews need to represent spatial information. This requirement adds interaction complexity: when a spatial preview is used in a world switching interface, a continuous interaction flow needs to support both efficient world selection and preview manipulation.
@@ -242,7 +245,7 @@
             </div> --}}
             {{!-- <br> --}}
             <p>
-              We ran a user study with a simple coin collection task across several similarly structured environments. We compared all 8 interfaces and a baseline interface that consisted of a 2D grid of world options without previews anda ray-based selection interaction technique. We measured how fast users were able to <b>search</b> for and find the coin, <b>retrieve</b> it, and <b>deposit</b> it in the "home" environment. This allowed us to understand the overall efficiency of our interfaces, the pre-orientation abilities of each preview type, and the efficiency of the interaction techniques for performing familiar interactions, respectively. We also used subjective questionnaires and interviewed participants to gain insight into user experience.
+              We ran a user study with a simple coin collection task across several similarly structured environments. We compared all 8 interfaces and a baseline interface that consisted of a 2D grid of world options without previews and a ray-based selection interaction technique. We measured how fast users were able to <b>search</b> for and find the coin, <b>retrieve</b> it, and <b>deposit</b> it in the "home" environment. This allowed us to understand the overall efficiency of our interfaces, the pre-orientation abilities of each preview type, and the efficiency of the interaction techniques for performing familiar interactions, respectively. We also used subjective questionnaires and interviewed participants to gain insight into user experience.
             </p>
             <div >
               <img class="center" src="images/worldswitchUI/box_search_tech_4.png" width="50%">
@@ -311,7 +314,7 @@
               In most cases, retaining memories of things we have experienced in the past is desirable, but in some cases, we want to clear our minds so that we may focus completely on subsequent activities. When someone switches from one task to another, they commonly incur some "cognitive residue" where some of their cognitive resources such as working memory and attention remain devoted to their previous task even after they try to switch their focus to their new task. This residue could have a negative impact on their performance in the next task, and in such circumstances, it is important to reduce that residue. In this paper, we explore the concept of cognitive residue in the context of switching between virtual reality (VR) environments. We conducted a human-subject experiment (N=24) with a spatial recall task to investigate how different visual transitions might reduce participants' spatial cognitive residue. In this instance, <b>more errors</b> on the recall task corresponds to <b>less spatial cognitive residue</b>.
             </p>
             <p>
-              Participants experienced a series of distinct virtual environments (VEs) in which a narratation directed them to look at a series of five objects in the VE. Examples of the experiment environments are shown to the left. Between each VE, participants experienced a transition for one of three durations: instantaneous, 20 seconds, or 60 seconds. The instantaneous transition was a cut transition, where the previous VE disappeared and the new VE appeared immediately. The 20-second and 60-second transitions either showed a nature scene (first image on the left) or nothing (i.e., a black screen).
+              Participants experienced a series of distinct virtual environments (VEs) in which a narration directed them to look at a series of five objects in the VE. Examples of the experiment environments are shown to the left. Between each VE, participants experienced a transition for one of three durations: instantaneous, 20 seconds, or 60 seconds. The instantaneous transition was a cut transition, where the previous VE disappeared and the new VE appeared immediately. The 20-second and 60-second transitions either showed a nature scene (first image on the left) or nothing (i.e., a black screen).
             </p>
             <img class="center" src="images/spatial-residue/accuracy_nolower-residue.png" alt="Spatial cognitive residue results" width="200em"></img>
             <br>
@@ -456,7 +459,7 @@ Read more in our paper, Examining the Effects of Immersive and Non-Immersive Pre
             <ul>
               <li>You are playing a VR game in your home, and your roommate needs to ask what kind of pizza you want.</li>
               <li>You are working on a 3D design task in VR, and your collaborator needs to tell you about a specification update.</li>
-              <li>You are passing time on a plane in peaceful virtual environment, and your seat neighbor needs to move around you to use the onboard lavatory.</li>
+              <li>You are passing time on a plane in a peaceful virtual environment, and your seat neighbor needs to move around you to use the onboard lavatory.</li>
             </ul>
             <p>
               With the current state of the art, the interrupter cannot fully interact with the VR user unless they take off the headset. There is a lot of friction involved in that process, so it seems that there should be a communication channel that does not require the user to doff the headset. Additionally, the interruption is often jarring for the user. They are immersed in another world. When someone taps them on the shoulder or speaks to them, their physical environment abruptly calls them back. This process could be smoother.
@@ -468,7 +471,7 @@ Read more in our paper, Examining the Effects of Immersive and Non-Immersive Pre
               The word "diegetic" comes from describing narrative media elements. A story element is diegetic if it comes from within the context of the story world itself. For example, a sound in a movie is diegetic if it is produced by something in the scene (e.g., a radio playing a song). A different sound is non-diegetic if it is added to the scene as a narrative element (e.g., a musical score added to a scene where there is no orchestra plausibly nearby). I made a <a href="https://youtu.be/ioq4Q-ffNwE?t=1400">2-minute creative explanation for this concept</a> in my video presentation of this paper. You can watch the whole "live" presentation from that link if you want; my presentation starts around the <a href="https://youtu.be/ioq4Q-ffNwE?t=1222">20:20 mark</a>.
             </p>
             <p>
-              VR complicates the common definition diegetic because the virtual world completely surrounds the user. We can talk about audio mostly in the same diegetic dimensions, but the lines between diegetic and non-diegetic visuals blur a little. We explored how one might vary the diegetic degree of the appearance of an avatar to represent a non-VR interrupter to a VR user, and the different effects that might have on the VR user's virtual experience and cross-reality interaction experience.
+              VR complicates the common definition of diegetic because the virtual world completely surrounds the user. We can talk about audio mostly in the same diegetic dimensions, but the lines between diegetic and non-diegetic visuals blur a little. We explored how one might vary the diegetic degree of the appearance of an avatar to represent a non-VR interrupter to a VR user, and the different effects that might have on the VR user's virtual experience and cross-reality interaction experience.
             </p>
             <p>
               I built a virtual office environment and tasked participants with stacking virtual blocks in a couple different formations&mdash;just an easy task that could help them fall into a rhythm pretty quickly. The experimenter interrupted them part-way through each block formation. The way the interrupter was represented to the VR user changed each time:
